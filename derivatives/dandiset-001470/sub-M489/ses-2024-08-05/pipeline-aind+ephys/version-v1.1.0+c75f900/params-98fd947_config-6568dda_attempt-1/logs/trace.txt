@@ -1,0 +1,30 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	1d/95c558	12396660	job_dispatch (job-dispatch)	COMPLETED	0	2026-04-23 11:48:40.796	1m 9s	6.4s	43.5%	626.8 MB	1.5 GB	30.9 MB	1.4 MB
+3	cb/3d9154	12396711	preprocessing (preprocessing)	COMPLETED	0	2026-04-23 11:49:50.627	8m 35s	6m 29s	1238.4%	21.9 GB	131.6 GB	116.2 GB	25.5 GB
+7	3e/c3f508	12397458	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-04-23 11:58:25.424	8m 5s	7m 24s	398.5%	29.2 GB	49 GB	148 MB	637.2 MB
+2	46/d75329	12396714	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-04-23 11:49:50.897	23m 14s	21m 22s	1342.5%	11.4 GB	49.4 GB	1.1 TB	1.7 GB
+4	95/e93491	12396712	preprocessing (preprocessing)	COMPLETED	0	2026-04-23 11:49:50.709	25m 15s	5m 26s	977.3%	22.3 GB	131.7 GB	155.1 GB	25.7 GB
+5	90/c99985	12396713	preprocessing (preprocessing)	COMPLETED	0	2026-04-23 11:49:50.816	31m 14s	4m 35s	1245.6%	22.3 GB	131.7 GB	116.5 GB	25.5 GB
+8	ed/ec50ff	12398272	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-04-23 12:15:05.363	13m 5s	10m 11s	319.4%	29.6 GB	45.3 GB	149 MB	644.2 MB
+9	07/5b4d59	12398569	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-04-23 12:21:05.453	10m 40s	7m 45s	382.7%	29.2 GB	44.9 GB	151.2 MB	664.3 MB
+6	aa/5cc2ce	12396715	preprocessing (preprocessing)	COMPLETED	0	2026-04-23 11:49:50.982	43m 14s	6m 23s	1277.4%	22.4 GB	131.8 GB	155.5 GB	25.5 GB
+10	ab/a33e28	12399014	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-04-23 12:33:05.406	11m 10s	7m 43s	364.3%	29.2 GB	45 GB	150.8 MB	661.2 MB
+13	35/387b12	12399378	postprocessing (postprocessing)	COMPLETED	0	2026-04-23 12:44:15.773	6m 10s	5m 54s	951.6%	49.3 GB	108.9 GB	3.2 GB	3.8 GB
+15	b2/1cc520	12399575	curation (curation)	COMPLETED	0	2026-04-23 12:50:25.513	1m 35s	23.1s	46.5%	3.6 GB	4.8 GB	704.4 MB	278 KB
+12	4d/7ed13c	12399375	postprocessing (postprocessing)	COMPLETED	0	2026-04-23 12:44:15.506	8m 5s	6m 57s	637.9%	34 GB	87.8 GB	2.2 GB	2.6 GB
+11	50/618202	12399376	postprocessing (postprocessing)	COMPLETED	0	2026-04-23 12:44:15.603	8m 15s	7m 43s	665.4%	40.8 GB	95.8 GB	2.6 GB	3.1 GB
+16	9b/da3834	12399663	curation (curation)	COMPLETED	0	2026-04-23 12:52:20.446	34.9s	21.5s	40.9%	2.6 GB	3.7 GB	570.4 MB	276.8 KB
+14	3c/e67431	12399377	postprocessing (postprocessing)	COMPLETED	0	2026-04-23 12:44:15.689	9m 15s	8m 12s	706.5%	55.4 GB	113.3 GB	3.5 GB	4 GB
+17	f4/7ec351	12399678	curation (curation)	COMPLETED	0	2026-04-23 12:52:30.439	1m 35s	23.1s	38.7%	3 GB	4.1 GB	620.6 MB	277.3 KB
+18	0f/2a068d	12399707	curation (curation)	COMPLETED	0	2026-04-23 12:53:30.466	1m 40s	20.5s	46.5%	1.5 GB	3.8 GB	714.7 MB	277.9 KB
+22	4c/726f9d	12399751	visualization (visualization)	COMPLETED	0	2026-04-23 12:55:10.757	2m 5s	1m 4s	95.5%	7.4 GB	8.4 GB	3.8 GB	8.1 MB
+20	c6/d6da12	12399749	visualization (visualization)	COMPLETED	0	2026-04-23 12:55:10.592	2m 5s	1m 11s	63.5%	7.2 GB	8.2 GB	3.7 GB	7.6 MB
+21	b8/56a574	12399750	visualization (visualization)	COMPLETED	0	2026-04-23 12:55:10.669	2m 5s	56.5s	95.8%	7.4 GB	8.4 GB	3.1 GB	8.2 MB
+19	9a/cf9b57	12399748	visualization (visualization)	COMPLETED	0	2026-04-23 12:55:10.496	3m 5s	1m 57s	84.2%	7.4 GB	8.8 GB	3 GB	7.6 MB
+23	99/ffa085	12399849	results_collector (result-collector)	COMPLETED	0	2026-04-23 12:58:15.494	2m 5s	1m 25s	15.8%	610.1 MB	1.4 GB	2.8 GB	2.9 GB
+24	23/fc704e	12399939	quality_control (quality-control)	COMPLETED	0	2026-04-23 13:00:20.721	34.6s	28.5s	64.1%	1.5 GB	3.8 GB	1.5 GB	7.6 MB
+26	8f/fef3b3	12399937	quality_control (quality-control)	COMPLETED	0	2026-04-23 13:00:20.546	1m 5s	44.6s	45.5%	1.5 GB	3.8 GB	1.7 GB	7.5 MB
+28	b8/1fe474	12399940	quality_control (quality-control)	COMPLETED	0	2026-04-23 13:00:20.800	1m 5s	47s	41.8%	1.5 GB	4.1 GB	1.7 GB	7.7 MB
+27	41/8e02ec	12399941	quality_control (quality-control)	COMPLETED	0	2026-04-23 13:00:20.894	1m 5s	42.9s	45.1%	1.5 GB	4.1 GB	1.5 GB	7.6 MB
+25	22/d26968	12399938	nwb_units (nwb-units)	COMPLETED	0	2026-04-23 13:00:20.644	2m 10s	1m	53.9%	1 GB	1.7 GB	906.7 MB	833.7 MB
+29	61/41f7aa	12400102	quality_control_collector (qc-collector)	COMPLETED	0	2026-04-23 13:01:25.567	1m 35s	3.6s	24.9%	50.6 MB	370.9 MB	25.5 MB	17.5 MB

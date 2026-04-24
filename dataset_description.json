@@ -1,0 +1,26 @@
+{
+  "Name": "DANDI Compute: AIND Ephys",
+  "Description": "This is an ongoing meta-analysis of spike sorting applied to all qualifying DANDI assets.",
+  "BIDSVersion": "1.10.1",
+  "DatasetType": "study",
+  "Authors": [
+      "Baker, Cody",
+      "Halchenko, Yaroslav"
+  ],
+  "Funding": [
+      "NIH 5R24MH117295-07"
+  ],
+  "License": "CC-BY-4.0",
+  "GeneratedBy": [
+    {
+      "Name": "DANDI Compute: Code",
+      "Description": "The primary source code for orchestration of AIND on MIT Engaging.",
+      "CodeURL": "https://github.com/dandi-compute/code"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "DANDI Compute: AIND Ephys Pipeline Output for Dandiset 214527",
+  "BIDSVersion": "1.10",
+  "DatasetType": "study",
+  "GeneratedBy": [
+    {
+      "Name": "AIND Ephys Pipeline",
+      "Description": "A customized and version-locked branch of the main AIND ephys pipeline.",
+      "Version": "v1.0.0+fixes",
+      "CodeURL": "https://github.com/CodyCBakerPhD/aind-ephys-pipeline/tree/v1.0.0%2Bfixes"
+    },
+    {
+      "Name": "DANDI Compute: Code",
+      "Description": "A customized and version-locked branch of the main AIND ephys pipeline.",
+      "Version": "4594afb",
+      "CodeURL": "https://github.com/dandi-compute/code"
+    }
+  ]
+}

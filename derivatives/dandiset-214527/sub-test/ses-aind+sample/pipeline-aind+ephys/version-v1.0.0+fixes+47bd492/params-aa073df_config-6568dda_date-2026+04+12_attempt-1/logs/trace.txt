@@ -1,0 +1,12 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	f1/84d5c9	11708406	job_dispatch (job-dispatch)	COMPLETED	0	2026-04-12 04:02:26.662	1m 9s	3.7s	22.8%	78.1 MB	403.7 MB	18 MB	633.2 KB
+2	44/0fff57	11708407	preprocessing (preprocessing)	COMPLETED	0	2026-04-12 04:03:35.979	1m 5s	14.6s	261.8%	314.2 MB	508 MB	715.2 MB	7.7 MB
+3	94/8d8e4d	11708408	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-04-12 04:03:36.492	2m 4s	37.1s	2453.7%	7.6 GB	91.7 GB	7 GB	13.9 MB
+4	35/f23b66	11708438	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-04-12 04:04:40.783	3m 5s	17.7s	458.7%	2 GB	18.8 GB	69.1 MB	14.6 MB
+5	67/903d34	11708584	postprocessing (postprocessing)	COMPLETED	0	2026-04-12 04:07:45.717	2m 5s	53.3s	341.8%	100.1 GB	697.6 GB	613.8 MB	298.3 MB
+6	61/04b17a	11708588	curation (curation)	COMPLETED	0	2026-04-12 04:09:50.724	1m 5s	27.6s	24.1%	955.4 MB	4.9 GB	223.8 MB	270.2 KB
+7	24/af86d8	11708603	visualization (visualization)	COMPLETED	0	2026-04-12 04:10:55.691	34.9s	12.8s	63.7%	796.5 MB	1.5 GB	484.4 MB	2.5 MB
+8	da/8ad2d6	11708608	results_collector (result-collector)	COMPLETED	0	2026-04-12 04:11:30.724	1m 35s	4.8s	75.7%	268.8 MB	918.6 MB	147.6 MB	111.4 MB
+9	6a/56ef37	11708621	quality_control (quality-control)	COMPLETED	0	2026-04-12 04:13:05.905	34.7s	11.9s	97.0%	666.5 MB	3.3 GB	1.1 GB	5.3 MB
+10	e4/e8e976	11708620	nwb_units (nwb-units)	COMPLETED	0	2026-04-12 04:13:05.807	34.8s	7s	30.0%	184 MB	563.1 MB	39.9 MB	4.4 MB
+11	ad/fca8b8	11708640	quality_control_collector (qc-collector)	COMPLETED	0	2026-04-12 04:13:40.703	34.9s	1.9s	93.2%	78.5 MB	396.8 MB	10.3 MB	2.2 MB
