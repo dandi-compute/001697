@@ -34,34 +34,20 @@ Each subdirectory at the bottom level is itself a **self-contained BIDS-Study**,
 
 
 
-### Setting up `git-annex` on MIT Engaging
+### Setting up DataLad/`git-annex` on MIT Engaging
 
 ```
 dandi_instance: dandi
 s3bucket: dandiarchive
-backup_root: /path/to/backups
+backup_root: /orcd/data/dandi/001/dandi-compute/datalad
 dandisets:
   path: dandisets
-  github_org: dandisets        # GitHub org where repos will be created
-  remote:
-    name: dandi-backup
-    type: s3
-    options:
-      bucket: my-backup-bucket
+  github_org: dandi-compute        # GitHub org where repos will be created
 zarrs:
   path: zarrs
-  github_org: dandizarrs
-  remote:
-    name: dandi-zarr-backup
-    type: s3
-    options:
-      bucket: my-zarr-bucket
-jobs: 4
-workers: 4
+  github_org: dandi-compute
+jobs: 1
+workers: 1
 ```
 
-```
-cd /orcd/data/dandi/001/dandi-compute
-backups2datalad -B ./datalad -c config.yaml update-from-backup 001697
-backups2datalad -B ./datalad -c config.yaml populate 001697
-```
+Then refer to [submitter/sync-datalad.yml](https://github.com/dandi-compute/submitter/blob/main/.github/workflows/sync-datalad.yml) for details on how `backups2datalad` is run.
