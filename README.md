@@ -65,4 +65,5 @@ find . -name '*.png' -exec git annex unannex {} +
 git add .gitattributes
 git add '*.png'
 git commit -m "Track PNGs in Git directly instead of git-annex"
+datalad push --to github
 ```
