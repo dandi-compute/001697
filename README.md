@@ -51,3 +51,18 @@ workers: 1
 ```
 
 Then refer to [submitter/sync-datalad.yml](https://github.com/dandi-compute/submitter/blob/main/.github/workflows/sync-datalad.yml) for details on how `backups2datalad` is run.
+
+After the first run, we decided to host PNG files via the GitHub CDN for the webpage.
+This requires unannexing these files:
+
+```
+cat >> .gitattributes << 'EOF'
+*.png annex.largefiles=nothing
+EOF
+
+find . -name '*.png' -exec git annex unannex {} +
+
+git add .gitattributes
+git add '*.png'
+git commit -m "Track PNGs in Git directly instead of git-annex"
+```
