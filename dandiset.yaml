@@ -19,27 +19,27 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: analytical technique
+  - name: surgical technique
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  - name: spike sorting technique
-    schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
-  - name: surgical technique
+  - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1950631307
-  numberOfFiles: 150
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 116584706
+  numberOfFiles: 48
   numberOfSubjects: 1
   schemaKey: AssetsSummary
   species: []
   variableMeasured:
-  - ElectricalSeries
   - LFP
   - ProcessingModule
-  - Units
+  - ElectricalSeries
   - ElectrodeGroup
+  - Units
 citation: 'Baker, Cody (2026) DANDI Compute: AIND Ephys (Version draft) [Data set].
   DANDI Archive. https://dandiarchive.org/dandiset/001697/draft'
 contributor:
