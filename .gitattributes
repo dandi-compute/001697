@@ -2,3 +2,6 @@
 **/.git* annex.largefiles=nothing
 * annex.largefiles=((mimeencoding=binary)and(largerthan=0))
 *.png annex.largefiles=nothing
+*.log annex.largefiles=nothing
+*.config annex.largefiles=nothing
+*.nf annex.largefiles=nothing

@@ -1,1 +1,556 @@
-../../../../../../../../.git/annex/objects/XJ/3g/SHA256E-s34123--f96d4f702bd45260188dbb8e58e9201b7cf634a7f57bc2388814b089f19fbdc2.log/SHA256E-s34123--f96d4f702bd45260188dbb8e58e9201b7cf634a7f57bc2388814b089f19fbdc2.log
+Already on 'v1.1.1'
+Your branch is up to date with 'origin/v1.1.1'.
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: dandi in /home/cb239/.local/lib/python3.12/site-packages (0.74.3)
+Requirement already satisfied: bidsschematools~=1.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (1.2.0)
+Requirement already satisfied: bids-validator-deno>=2.0.5 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.4.0)
+Requirement already satisfied: click<8.2.0,>=7.1 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (8.1.8)
+Requirement already satisfied: click-didyoumean in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.1)
+Requirement already satisfied: dandischema~=0.12.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.12.1)
+Requirement already satisfied: etelemetry>=0.2.2 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.1)
+Requirement already satisfied: fasteners in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.20)
+Requirement already satisfied: fscacher>=0.3.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.4.4)
+Requirement already satisfied: hdmf!=3.14.4,!=3.5.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (4.3.1)
+Requirement already satisfied: humanize in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (4.15.0)
+Requirement already satisfied: interleave~=0.3 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.0)
+Requirement already satisfied: joblib in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (1.5.2)
+Requirement already satisfied: keyring!=23.9.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (25.7.0)
+Requirement already satisfied: keyrings.alt in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (5.0.2)
+Requirement already satisfied: packaging in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (25.0)
+Requirement already satisfied: platformdirs in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (4.5.0)
+Requirement already satisfied: pycryptodomex in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (3.23.0)
+Requirement already satisfied: pydantic~=2.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.12.5)
+Requirement already satisfied: pynwb!=1.1.0,!=2.3.0,>=1.0.3 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (3.1.3)
+Requirement already satisfied: numcodecs<0.16 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.15.1)
+Requirement already satisfied: nwbinspector!=0.4.32,>=0.4.28 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.6.5)
+Requirement already satisfied: pyout!=0.6.0,>=0.5 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.8.1)
+Requirement already satisfied: python-dateutil in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.9.0.post0)
+Requirement already satisfied: requests~=2.20 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.32.5)
+Requirement already satisfied: ruamel.yaml<1,>=0.15 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (0.18.16)
+Requirement already satisfied: semantic-version in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.10.0)
+Requirement already satisfied: tenacity in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (9.1.3)
+Requirement already satisfied: tensorstore in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.1.80)
+Requirement already satisfied: urllib3>=2.0.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.5.0)
+Requirement already satisfied: yarl~=1.9 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (1.22.0)
+Requirement already satisfied: zarr<=3.1.5,>=2.10 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.18.7)
+Requirement already satisfied: zarr_checksum~=0.4.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.4.7)
+Requirement already satisfied: acres in /home/cb239/.local/lib/python3.12/site-packages (from bidsschematools~=1.0->dandi) (0.5.0)
+Requirement already satisfied: pyyaml in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from bidsschematools~=1.0->dandi) (6.0.3)
+Requirement already satisfied: jsonschema[format] in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandischema~=0.12.0->dandi) (4.25.1)
+Requirement already satisfied: pydantic-settings in /home/cb239/.local/lib/python3.12/site-packages (from dandischema~=0.12.0->dandi) (2.12.0)
+Requirement already satisfied: numpy>=1.24 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from numcodecs<0.16->dandi) (2.3.5)
+Requirement already satisfied: deprecated in /home/cb239/.local/lib/python3.12/site-packages (from numcodecs<0.16->dandi) (1.3.1)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (2.41.5)
+Requirement already satisfied: typing-extensions>=4.14.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (4.15.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (0.4.2)
+Requirement already satisfied: email-validator>=2.0.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic[email]~=2.4->dandischema~=0.12.0->dandi) (2.3.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (3.11)
+Requirement already satisfied: certifi>=2017.4.17 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (2025.11.12)
+Requirement already satisfied: ruamel.yaml.clib>=0.2.7 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from ruamel.yaml<1,>=0.15->dandi) (0.2.14)
+Requirement already satisfied: multidict>=4.0 in /home/cb239/.local/lib/python3.12/site-packages (from yarl~=1.9->dandi) (6.7.1)
+Requirement already satisfied: propcache>=0.2.1 in /home/cb239/.local/lib/python3.12/site-packages (from yarl~=1.9->dandi) (0.4.1)
+Requirement already satisfied: asciitree in /home/cb239/.local/lib/python3.12/site-packages (from zarr<=3.1.5,>=2.10->dandi) (0.3.3)
+Requirement already satisfied: tqdm>=4.67.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from zarr_checksum~=0.4.0->dandi) (4.67.1)
+Requirement already satisfied: dnspython>=2.0.0 in /home/cb239/.local/lib/python3.12/site-packages (from email-validator>=2.0.0->pydantic[email]~=2.4->dandischema~=0.12.0->dandi) (2.8.0)
+Requirement already satisfied: ci-info>=0.2 in /home/cb239/.local/lib/python3.12/site-packages (from etelemetry>=0.2.2->dandi) (0.4.0)
+Requirement already satisfied: h5py>=3.1.0 in /home/cb239/.local/lib/python3.12/site-packages (from hdmf!=3.14.4,!=3.5.0->dandi) (3.15.1)
+Requirement already satisfied: pandas<3,>=1.2.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from hdmf!=3.14.4,!=3.5.0->dandi) (2.3.3)
+Requirement already satisfied: pytz>=2020.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pandas<3,>=1.2.0->hdmf!=3.14.4,!=3.5.0->dandi) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pandas<3,>=1.2.0->hdmf!=3.14.4,!=3.5.0->dandi) (2025.2)
+Requirement already satisfied: attrs>=22.2.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (25.4.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.37.0)
+Requirement already satisfied: rpds-py>=0.7.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.30.0)
+Requirement already satisfied: SecretStorage>=3.2 in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (3.5.0)
+Requirement already satisfied: jeepney>=0.4.2 in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (0.9.0)
+Requirement already satisfied: jaraco.classes in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (3.4.0)
+Requirement already satisfied: jaraco.functools in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (4.4.0)
+Requirement already satisfied: jaraco.context in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (6.1.0)
+Requirement already satisfied: aiohttp in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (3.13.3)
+Requirement already satisfied: fsspec in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (2025.9.0)
+Requirement already satisfied: hdmf-zarr in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (0.12.0)
+Requirement already satisfied: isodate in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (0.7.2)
+Requirement already satisfied: natsort in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (8.4.0)
+Requirement already satisfied: blessed in /home/cb239/.local/lib/python3.12/site-packages (from pyout!=0.6.0,>=0.5->dandi) (1.29.0)
+Requirement already satisfied: six>=1.5 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from python-dateutil->dandi) (1.17.0)
+Requirement already satisfied: cryptography>=2.0 in /home/cb239/.local/lib/python3.12/site-packages (from SecretStorage>=3.2->keyring!=23.9.0->dandi) (46.0.4)
+Requirement already satisfied: cffi>=2.0.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from cryptography>=2.0->SecretStorage>=3.2->keyring!=23.9.0->dandi) (2.0.0)
+Requirement already satisfied: pycparser in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring!=23.9.0->dandi) (2.22)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (1.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (1.8.0)
+Requirement already satisfied: wcwidth>=0.5 in /home/cb239/.local/lib/python3.12/site-packages (from blessed->pyout!=0.6.0,>=0.5->dandi) (0.5.3)
+Requirement already satisfied: wrapt<3,>=1.10 in /home/cb239/.local/lib/python3.12/site-packages (from deprecated->numcodecs<0.16->dandi) (2.0.1)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from hdmf-zarr->nwbinspector!=0.4.32,>=0.4.28->dandi) (3.6.0)
+Requirement already satisfied: more-itertools in /home/cb239/.local/lib/python3.12/site-packages (from jaraco.classes->keyring!=23.9.0->dandi) (10.8.0)
+Requirement already satisfied: fqdn in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.5.1)
+Requirement already satisfied: isoduration in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (20.11.0)
+Requirement already satisfied: jsonpointer>1.13 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (3.0.0)
+Requirement already satisfied: rfc3339-validator in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.1.4)
+Requirement already satisfied: rfc3987 in /home/cb239/.local/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.3.8)
+Requirement already satisfied: uri-template in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.3.0)
+Requirement already satisfied: webcolors>=1.11 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (25.10.0)
+Requirement already satisfied: arrow>=0.15.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from isoduration->jsonschema[format]->dandischema~=0.12.0->dandi) (1.4.0)
+Requirement already satisfied: python-dotenv>=0.21.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic-settings->dandischema~=0.12.0->dandi) (1.2.1)
+Requirement already satisfied: ml_dtypes>=0.5.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from tensorstore->dandi) (0.5.4)
+Nextflow 25.10.4 is available - Please consider updating your version to it
+
+ N E X T F L O W   ~  version 25.10.2
+
+Launching `/orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf` [confident_salas] DSL2 - revision: 9b4b4a2d88
+
+DATA_PATH: /orcd/data/dandi/001/s3dandiarchive/blobs/001/911
+RESULTS_PATH: /orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/intermediate
+Loaded parameters from /orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+PARAMS: [params_file:/orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json, job_dispatch_args:--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048, executor:slurm, default_queue:mit_normal, gpu_queue:mit_normal_gpu, max_normal_runtime_in_minutes:720m, max_gpu_runtime_in_minutes:360m, ecephys_path:/orcd/data/dandi/001/s3dandiarchive/blobs/001/911, git_repo_prefix:https://github.com/AllenNeuralDynamics/aind-]
+Using custom capsule versions file at: /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/capsule_versions.env
+CONTAINER TAG: si-0.103.2
+No extra installs specified.
+Using RUNMODE: full
+Using parameters from JSON file: /orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+Merging job_dispatch_args from JSON with CLI args: --nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048
+No sorter specified, defaulting to kilosort4
+Using SORTER: kilosort4 with args: --params '{"job_kwargs":{"chunk_duration":"1s","progress_bar":false},"skip_motion_correction":false,"min_drift_channels":96,"raise_if_fails":true,"clear_cache":false,"sorter":{"batch_size":60000,"nblocks":5,"Th_universal":9,"Th_learned":8,"do_CAR":true,"invert_sign":false,"nt":61,"shift":null,"scale":null,"artifact_threshold":null,"nskip":25,"whitening_range":32,"highpass_cutoff":300,"binning_depth":5,"sig_interp":20,"drift_smoothing":[0.5,0.5,0.5],"nt0min":null,"dmin":null,"dminx":32,"min_template_size":10,"template_sizes":5,"nearest_chans":10,"nearest_templates":100,"max_channel_distance":null,"templates_from_data":true,"n_templates":6,"n_pcs":6,"Th_single_ch":6,"acg_threshold":0.2,"ccg_threshold":0.25,"cluster_downsampling":20,"x_centers":null,"duplicate_spike_ms":0.25,"save_preprocessed_copy":false,"torch_device":"auto","bad_channels":null,"clear_cache":false,"save_extra_vars":false,"do_correction":true,"keep_good_only":false,"skip_kilosort_preprocessing":false,"use_binary_file":null,"delete_recording_dat":true}}'
+[-        ] job_dispatch        -
+[-        ] preprocessing       -
+[-        ] spikesort_kilosort4 -
+[-        ] postprocessing      -
+[-        ] curation            -
+[-        ] visualization       -
+
+[-        ] job_dispatch              -
+[-        ] preprocessing             -
+[-        ] spikesort_kilosort4       -
+[-        ] postprocessing            -
+[-        ] curation                  -
+[-        ] visualization             -
+[-        ] results_collector         -
+[-        ] quality_control           -
+[-        ] quality_control_collector -
+[-        ] nwb_ecephys               -
+[-        ] nwb_units                 -
+WARN: There's no process matching config selector: nwb_subject
+
+[-        ] job_dispatch              | 0 of 1
+[-        ] preprocessing             -
+[-        ] spikesort_kilosort4       -
+[-        ] postprocessing            -
+[-        ] curation                  -
+[-        ] visualization             -
+[-        ] results_collector         -
+[-        ] quality_control           -
+[-        ] quality_control_collector -
+[-        ] nwb_ecephys               -
+[-        ] nwb_units                 -
+WARN: There's no process matching config selector: nwb_subject
+
+executor >  slurm (1)
+[d3/f9ec05] job_dispatch (job-dispatch) | 0 of 1
+[-        ] preprocessing               -
+[-        ] spikesort_kilosort4         -
+[-        ] postprocessing              -
+[-        ] curation                    -
+[-        ] visualization               -
+[-        ] results_collector           -
+[-        ] quality_control             -
+[-        ] quality_control_collector   -
+[-        ] nwb_ecephys                 -
+[-        ] nwb_units                   -
+WARN: There's no process matching config selector: nwb_subject
+
+executor >  slurm (1)
+[d3/f9ec05] job_dispatch (job-dispatch) | 0 of 1
+[-        ] preprocessing               -
+[-        ] spikesort_kilosort4         -
+[-        ] postprocessing              -
+[-        ] curation                    -
+[-        ] visualization               -
+[-        ] results_collector           -
+[-        ] quality_control             -
+[-        ] quality_control_collector   -
+[-        ] nwb_ecephys                 -
+[-        ] nwb_units                   -
+
+
+executor >  slurm (1)
+[d3/f9ec05] job_dispatch (job-dispatch) | 1 of 1 ✔
+[-        ] preprocessing               | 0 of 1
+[-        ] spikesort_kilosort4         -
+[-        ] postprocessing              -
+[-        ] curation                    -
+[-        ] visualization               -
+[-        ] results_collector           -
+[-        ] quality_control             -
+[-        ] quality_control_collector   -
+[-        ] nwb_ecephys                 | 0 of 1
+[-        ] nwb_units                   -
+[job-dispatch] allocated task time: 12h
+[job-dispatch] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git (commit: bc73404c574d04d456684fd0abad5373a257d4fe)...
+[job-dispatch] running capsule...
+Running job dispatcher with the following parameters:
+	SPLIT SEGMENTS: True
+	SPLIT GROUPS: True
+	DEBUG: False
+	DEBUG DURATION: 30.0
+	SKIP TIMESTAMPS CHECK: False
+	MULTI SESSION: False
+	INPUT: nwb
+	MIN_RECORDING_DURATION: -1
+Parsing nwb input folder
+nwb_files: [PosixPath('/orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048')]
+Processing NWB file: /orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048
+	Session name: 00191182-4939-4c60-bc8c-e45b82e83048
+	Num. Blocks 1 - Num. streams: 1
+Recording to be processed in parallel:
+Relative to: ../data
+	block0_acquisition-ElectricalSeries_recording1
+		Duration: 600.1 s - Num. channels: 882
+Generated 1 job config files
+[job-dispatch] completed!
+
+Max recording duration: 10min
+
+executor >  slurm (3)
+[d3/f9ec05] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[e0/49305a] preprocessing (preprocessing) | 0 of 1
+[-        ] spikesort_kilosort4           -
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[4a/f79858] nwb_ecephys (nwb-ecephys)     | 0 of 1
+[-        ] nwb_units                     -
+[job-dispatch] allocated task time: 12h
+[job-dispatch] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git (commit: bc73404c574d04d456684fd0abad5373a257d4fe)...
+[job-dispatch] running capsule...
+Running job dispatcher with the following parameters:
+	SPLIT SEGMENTS: True
+	SPLIT GROUPS: True
+	DEBUG: False
+	DEBUG DURATION: 30.0
+	SKIP TIMESTAMPS CHECK: False
+	MULTI SESSION: False
+	INPUT: nwb
+	MIN_RECORDING_DURATION: -1
+Parsing nwb input folder
+nwb_files: [PosixPath('/orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048')]
+Processing NWB file: /orcd/data/dandi/001/s3dandiarchive/blobs/001/911/00191182-4939-4c60-bc8c-e45b82e83048
+	Session name: 00191182-4939-4c60-bc8c-e45b82e83048
+	Num. Blocks 1 - Num. streams: 1
+Recording to be processed in parallel:
+Relative to: ../data
+	block0_acquisition-ElectricalSeries_recording1
+		Duration: 600.1 s - Num. channels: 882
+Generated 1 job config files
+[job-dispatch] completed!
+
+Max recording duration: 10min
+
+executor >  slurm (3)
+[d3/f9ec05] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[e0/49305a] preprocessing (preprocessing) | 0 of 1 ✘
+[-        ] spikesort_kilosort4           -
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[4a/f79858] nwb_ecephys (nwb-ecephys)     | 0 of 1
+[-        ] nwb_units                     -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERROR ~ Error executing process > 'nwb_ecephys (nwb-ecephys)'
+
+Caused by:
+  Process `nwb_ecephys (nwb-ecephys)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  #!/usr/bin/env bash
+      set -e
+  
+      
+      
+  
+      mkdir -p capsule
+      mkdir -p capsule/data
+      mkdir -p capsule/results
+      mkdir -p capsule/scratch
+  
+      if [[ slurm == "slurm" ]]; then
+          echo "[nwb-ecephys] allocated task time: 12h"
+          # Make sure N_JOBS matches allocated CPUs on SLURM
+          export N_JOBS_EXT=16
+      fi
+  
+      echo "[nwb-ecephys] cloning git repo..."
+      
+  clone_repo() {
+      local repo_url="$1"
+      local commit_hash="$2"
+  
+      echo "cloning git repo: ${repo_url} (commit: ${commit_hash})..."
+  
+      git clone "${repo_url}" capsule-repo
+      git -C capsule-repo -c core.fileMode=false checkout "${commit_hash}" --quiet
+  
+      mv capsule-repo/code capsule/code
+      rm -rf capsule-repo
+  }
+  
+      clone_repo "https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git" "31d08bf37ec50b4092565a42783aa853862b348c"
+  
+      echo "[nwb-ecephys] running capsule..."
+      cd capsule/code
+      chmod +x run
+      ./run --params '{"backend":"hdf5","stub":false,"stub_seconds":10,"write_lfp":true,"write_raw":false,"lfp_temporal_factor":2,"lfp_spatial_factor":4,"lfp_highpass_freq_min":0.1,"surface_channel_agar_probes_indices":"","lfp":{"filter":{"freq_min":0.1,"freq_max":500},"sampling_rate":2500}}'
+  
+      echo "[nwb-ecephys] completed!"
+
+Command exit status:
+  1
+
+Command output:
+  [nwb-ecephys] allocated task time: 12h
+  [nwb-ecephys] cloning git repo...
+  cloning git repo: https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git (commit: 31d08bf37ec50b4092565a42783aa853862b348c)...
+  [nwb-ecephys] running capsule...
+  
+  
+  NWB EXPORT ECEPHYS
+  Running NWB conversion with the following parameters:
+  Stub test: False
+  Stub seconds: 10.0
+  Write LFP: True
+  Write RAW: False
+  Temporal subsampling factor: 2
+  Spatial subsampling factor: 4
+  Highpass filter frequency: 0.1
+  Surface channel indices for agar probes: 
+  NWB backend: hdf5
+  Found 1 JSON job files
+  Session: 00191182-4939-4c60-bc8c-e45b82e83048
+  Number of NWB files to write: 1
+  Number of streams to write for each file: 1
+  Creating NWB file with info.
+  Processing block0_acquisition-ElectricalSeries_recording1
+  	Loading block0_acquisition-ElectricalSeries_recording1 from 1 JSON files
+  		block0_acquisition-ElectricalSeries_recording1
+  	Could not load device information: adding default probe device
+  	Adding LFP data for stream acquisition-ElectricalSeries from wide-band signal - segment 0
+
+Command error:
+  WARNING: While bind mounting '/orcd/data/dandi/001:/orcd/data/dandi/001': destination is already in the mount point list
+  Cloning into 'capsule-repo'...
+  + python -u run_capsule.py --params '{"backend":"hdf5","stub":false,"stub_seconds":10,"write_lfp":true,"write_raw":false,"lfp_temporal_factor":2,"lfp_spatial_factor":4,"lfp_highpass_freq_min":0.1,"surface_channel_agar_probes_indices":"","lfp":{"filter":{"freq_min":0.1,"freq_max":500},"sampling_rate":2500}}'
+  Traceback (most recent call last):
+    File "capsule/code/run_capsule.py", line 637, in <module>
+      recording_lfp = spre.bandpass_filter(recording, **lfp_filter_kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/core/core_tools.py", line 35, in source_class_or_dict_of_sources_classes
+      return source_class(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 233, in __init__
+      FilterRecording.__init__(
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 105, in __init__
+      dtype = fix_dtype(recording, dtype)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 425, in fix_dtype
+      raise ValueError(
+  ValueError: Unsigned types are not supported, since they don't interact well with various preprocessing steps. You can use `spikeinterface.preprocessing.unsigned_to_signed` to convert the recording to a signed type.For more information, please see https://spikeinterface.readthedocs.io/en/stable/how_to/unsigned_to_signed.html
+
+Work dir:
+  /orcd/data/dandi/001/dandi-compute/work/4a/f798585dd208147fda073bb4902091
+
+Container:
+  /orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-nwb-si-0.103.2.img
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '/orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/logs/nextflow.log' file for details
+
+executor >  slurm (3)
+[d3/f9ec05] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[e0/49305a] preprocessing (preprocessing) | 0 of 1 ✘
+[-        ] spikesort_kilosort4           -
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[4a/f79858] nwb_ecephys (nwb-ecephys)     | 0 of 1 ✘
+[-        ] nwb_units                     -
+ERROR ~ Error executing process > 'nwb_ecephys (nwb-ecephys)'
+
+Caused by:
+  Process `nwb_ecephys (nwb-ecephys)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  #!/usr/bin/env bash
+      set -e
+  
+      
+      
+  
+      mkdir -p capsule
+      mkdir -p capsule/data
+      mkdir -p capsule/results
+      mkdir -p capsule/scratch
+  
+      if [[ slurm == "slurm" ]]; then
+          echo "[nwb-ecephys] allocated task time: 12h"
+          # Make sure N_JOBS matches allocated CPUs on SLURM
+          export N_JOBS_EXT=16
+      fi
+  
+      echo "[nwb-ecephys] cloning git repo..."
+      
+  clone_repo() {
+      local repo_url="$1"
+      local commit_hash="$2"
+  
+      echo "cloning git repo: ${repo_url} (commit: ${commit_hash})..."
+  
+      git clone "${repo_url}" capsule-repo
+      git -C capsule-repo -c core.fileMode=false checkout "${commit_hash}" --quiet
+  
+      mv capsule-repo/code capsule/code
+      rm -rf capsule-repo
+  }
+  
+      clone_repo "https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git" "31d08bf37ec50b4092565a42783aa853862b348c"
+  
+      echo "[nwb-ecephys] running capsule..."
+      cd capsule/code
+      chmod +x run
+      ./run --params '{"backend":"hdf5","stub":false,"stub_seconds":10,"write_lfp":true,"write_raw":false,"lfp_temporal_factor":2,"lfp_spatial_factor":4,"lfp_highpass_freq_min":0.1,"surface_channel_agar_probes_indices":"","lfp":{"filter":{"freq_min":0.1,"freq_max":500},"sampling_rate":2500}}'
+  
+      echo "[nwb-ecephys] completed!"
+
+Command exit status:
+  1
+
+Command output:
+  [nwb-ecephys] allocated task time: 12h
+  [nwb-ecephys] cloning git repo...
+  cloning git repo: https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git (commit: 31d08bf37ec50b4092565a42783aa853862b348c)...
+  [nwb-ecephys] running capsule...
+  
+  
+  NWB EXPORT ECEPHYS
+  Running NWB conversion with the following parameters:
+  Stub test: False
+  Stub seconds: 10.0
+  Write LFP: True
+  Write RAW: False
+  Temporal subsampling factor: 2
+  Spatial subsampling factor: 4
+  Highpass filter frequency: 0.1
+  Surface channel indices for agar probes: 
+  NWB backend: hdf5
+  Found 1 JSON job files
+  Session: 00191182-4939-4c60-bc8c-e45b82e83048
+  Number of NWB files to write: 1
+  Number of streams to write for each file: 1
+  Creating NWB file with info.
+  Processing block0_acquisition-ElectricalSeries_recording1
+  	Loading block0_acquisition-ElectricalSeries_recording1 from 1 JSON files
+  		block0_acquisition-ElectricalSeries_recording1
+  	Could not load device information: adding default probe device
+  	Adding LFP data for stream acquisition-ElectricalSeries from wide-band signal - segment 0
+
+Command error:
+  WARNING: While bind mounting '/orcd/data/dandi/001:/orcd/data/dandi/001': destination is already in the mount point list
+  Cloning into 'capsule-repo'...
+  + python -u run_capsule.py --params '{"backend":"hdf5","stub":false,"stub_seconds":10,"write_lfp":true,"write_raw":false,"lfp_temporal_factor":2,"lfp_spatial_factor":4,"lfp_highpass_freq_min":0.1,"surface_channel_agar_probes_indices":"","lfp":{"filter":{"freq_min":0.1,"freq_max":500},"sampling_rate":2500}}'
+  Traceback (most recent call last):
+    File "capsule/code/run_capsule.py", line 637, in <module>
+      recording_lfp = spre.bandpass_filter(recording, **lfp_filter_kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/core/core_tools.py", line 35, in source_class_or_dict_of_sources_classes
+      return source_class(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 233, in __init__
+      FilterRecording.__init__(
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 105, in __init__
+      dtype = fix_dtype(recording, dtype)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/filter.py", line 425, in fix_dtype
+      raise ValueError(
+  ValueError: Unsigned types are not supported, since they don't interact well with various preprocessing steps. You can use `spikeinterface.preprocessing.unsigned_to_signed` to convert the recording to a signed type.For more information, please see https://spikeinterface.readthedocs.io/en/stable/how_to/unsigned_to_signed.html
+
+Work dir:
+  /orcd/data/dandi/001/dandi-compute/work/4a/f798585dd208147fda073bb4902091
+
+Container:
+  /orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-nwb-si-0.103.2.img
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '/orcd/data/dandi/001/dandi-compute/processing/tmpk02kim7f/001697/derivatives/dandiset-001747/sub-chip19894/ses-recording049/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/logs/nextflow.log' file for details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mv: cannot stat 'nwb/': No such file or directory
+mv: cannot stat 'visualization_output.json': No such file or directory
+mv: cannot stat 'visualization/': No such file or directory
+2026-04-24 13:47:58,004 [    INFO] Found 13 files to consider

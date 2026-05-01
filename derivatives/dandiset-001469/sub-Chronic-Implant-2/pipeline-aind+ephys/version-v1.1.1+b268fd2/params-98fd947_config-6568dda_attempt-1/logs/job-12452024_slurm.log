@@ -1,1 +1,1336 @@
-../../../../../../../.git/annex/objects/P0/Gq/SHA256E-s54511--990d4d459bb19a7f1d76987962e7d1519beb76dc44b937777544afc9052b254f.log/SHA256E-s54511--990d4d459bb19a7f1d76987962e7d1519beb76dc44b937777544afc9052b254f.log
+Already on 'v1.1.1'
+Your branch is up to date with 'origin/v1.1.1'.
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: dandi in /home/cb239/.local/lib/python3.12/site-packages (0.74.3)
+Requirement already satisfied: bidsschematools~=1.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (1.2.0)
+Requirement already satisfied: bids-validator-deno>=2.0.5 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.4.0)
+Requirement already satisfied: click<8.2.0,>=7.1 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (8.1.8)
+Requirement already satisfied: click-didyoumean in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.1)
+Requirement already satisfied: dandischema~=0.12.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.12.1)
+Requirement already satisfied: etelemetry>=0.2.2 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.1)
+Requirement already satisfied: fasteners in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.20)
+Requirement already satisfied: fscacher>=0.3.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.4.4)
+Requirement already satisfied: hdmf!=3.14.4,!=3.5.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (4.3.1)
+Requirement already satisfied: humanize in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (4.15.0)
+Requirement already satisfied: interleave~=0.3 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.3.0)
+Requirement already satisfied: joblib in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (1.5.2)
+Requirement already satisfied: keyring!=23.9.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (25.7.0)
+Requirement already satisfied: keyrings.alt in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (5.0.2)
+Requirement already satisfied: packaging in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (25.0)
+Requirement already satisfied: platformdirs in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (4.5.0)
+Requirement already satisfied: pycryptodomex in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (3.23.0)
+Requirement already satisfied: pydantic~=2.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.12.5)
+Requirement already satisfied: pynwb!=1.1.0,!=2.3.0,>=1.0.3 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (3.1.3)
+Requirement already satisfied: numcodecs<0.16 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.15.1)
+Requirement already satisfied: nwbinspector!=0.4.32,>=0.4.28 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.6.5)
+Requirement already satisfied: pyout!=0.6.0,>=0.5 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.8.1)
+Requirement already satisfied: python-dateutil in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.9.0.post0)
+Requirement already satisfied: requests~=2.20 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.32.5)
+Requirement already satisfied: ruamel.yaml<1,>=0.15 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (0.18.16)
+Requirement already satisfied: semantic-version in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.10.0)
+Requirement already satisfied: tenacity in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (9.1.3)
+Requirement already satisfied: tensorstore in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.1.80)
+Requirement already satisfied: urllib3>=2.0.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandi) (2.5.0)
+Requirement already satisfied: yarl~=1.9 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (1.22.0)
+Requirement already satisfied: zarr<=3.1.5,>=2.10 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (2.18.7)
+Requirement already satisfied: zarr_checksum~=0.4.0 in /home/cb239/.local/lib/python3.12/site-packages (from dandi) (0.4.7)
+Requirement already satisfied: acres in /home/cb239/.local/lib/python3.12/site-packages (from bidsschematools~=1.0->dandi) (0.5.0)
+Requirement already satisfied: pyyaml in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from bidsschematools~=1.0->dandi) (6.0.3)
+Requirement already satisfied: jsonschema[format] in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from dandischema~=0.12.0->dandi) (4.25.1)
+Requirement already satisfied: pydantic-settings in /home/cb239/.local/lib/python3.12/site-packages (from dandischema~=0.12.0->dandi) (2.12.0)
+Requirement already satisfied: numpy>=1.24 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from numcodecs<0.16->dandi) (2.3.5)
+Requirement already satisfied: deprecated in /home/cb239/.local/lib/python3.12/site-packages (from numcodecs<0.16->dandi) (1.3.1)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (2.41.5)
+Requirement already satisfied: typing-extensions>=4.14.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (4.15.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic~=2.0->dandi) (0.4.2)
+Requirement already satisfied: email-validator>=2.0.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic[email]~=2.4->dandischema~=0.12.0->dandi) (2.3.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (3.11)
+Requirement already satisfied: certifi>=2017.4.17 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from requests~=2.20->dandi) (2025.11.12)
+Requirement already satisfied: ruamel.yaml.clib>=0.2.7 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from ruamel.yaml<1,>=0.15->dandi) (0.2.14)
+Requirement already satisfied: multidict>=4.0 in /home/cb239/.local/lib/python3.12/site-packages (from yarl~=1.9->dandi) (6.7.1)
+Requirement already satisfied: propcache>=0.2.1 in /home/cb239/.local/lib/python3.12/site-packages (from yarl~=1.9->dandi) (0.4.1)
+Requirement already satisfied: asciitree in /home/cb239/.local/lib/python3.12/site-packages (from zarr<=3.1.5,>=2.10->dandi) (0.3.3)
+Requirement already satisfied: tqdm>=4.67.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from zarr_checksum~=0.4.0->dandi) (4.67.1)
+Requirement already satisfied: dnspython>=2.0.0 in /home/cb239/.local/lib/python3.12/site-packages (from email-validator>=2.0.0->pydantic[email]~=2.4->dandischema~=0.12.0->dandi) (2.8.0)
+Requirement already satisfied: ci-info>=0.2 in /home/cb239/.local/lib/python3.12/site-packages (from etelemetry>=0.2.2->dandi) (0.4.0)
+Requirement already satisfied: h5py>=3.1.0 in /home/cb239/.local/lib/python3.12/site-packages (from hdmf!=3.14.4,!=3.5.0->dandi) (3.15.1)
+Requirement already satisfied: pandas<3,>=1.2.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from hdmf!=3.14.4,!=3.5.0->dandi) (2.3.3)
+Requirement already satisfied: pytz>=2020.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pandas<3,>=1.2.0->hdmf!=3.14.4,!=3.5.0->dandi) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from pandas<3,>=1.2.0->hdmf!=3.14.4,!=3.5.0->dandi) (2025.2)
+Requirement already satisfied: attrs>=22.2.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (25.4.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.37.0)
+Requirement already satisfied: rpds-py>=0.7.1 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.30.0)
+Requirement already satisfied: SecretStorage>=3.2 in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (3.5.0)
+Requirement already satisfied: jeepney>=0.4.2 in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (0.9.0)
+Requirement already satisfied: jaraco.classes in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (3.4.0)
+Requirement already satisfied: jaraco.functools in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (4.4.0)
+Requirement already satisfied: jaraco.context in /home/cb239/.local/lib/python3.12/site-packages (from keyring!=23.9.0->dandi) (6.1.0)
+Requirement already satisfied: aiohttp in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (3.13.3)
+Requirement already satisfied: fsspec in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (2025.9.0)
+Requirement already satisfied: hdmf-zarr in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (0.12.0)
+Requirement already satisfied: isodate in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (0.7.2)
+Requirement already satisfied: natsort in /home/cb239/.local/lib/python3.12/site-packages (from nwbinspector!=0.4.32,>=0.4.28->dandi) (8.4.0)
+Requirement already satisfied: blessed in /home/cb239/.local/lib/python3.12/site-packages (from pyout!=0.6.0,>=0.5->dandi) (1.29.0)
+Requirement already satisfied: six>=1.5 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from python-dateutil->dandi) (1.17.0)
+Requirement already satisfied: cryptography>=2.0 in /home/cb239/.local/lib/python3.12/site-packages (from SecretStorage>=3.2->keyring!=23.9.0->dandi) (46.0.4)
+Requirement already satisfied: cffi>=2.0.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from cryptography>=2.0->SecretStorage>=3.2->keyring!=23.9.0->dandi) (2.0.0)
+Requirement already satisfied: pycparser in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring!=23.9.0->dandi) (2.22)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (1.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/cb239/.local/lib/python3.12/site-packages (from aiohttp->nwbinspector!=0.4.32,>=0.4.28->dandi) (1.8.0)
+Requirement already satisfied: wcwidth>=0.5 in /home/cb239/.local/lib/python3.12/site-packages (from blessed->pyout!=0.6.0,>=0.5->dandi) (0.5.3)
+Requirement already satisfied: wrapt<3,>=1.10 in /home/cb239/.local/lib/python3.12/site-packages (from deprecated->numcodecs<0.16->dandi) (2.0.1)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from hdmf-zarr->nwbinspector!=0.4.32,>=0.4.28->dandi) (3.6.0)
+Requirement already satisfied: more-itertools in /home/cb239/.local/lib/python3.12/site-packages (from jaraco.classes->keyring!=23.9.0->dandi) (10.8.0)
+Requirement already satisfied: fqdn in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.5.1)
+Requirement already satisfied: isoduration in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (20.11.0)
+Requirement already satisfied: jsonpointer>1.13 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (3.0.0)
+Requirement already satisfied: rfc3339-validator in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (0.1.4)
+Requirement already satisfied: rfc3987 in /home/cb239/.local/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.3.8)
+Requirement already satisfied: uri-template in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (1.3.0)
+Requirement already satisfied: webcolors>=1.11 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from jsonschema[format]->dandischema~=0.12.0->dandi) (25.10.0)
+Requirement already satisfied: arrow>=0.15.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from isoduration->jsonschema[format]->dandischema~=0.12.0->dandi) (1.4.0)
+Requirement already satisfied: python-dotenv>=0.21.0 in /home/cb239/.local/lib/python3.12/site-packages (from pydantic-settings->dandischema~=0.12.0->dandi) (1.2.1)
+Requirement already satisfied: ml_dtypes>=0.5.0 in /orcd/software/core/001/pkg/miniforge/25.11.0-0/lib/python3.12/site-packages (from tensorstore->dandi) (0.5.4)
+Nextflow 25.10.4 is available - Please consider updating your version to it
+
+ N E X T F L O W   ~  version 25.10.2
+
+Launching `/orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf` [zen_panini] DSL2 - revision: 9b4b4a2d88
+
+DATA_PATH: /orcd/data/dandi/001/s3dandiarchive/blobs/000/891
+RESULTS_PATH: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/intermediate
+Loaded parameters from /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+PARAMS: [params_file:/orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json, job_dispatch_args:--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2, executor:slurm, default_queue:mit_normal, gpu_queue:mit_normal_gpu, max_normal_runtime_in_minutes:720m, max_gpu_runtime_in_minutes:360m, ecephys_path:/orcd/data/dandi/001/s3dandiarchive/blobs/000/891, git_repo_prefix:https://github.com/AllenNeuralDynamics/aind-]
+Using custom capsule versions file at: /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/capsule_versions.env
+CONTAINER TAG: si-0.103.2
+No extra installs specified.
+Using RUNMODE: full
+Using parameters from JSON file: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+Merging job_dispatch_args from JSON with CLI args: --nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2
+No sorter specified, defaulting to kilosort4
+Using SORTER: kilosort4 with args: --params '{"job_kwargs":{"chunk_duration":"1s","progress_bar":false},"skip_motion_correction":false,"min_drift_channels":96,"raise_if_fails":true,"clear_cache":false,"sorter":{"batch_size":60000,"nblocks":5,"Th_universal":9,"Th_learned":8,"do_CAR":true,"invert_sign":false,"nt":61,"shift":null,"scale":null,"artifact_threshold":null,"nskip":25,"whitening_range":32,"highpass_cutoff":300,"binning_depth":5,"sig_interp":20,"drift_smoothing":[0.5,0.5,0.5],"nt0min":null,"dmin":null,"dminx":32,"min_template_size":10,"template_sizes":5,"nearest_chans":10,"nearest_templates":100,"max_channel_distance":null,"templates_from_data":true,"n_templates":6,"n_pcs":6,"Th_single_ch":6,"acg_threshold":0.2,"ccg_threshold":0.25,"cluster_downsampling":20,"x_centers":null,"duplicate_spike_ms":0.25,"save_preprocessed_copy":false,"torch_device":"auto","bad_channels":null,"clear_cache":false,"save_extra_vars":false,"do_correction":true,"keep_good_only":false,"skip_kilosort_preprocessing":false,"use_binary_file":null,"delete_recording_dat":true}}'
+[-        ] job_dispatch              -
+[-        ] preprocessing             -
+[-        ] spikesort_kilosort4       -
+[-        ] postprocessing            -
+[-        ] curation                  -
+[-        ] visualization             -
+[-        ] results_collector         -
+[-        ] quality_control           -
+[-        ] quality_control_collector -
+[-        ] nwb_ecephys               -
+[-        ] nwb_units                 -
+WARN: There's no process matching config selector: nwb_subject
+
+executor >  slurm (1)
+[14/afffe2] job_dispatch (job-dispatch) | 0 of 1
+[-        ] preprocessing               -
+[-        ] spikesort_kilosort4         -
+[-        ] postprocessing              -
+[-        ] curation                    -
+[-        ] visualization               -
+[-        ] results_collector           -
+[-        ] quality_control             -
+[-        ] quality_control_collector   -
+[-        ] nwb_ecephys                 -
+[-        ] nwb_units                   -
+WARN: There's no process matching config selector: nwb_subject
+
+executor >  slurm (1)
+[14/afffe2] job_dispatch (job-dispatch) | 1 of 1 ✔
+[-        ] preprocessing               -
+[-        ] spikesort_kilosort4         -
+[-        ] postprocessing              -
+[-        ] curation                    -
+[-        ] visualization               -
+[-        ] results_collector           -
+[-        ] quality_control             -
+[-        ] quality_control_collector   -
+[-        ] nwb_ecephys                 -
+[-        ] nwb_units                   -
+[job-dispatch] allocated task time: 12h
+[job-dispatch] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git (commit: bc73404c574d04d456684fd0abad5373a257d4fe)...
+[job-dispatch] running capsule...
+Running job dispatcher with the following parameters:
+	SPLIT SEGMENTS: True
+	SPLIT GROUPS: True
+	DEBUG: False
+	DEBUG DURATION: 30.0
+	SKIP TIMESTAMPS CHECK: False
+	MULTI SESSION: False
+	INPUT: nwb
+	MIN_RECORDING_DURATION: -1
+Parsing nwb input folder
+nwb_files: [PosixPath('/orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2')]
+Processing NWB file: /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2
+	Session name: 00089114-fc52-4421-b143-a0e6d0b07ef2
+	Num. Blocks 1 - Num. streams: 1
+Recording to be processed in parallel:
+Relative to: ../data
+	block0_acquisition-ElectricalSeries_recording1
+		Duration: 3818.39 s - Num. channels: 32
+Generated 1 job config files
+[job-dispatch] completed!
+
+Max recording duration: 64min
+
+
+executor >  slurm (3)
+[14/afffe2] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing) | 0 of 1
+[-        ] spikesort_kilosort4           -
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)     | 0 of 1
+[-        ] nwb_units                     -
+[job-dispatch] allocated task time: 12h
+[job-dispatch] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git (commit: bc73404c574d04d456684fd0abad5373a257d4fe)...
+[job-dispatch] running capsule...
+Running job dispatcher with the following parameters:
+	SPLIT SEGMENTS: True
+	SPLIT GROUPS: True
+	DEBUG: False
+	DEBUG DURATION: 30.0
+	SKIP TIMESTAMPS CHECK: False
+	MULTI SESSION: False
+	INPUT: nwb
+	MIN_RECORDING_DURATION: -1
+Parsing nwb input folder
+nwb_files: [PosixPath('/orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2')]
+Processing NWB file: /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2
+	Session name: 00089114-fc52-4421-b143-a0e6d0b07ef2
+	Num. Blocks 1 - Num. streams: 1
+Recording to be processed in parallel:
+Relative to: ../data
+	block0_acquisition-ElectricalSeries_recording1
+		Duration: 3818.39 s - Num. channels: 32
+Generated 1 job config files
+[job-dispatch] completed!
+
+Max recording duration: 64min
+
+
+executor >  slurm (3)
+[14/afffe2] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing) | 0 of 1
+[-        ] spikesort_kilosort4           -
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)     | 0 of 1
+[-        ] nwb_units                     -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (3)
+[14/afffe2] job_dispatch (job-dispatch)   | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing) | 1 of 1 ✔
+[-        ] spikesort_kilosort4           | 0 of 1
+[-        ] postprocessing                -
+[-        ] curation                      -
+[-        ] visualization                 -
+[-        ] results_collector             -
+[-        ] quality_control               -
+[-        ] quality_control_collector     -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)     | 0 of 1
+[-        ] nwb_units                     -
+[preprocessing] allocated task time: 12h
+[preprocessing] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-preprocessing.git (commit: 6a093b1c76ab99c934fa16cf66360305092135e0)...
+[preprocessing] running capsule...
+Running preprocessing with the following parameters:
+	DENOISING_STRATEGY: cmr
+	FILTER TYPE: highpass
+	REMOVE_OUT_CHANNELS: True
+	REMOVE_BAD_CHANNELS: True
+	MAX BAD CHANNEL FRACTION: 0.5
+	COMPUTE_MOTION: True
+	APPLY_MOTION: False
+	MOTION PRESET: dredge_fast
+	MOTION TEMPORAL BIN S: 1
+	T_START: None
+	T_STOP: None
+	MIN_DURATION FOR PREPROCESSING: 120
+	N_JOBS: 32
+Found 1 configurations
+
+
+PREPROCESSING
+Preprocessing recording: 00089114-fc52-4421-b143-a0e6d0b07ef2 - block0_acquisition-ElectricalSeries_recording1
+	Duration: 3818.39 s
+	Bad channel detection:
+		- dead channels - 0
+		- noise channels - 32
+		- out channels - 0
+	More than 50.0% bad channels (32). 
+	Skipping further processing for this recording.
+PREPROCESSING time: 29.41s
+[preprocessing] completed!
+
+
+executor >  slurm (4)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 0 of 1
+[-        ] postprocessing                 -
+[-        ] curation                       -
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 0 of 1
+[-        ] nwb_units                      -
+[preprocessing] allocated task time: 12h
+[preprocessing] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-preprocessing.git (commit: 6a093b1c76ab99c934fa16cf66360305092135e0)...
+[preprocessing] running capsule...
+Running preprocessing with the following parameters:
+	DENOISING_STRATEGY: cmr
+	FILTER TYPE: highpass
+	REMOVE_OUT_CHANNELS: True
+	REMOVE_BAD_CHANNELS: True
+	MAX BAD CHANNEL FRACTION: 0.5
+	COMPUTE_MOTION: True
+	APPLY_MOTION: False
+	MOTION PRESET: dredge_fast
+	MOTION TEMPORAL BIN S: 1
+	T_START: None
+	T_STOP: None
+	MIN_DURATION FOR PREPROCESSING: 120
+	N_JOBS: 32
+Found 1 configurations
+
+
+PREPROCESSING
+Preprocessing recording: 00089114-fc52-4421-b143-a0e6d0b07ef2 - block0_acquisition-ElectricalSeries_recording1
+	Duration: 3818.39 s
+	Bad channel detection:
+		- dead channels - 0
+		- noise channels - 32
+		- out channels - 0
+	More than 50.0% bad channels (32). 
+	Skipping further processing for this recording.
+PREPROCESSING time: 29.41s
+[preprocessing] completed!
+
+
+executor >  slurm (4)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 0 of 1
+[-        ] postprocessing                 -
+[-        ] curation                       -
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[nwb-ecephys] allocated task time: 12h
+[nwb-ecephys] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git (commit: 31d08bf37ec50b4092565a42783aa853862b348c)...
+[nwb-ecephys] running capsule...
+
+
+NWB EXPORT ECEPHYS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub seconds: 10.0
+Write LFP: True
+Write RAW: False
+Temporal subsampling factor: 2
+Spatial subsampling factor: 4
+Highpass filter frequency: 0.1
+Surface channel indices for agar probes: 
+NWB backend: hdf5
+Found 1 JSON job files
+Session: 00089114-fc52-4421-b143-a0e6d0b07ef2
+Number of NWB files to write: 1
+Number of streams to write for each file: 1
+Creating NWB file with info.
+Processing block0_acquisition-ElectricalSeries_recording1
+	Loading block0_acquisition-ElectricalSeries_recording1 from 1 JSON files
+		block0_acquisition-ElectricalSeries_recording1
+	Could not load device information: adding default probe device
+	Adding LFP data for stream acquisition-ElectricalSeries from wide-band signal - segment 0
+Could not find Device in surface channel dictionary
+		Spatial subsampling factor: 4
+		Temporal subsampling factor: 2
+		Highpass filter frequency: 0.1
+	Saving preprocessed LFP to binary
+	Adding LFP recording BinaryFolderRecording: 8 channels - 1250.0Hz - 1 segments - 4,772,500 samples 
+                       3,818.00s (1.06 hours) - int16 dtype - 72.82 MiB
+Added 1 streams
+Configuring hdf5 backend
+Writing NWB file to ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+Writing time: 2.96s
+Done writing ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+NWB EXPORT ECEPHYS time: 171.07s
+[nwb-ecephys] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (4)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 0 of 1 ✔
+[-        ] postprocessing                 -
+[-        ] curation                       -
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[nwb-ecephys] allocated task time: 12h
+[nwb-ecephys] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git (commit: 31d08bf37ec50b4092565a42783aa853862b348c)...
+[nwb-ecephys] running capsule...
+
+
+NWB EXPORT ECEPHYS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub seconds: 10.0
+Write LFP: True
+Write RAW: False
+Temporal subsampling factor: 2
+Spatial subsampling factor: 4
+Highpass filter frequency: 0.1
+Surface channel indices for agar probes: 
+NWB backend: hdf5
+Found 1 JSON job files
+Session: 00089114-fc52-4421-b143-a0e6d0b07ef2
+Number of NWB files to write: 1
+Number of streams to write for each file: 1
+Creating NWB file with info.
+Processing block0_acquisition-ElectricalSeries_recording1
+	Loading block0_acquisition-ElectricalSeries_recording1 from 1 JSON files
+		block0_acquisition-ElectricalSeries_recording1
+	Could not load device information: adding default probe device
+	Adding LFP data for stream acquisition-ElectricalSeries from wide-band signal - segment 0
+Could not find Device in surface channel dictionary
+		Spatial subsampling factor: 4
+		Temporal subsampling factor: 2
+		Highpass filter frequency: 0.1
+	Saving preprocessed LFP to binary
+	Adding LFP recording BinaryFolderRecording: 8 channels - 1250.0Hz - 1 segments - 4,772,500 samples 
+                       3,818.00s (1.06 hours) - int16 dtype - 72.82 MiB
+Added 1 streams
+Configuring hdf5 backend
+Writing NWB file to ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+Writing time: 2.96s
+Done writing ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+NWB EXPORT ECEPHYS time: 171.07s
+[nwb-ecephys] completed!
+
+[spikesort-kilosort4] allocated task time: 6h
+[spikesort-kilosort4] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-spikesort-kilosort4.git (commit: dbe0c9683433f0d10057b9db800c62654ee1abf5)...
+[spikesort-kilosort4] running capsule...
+
+
+SPIKE SORTING WITH KILOSORT4
+
+	RAISE_IF_FAILS: True
+	SKIP_MOTION_CORRECTION: False
+	MIN_DRIFT_CHANNELS: 96
+	N_JOBS: 16
+Sorting recording: block0_acquisition-ElectricalSeries_recording1
+Skipping spike sorting for block0_acquisition-ElectricalSeries_recording1.
+SPIKE SORTING time: 0.0s
+[spikesort-kilosort4] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (5)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 0 of 1
+[-        ] curation                       -
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[nwb-ecephys] allocated task time: 12h
+[nwb-ecephys] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ecephys-nwb.git (commit: 31d08bf37ec50b4092565a42783aa853862b348c)...
+[nwb-ecephys] running capsule...
+
+
+NWB EXPORT ECEPHYS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub seconds: 10.0
+Write LFP: True
+Write RAW: False
+Temporal subsampling factor: 2
+Spatial subsampling factor: 4
+Highpass filter frequency: 0.1
+Surface channel indices for agar probes: 
+NWB backend: hdf5
+Found 1 JSON job files
+Session: 00089114-fc52-4421-b143-a0e6d0b07ef2
+Number of NWB files to write: 1
+Number of streams to write for each file: 1
+Creating NWB file with info.
+Processing block0_acquisition-ElectricalSeries_recording1
+	Loading block0_acquisition-ElectricalSeries_recording1 from 1 JSON files
+		block0_acquisition-ElectricalSeries_recording1
+	Could not load device information: adding default probe device
+	Adding LFP data for stream acquisition-ElectricalSeries from wide-band signal - segment 0
+Could not find Device in surface channel dictionary
+		Spatial subsampling factor: 4
+		Temporal subsampling factor: 2
+		Highpass filter frequency: 0.1
+	Saving preprocessed LFP to binary
+	Adding LFP recording BinaryFolderRecording: 8 channels - 1250.0Hz - 1 segments - 4,772,500 samples 
+                       3,818.00s (1.06 hours) - int16 dtype - 72.82 MiB
+Added 1 streams
+Configuring hdf5 backend
+Writing NWB file to ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+Writing time: 2.96s
+Done writing ../results/00089114-fc52-4421-b143-a0e6d0b07ef2_block0_recording1.nwb
+NWB EXPORT ECEPHYS time: 171.07s
+[nwb-ecephys] completed!
+
+[spikesort-kilosort4] allocated task time: 6h
+[spikesort-kilosort4] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-spikesort-kilosort4.git (commit: dbe0c9683433f0d10057b9db800c62654ee1abf5)...
+[spikesort-kilosort4] running capsule...
+
+
+SPIKE SORTING WITH KILOSORT4
+
+	RAISE_IF_FAILS: True
+	SKIP_MOTION_CORRECTION: False
+	MIN_DRIFT_CHANNELS: 96
+	N_JOBS: 16
+Sorting recording: block0_acquisition-ElectricalSeries_recording1
+Skipping spike sorting for block0_acquisition-ElectricalSeries_recording1.
+SPIKE SORTING time: 0.0s
+[spikesort-kilosort4] completed!
+
+
+executor >  slurm (5)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 0 of 1
+[-        ] curation                       -
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (5)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[-        ] curation                       | 0 of 1
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[postprocessing] allocated task time: 12h
+[postprocessing] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-postprocessing.git (commit: 2ebaa8180ba33a54a8378b9dd56b5147a535b5a8)...
+[postprocessing] running capsule...
+Running postprocessing with the following parameters:
+	USE_MOTION_CORRECTED: False
+	N_JOBS: 16
+
+POSTPROCESSING
+Found 1 json configurations
+	Processing block0_acquisition-ElectricalSeries_recording1
+Spike sorting skipped on block0_acquisition-ElectricalSeries_recording1. Skipping postprocessing
+POSTPROCESSING time: 0.01s
+[postprocessing] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (6)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 0 of 1
+[-        ] visualization                  -
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[postprocessing] allocated task time: 12h
+[postprocessing] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-postprocessing.git (commit: 2ebaa8180ba33a54a8378b9dd56b5147a535b5a8)...
+[postprocessing] running capsule...
+Running postprocessing with the following parameters:
+	USE_MOTION_CORRECTED: False
+	N_JOBS: 16
+
+POSTPROCESSING
+Found 1 json configurations
+	Processing block0_acquisition-ElectricalSeries_recording1
+Spike sorting skipped on block0_acquisition-ElectricalSeries_recording1. Skipping postprocessing
+POSTPROCESSING time: 0.01s
+[postprocessing] completed!
+
+
+executor >  slurm (6)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[-        ] visualization                  | 0 of 1
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[curation] allocated task time: 12h
+[curation] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-curation.git (commit: 3b9f14112184e93ea1edebe01e9cb68b377593be)...
+[curation] running capsule...
+
+CURATION
+Spike sorting failed on block0_acquisition-ElectricalSeries_recording1. Skipping curation
+CURATION time: 0.1s
+[curation] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (7)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 0 of 1
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[curation] allocated task time: 12h
+[curation] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-curation.git (commit: 3b9f14112184e93ea1edebe01e9cb68b377593be)...
+[curation] running capsule...
+
+CURATION
+Spike sorting failed on block0_acquisition-ElectricalSeries_recording1. Skipping curation
+CURATION time: 0.1s
+[curation] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (7)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 0 of 1
+[-        ] results_collector              -
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (8)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 0 of 1
+[-        ] quality_control                -
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      -
+[visualization] allocated task time: 12h
+[visualization] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-visualization.git (commit: bf08d5ac4f967109d8c61bf81dc7f6364a20562d)...
+[visualization] running capsule...
+
+
+VISUALIZATION
+Kachery plots disabled. KACHERY_API_KEY not found
+Found 1 JSON job files
+Visualizing recording: block0_acquisition-ElectricalSeries_recording1
+	Found JSON file associated to recording
+	Could not load sorting analyzer or recording for block0_acquisition-ElectricalSeries_recording1.
+	Visualizing drift maps using detected peaks (no spike sorting available)
+		Could not load drift recording. Skipping
+	Visualizing traces
+	Preprocessed timeseries not avaliable
+	Skipping sorting summary visualization for block0_acquisition-ElectricalSeries_recording1. No sorting information available.
+VISUALIZATION time: 20.97s
+[visualization] completed!
+
+
+executor >  slurm (8)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 0 of 1
+[-        ] quality_control                | 0 of 1
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[-        ] nwb_units                      | 0 of 1
+[result-collector] allocated task time: 12h
+[result-collector] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-results-collector.git (commit: ffc239b55b3bfbc45408e38de5f95a4284f9f8bf)...
+[result-collector] running capsule...
+
+
+COLLECTING RESULTS
+Loaded session name from JSON files: 00089114-fc52-4421-b143-a0e6d0b07ef2
+Copying preprocessed folders to results:
+Copying spikesorted folders to results:
+	block0_acquisition-ElectricalSeries_recording1
+Copying postprocessed and curated folders to results:
+	block0_acquisition-ElectricalSeries_recording1
+		Spike sorting failed on block0_acquisition-ElectricalSeries_recording1. Skipping collection
+Copying visualization outputs to results:
+Generating processing metadata
+Generating data_description metadata
+Propagating other metadata files
+COLLECTION time: 0.05s
+[result-collector] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (10)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 0 of 1
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 0 of 1
+[result-collector] allocated task time: 12h
+[result-collector] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-results-collector.git (commit: ffc239b55b3bfbc45408e38de5f95a4284f9f8bf)...
+[result-collector] running capsule...
+
+
+COLLECTING RESULTS
+Loaded session name from JSON files: 00089114-fc52-4421-b143-a0e6d0b07ef2
+Copying preprocessed folders to results:
+Copying spikesorted folders to results:
+	block0_acquisition-ElectricalSeries_recording1
+Copying postprocessed and curated folders to results:
+	block0_acquisition-ElectricalSeries_recording1
+		Spike sorting failed on block0_acquisition-ElectricalSeries_recording1. Skipping collection
+Copying visualization outputs to results:
+Generating processing metadata
+Generating data_description metadata
+Propagating other metadata files
+COLLECTION time: 0.05s
+[result-collector] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (10)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 0 of 1
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[nwb-units] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-units-nwb.git (commit: fe5dc84b4870f422ce8b2de9b979a8978069fb1e)...
+[nwb-units] allocated task time: 12h
+[nwb-units] running capsule...
+
+
+NWB EXPORT UNITS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub units: 10
+NWB backend: hdf5
+Found 1 JSON job files
+Found 0 processed recordings
+Number of NWB files to write: 0
+Number of streams to write for each file: 0
+NWB EXPORT UNITS time: 0.33s
+[nwb-units] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (10)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 1 of 1 ✔
+[-        ] quality_control_collector      -
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[nwb-units] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-units-nwb.git (commit: fe5dc84b4870f422ce8b2de9b979a8978069fb1e)...
+[nwb-units] allocated task time: 12h
+[nwb-units] running capsule...
+
+
+NWB EXPORT UNITS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub units: 10
+NWB backend: hdf5
+Found 1 JSON job files
+Found 0 processed recordings
+Number of NWB files to write: 0
+Number of streams to write for each file: 0
+NWB EXPORT UNITS time: 0.33s
+[nwb-units] completed!
+
+[quality-control] allocated task time: 12h
+[quality-control] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-processing-qc.git (commit: 6900dca7f147b2b78da51b6339dce865593b0cf3)...
+[quality-control] running capsule...
+Running Ephys QC with the following parameters:
+	COMPUTE EVENT METRICS: True
+	MIN DURATION ALLOW FAILED: 0.0
+Found 1 JSON job files
+Events from HARP not found. Trigger event metrics will not be generated.
+Recording block0_acquisition-ElectricalSeries_recording1
+Preprocessed recording not found...
+Failed to load bad channel labels for block0_acquisition-ElectricalSeries_recording1
+Generating RAW DATA metrics
+Generating PSD metrics
+Generating NOISE metrics
+Generating SATURATION metric
+	Saturation threshold for block0_acquisition-ElectricalSeries_recording1 not available. Cannot generate saturation metrics.
+	Motion not found for block0_acquisition-ElectricalSeries_recording1
+Generating UNIT YIELD metric
+	No sorting analyzer found for block0_acquisition-ElectricalSeries_recording1
+EPHYS QC time: 8.69s
+[quality-control] completed!
+
+
+executor >  slurm (11)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 1 of 1 ✔
+[df/31b591] qua…l_collector (qc-collector) | 0 of 1
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[nwb-units] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-units-nwb.git (commit: fe5dc84b4870f422ce8b2de9b979a8978069fb1e)...
+[nwb-units] allocated task time: 12h
+[nwb-units] running capsule...
+
+
+NWB EXPORT UNITS
+Running NWB conversion with the following parameters:
+Stub test: False
+Stub units: 10
+NWB backend: hdf5
+Found 1 JSON job files
+Found 0 processed recordings
+Number of NWB files to write: 0
+Number of streams to write for each file: 0
+NWB EXPORT UNITS time: 0.33s
+[nwb-units] completed!
+
+[quality-control] allocated task time: 12h
+[quality-control] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-processing-qc.git (commit: 6900dca7f147b2b78da51b6339dce865593b0cf3)...
+[quality-control] running capsule...
+Running Ephys QC with the following parameters:
+	COMPUTE EVENT METRICS: True
+	MIN DURATION ALLOW FAILED: 0.0
+Found 1 JSON job files
+Events from HARP not found. Trigger event metrics will not be generated.
+Recording block0_acquisition-ElectricalSeries_recording1
+Preprocessed recording not found...
+Failed to load bad channel labels for block0_acquisition-ElectricalSeries_recording1
+Generating RAW DATA metrics
+Generating PSD metrics
+Generating NOISE metrics
+Generating SATURATION metric
+	Saturation threshold for block0_acquisition-ElectricalSeries_recording1 not available. Cannot generate saturation metrics.
+	Motion not found for block0_acquisition-ElectricalSeries_recording1
+Generating UNIT YIELD metric
+	No sorting analyzer found for block0_acquisition-ElectricalSeries_recording1
+EPHYS QC time: 8.69s
+[quality-control] completed!
+
+
+executor >  slurm (11)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 1 of 1 ✔
+[df/31b591] qua…l_collector (qc-collector) | 0 of 1
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[quality-control] allocated task time: 12h
+[quality-control] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-processing-qc.git (commit: 6900dca7f147b2b78da51b6339dce865593b0cf3)...
+[quality-control] running capsule...
+Running Ephys QC with the following parameters:
+	COMPUTE EVENT METRICS: True
+	MIN DURATION ALLOW FAILED: 0.0
+Found 1 JSON job files
+Events from HARP not found. Trigger event metrics will not be generated.
+Recording block0_acquisition-ElectricalSeries_recording1
+Preprocessed recording not found...
+Failed to load bad channel labels for block0_acquisition-ElectricalSeries_recording1
+Generating RAW DATA metrics
+Generating PSD metrics
+Generating NOISE metrics
+Generating SATURATION metric
+	Saturation threshold for block0_acquisition-ElectricalSeries_recording1 not available. Cannot generate saturation metrics.
+	Motion not found for block0_acquisition-ElectricalSeries_recording1
+Generating UNIT YIELD metric
+	No sorting analyzer found for block0_acquisition-ElectricalSeries_recording1
+EPHYS QC time: 8.69s
+[quality-control] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+executor >  slurm (11)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 1 of 1 ✔
+[df/31b591] qua…l_collector (qc-collector) | 1 of 1 ✔
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[quality-control] allocated task time: 12h
+[quality-control] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-processing-qc.git (commit: 6900dca7f147b2b78da51b6339dce865593b0cf3)...
+[quality-control] running capsule...
+Running Ephys QC with the following parameters:
+	COMPUTE EVENT METRICS: True
+	MIN DURATION ALLOW FAILED: 0.0
+Found 1 JSON job files
+Events from HARP not found. Trigger event metrics will not be generated.
+Recording block0_acquisition-ElectricalSeries_recording1
+Preprocessed recording not found...
+Failed to load bad channel labels for block0_acquisition-ElectricalSeries_recording1
+Generating RAW DATA metrics
+Generating PSD metrics
+Generating NOISE metrics
+Generating SATURATION metric
+	Saturation threshold for block0_acquisition-ElectricalSeries_recording1 not available. Cannot generate saturation metrics.
+	Motion not found for block0_acquisition-ElectricalSeries_recording1
+Generating UNIT YIELD metric
+	No sorting analyzer found for block0_acquisition-ElectricalSeries_recording1
+EPHYS QC time: 8.69s
+[quality-control] completed!
+
+[qc-collector] allocated task time: 12h
+[qc-collector] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-qc-collector.git (commit: 1976997d7122671f03a184bb9a49f60b1c768b87)...
+[qc-collector] running capsule...
+
+EPHYS QC COLLECTION
+Found 1 quality control files
+All recording segments are the same. Dropping recording segment from recording name.
+	Collected 3 metrics for 0 tags and 1 streams.
+	Tags allowed to fail: []
+EPHYS QC COLLECTION time: 0.15s
+[qc-collector] completed!
+
+
+
+
+
+
+
+executor >  slurm (11)
+[14/afffe2] job_dispatch (job-dispatch)    | 1 of 1 ✔
+[92/83be4a] preprocessing (preprocessing)  | 1 of 1 ✔
+[4e/d895e3] spi…ort4 (spikesort-kilosort4) | 1 of 1 ✔
+[10/18a957] pos…rocessing (postprocessing) | 1 of 1 ✔
+[90/729dd1] curation (curation)            | 1 of 1 ✔
+[cf/822b35] visualization (visualization)  | 1 of 1 ✔
+[13/1a4c45] res…llector (result-collector) | 1 of 1 ✔
+[e6/b927a5] qua…_control (quality-control) | 1 of 1 ✔
+[df/31b591] qua…l_collector (qc-collector) | 1 of 1 ✔
+[ea/6213d7] nwb_ecephys (nwb-ecephys)      | 1 of 1 ✔
+[68/1b2336] nwb_units (nwb-units)          | 1 of 1 ✔
+[qc-collector] allocated task time: 12h
+[qc-collector] cloning git repo...
+cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-qc-collector.git (commit: 1976997d7122671f03a184bb9a49f60b1c768b87)...
+[qc-collector] running capsule...
+
+EPHYS QC COLLECTION
+Found 1 quality control files
+All recording segments are the same. Dropping recording segment from recording name.
+	Collected 3 metrics for 0 tags and 1 streams.
+	Tags allowed to fail: []
+EPHYS QC COLLECTION time: 0.15s
+[qc-collector] completed!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed at: 24-Apr-2026 11:15:58
+Duration    : 11m 22s
+CPU hours   : 1.3
+Succeeded   : 11
+
+
+2026-04-24 11:16:02,599 [    INFO] Found 16 files to consider

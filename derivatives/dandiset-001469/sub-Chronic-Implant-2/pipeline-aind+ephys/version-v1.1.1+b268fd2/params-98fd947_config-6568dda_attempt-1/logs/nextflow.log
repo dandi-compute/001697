@@ -1,1 +1,174 @@
-../../../../../../../.git/annex/objects/Fw/gX/SHA256E-s28870--31dd8f040795dab3e9f65dd9a1dce9a6e71c16efe40690cc348f700bc0127895.log/SHA256E-s28870--31dd8f040795dab3e9f65dd9a1dce9a6e71c16efe40690cc348f700bc0127895.log
+Apr-24 11:04:35.636 [main] DEBUG nextflow.cli.Launcher - $> nextflow -C /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/mit_engaging.config -log /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/logs/nextflow.log run /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf -work-dir /orcd/data/dandi/001/dandi-compute/work --params_file /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json --job_dispatch_args '--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2'
+Apr-24 11:04:35.845 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.2
+Apr-24 11:04:35.928 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/cb239/.nextflow/plugins; core-plugins: nf-amazon@3.4.2,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.3,nf-wave@1.16.1
+Apr-24 11:04:35.961 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-24 11:04:35.962 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-24 11:04:35.965 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-24 11:04:35.989 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-24 11:04:36.158 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-24 11:04:36.205 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/mit_engaging.config
+Apr-24 11:04:36.240 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-24 11:04:36.881 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-24 11:04:36.882 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-24 11:04:36.894 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/cb239/.nextflow/secrets/store.json
+Apr-24 11:04:36.897 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@bc6288b] - activable => nextflow.secret.LocalSecretsProvider@bc6288b
+Apr-24 11:04:36.903 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-24 11:04:36.919 [main] DEBUG nextflow.cli.CmdRun - Launching `/orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf` [zen_panini] DSL2 - revision: 9b4b4a2d88
+Apr-24 11:04:36.967 [main] DEBUG nextflow.Session - Session UUID: c5488403-4092-46c4-8928-a2c2be7ab864
+Apr-24 11:04:36.967 [main] DEBUG nextflow.Session - Run name: zen_panini
+Apr-24 11:04:36.968 [main] DEBUG nextflow.Session - Executor pool size: 2
+Apr-24 11:04:36.975 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-24 11:04:36.979 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-24 11:04:37.054 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.2 build 10555
+  Created: 28-11-2025 19:24 UTC (14:24 EDT)
+  System: Linux 4.18.0-553.83.1.el8_10.x86_64
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 2527294@node3306 [10.1.33.6]
+  CPUs: 2 - Mem: 1 GB (874.6 MB) - Swap: 4 GB (0)
+Apr-24 11:04:37.104 [main] DEBUG nextflow.Session - Work-dir: /orcd/data/dandi/001/dandi-compute/work [nfs]
+Apr-24 11:04:37.105 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/bin
+Apr-24 11:04:37.111 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-24 11:04:37.118 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-24 11:04:37.120 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-24 11:04:37.179 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-24 11:04:37.187 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Apr-24 11:04:37.263 [main] DEBUG nextflow.Session - Session start
+Apr-24 11:04:37.269 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/intermediate/nextflow/trace.txt
+Apr-24 11:04:38.502 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-24 11:04:38.506 [main] INFO  nextflow.script.BaseScript - DATA_PATH: /orcd/data/dandi/001/s3dandiarchive/blobs/000/891
+Apr-24 11:04:38.507 [main] INFO  nextflow.script.BaseScript - RESULTS_PATH: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/intermediate
+Apr-24 11:04:38.525 [main] INFO  nextflow.script.BaseScript - Loaded parameters from /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+Apr-24 11:04:38.526 [main] INFO  nextflow.script.BaseScript - PARAMS: [params_file:/orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json, job_dispatch_args:--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2, executor:slurm, default_queue:mit_normal, gpu_queue:mit_normal_gpu, max_normal_runtime_in_minutes:720m, max_gpu_runtime_in_minutes:360m, ecephys_path:/orcd/data/dandi/001/s3dandiarchive/blobs/000/891, git_repo_prefix:https://github.com/AllenNeuralDynamics/aind-]
+Apr-24 11:04:38.538 [main] INFO  nextflow.script.BaseScript - Using custom capsule versions file at: /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/capsule_versions.env
+Apr-24 11:04:38.544 [main] INFO  nextflow.script.BaseScript - CONTAINER TAG: si-0.103.2
+Apr-24 11:04:38.545 [main] INFO  nextflow.script.BaseScript - No extra installs specified.
+Apr-24 11:04:38.546 [main] INFO  nextflow.script.BaseScript - Using RUNMODE: full
+Apr-24 11:04:38.546 [main] INFO  nextflow.script.BaseScript - Using parameters from JSON file: /orcd/data/dandi/001/dandi-compute/processing/tmp7ekfmwqf/001697/derivatives/dandiset-001469/sub-Chronic-Implant-2/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json
+Apr-24 11:04:38.548 [main] INFO  nextflow.script.BaseScript - Merging job_dispatch_args from JSON with CLI args: --nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/000/891/00089114-fc52-4421-b143-a0e6d0b07ef2
+Apr-24 11:04:38.556 [main] INFO  nextflow.script.BaseScript - No sorter specified, defaulting to kilosort4
+Apr-24 11:04:38.557 [main] INFO  nextflow.script.BaseScript - Using SORTER: kilosort4 with args: --params '{"job_kwargs":{"chunk_duration":"1s","progress_bar":false},"skip_motion_correction":false,"min_drift_channels":96,"raise_if_fails":true,"clear_cache":false,"sorter":{"batch_size":60000,"nblocks":5,"Th_universal":9,"Th_learned":8,"do_CAR":true,"invert_sign":false,"nt":61,"shift":null,"scale":null,"artifact_threshold":null,"nskip":25,"whitening_range":32,"highpass_cutoff":300,"binning_depth":5,"sig_interp":20,"drift_smoothing":[0.5,0.5,0.5],"nt0min":null,"dmin":null,"dminx":32,"min_template_size":10,"template_sizes":5,"nearest_chans":10,"nearest_templates":100,"max_channel_distance":null,"templates_from_data":true,"n_templates":6,"n_pcs":6,"Th_single_ch":6,"acg_threshold":0.2,"ccg_threshold":0.25,"cluster_downsampling":20,"x_centers":null,"duplicate_spike_ms":0.25,"save_preprocessed_copy":false,"torch_device":"auto","bad_channels":null,"clear_cache":false,"save_extra_vars":false,"do_correction":true,"keep_good_only":false,"skip_kilosort_preprocessing":false,"use_binary_file":null,"delete_recording_dat":true}}'
+Apr-24 11:04:38.730 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:job_dispatch` matches process job_dispatch
+Apr-24 11:04:38.736 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.736 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.843 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Apr-24 11:04:38.851 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Apr-24 11:04:38.852 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Apr-24 11:04:38.861 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Apr-24 11:04:38.878 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'job_dispatch': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.913 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:preprocessing` matches process preprocessing
+Apr-24 11:04:38.915 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.916 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.916 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'preprocessing': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.919 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:spikesort_kilosort4` matches process spikesort_kilosort4
+Apr-24 11:04:38.921 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.921 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.921 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'spikesort_kilosort4': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.928 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:postprocessing` matches process postprocessing
+Apr-24 11:04:38.930 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.930 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.930 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'postprocessing': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.934 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:curation` matches process curation
+Apr-24 11:04:38.935 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.935 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.936 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'curation': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.953 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:visualization` matches process visualization
+Apr-24 11:04:38.954 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.954 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.955 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'visualization': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.972 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:results_collector` matches process results_collector
+Apr-24 11:04:38.974 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.974 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.974 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'results_collector': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.988 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:quality_control` matches process quality_control
+Apr-24 11:04:38.991 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.991 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.991 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'quality_control': maxForks=0; fair=false; array=0
+Apr-24 11:04:38.995 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:quality_control_collector` matches process quality_control_collector
+Apr-24 11:04:38.996 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:38.997 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:38.997 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'quality_control_collector': maxForks=0; fair=false; array=0
+Apr-24 11:04:39.005 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:nwb_ecephys` matches process nwb_ecephys
+Apr-24 11:04:39.006 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:39.006 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:39.007 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'nwb_ecephys': maxForks=0; fair=false; array=0
+Apr-24 11:04:39.018 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:nwb_units` matches process nwb_units
+Apr-24 11:04:39.019 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Apr-24 11:04:39.019 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Apr-24 11:04:39.020 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'nwb_units': maxForks=0; fair=false; array=0
+Apr-24 11:04:39.022 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: nwb_ecephys, visualization, results_collector, postprocessing, preprocessing, spikesort_lupin, spikesort_kilosort25, job_dispatch, spikesort_spykingcircus2, spikesort_kilosort4, curation, quality_control_collector, quality_control, nwb_units
+Apr-24 11:04:39.035 [main] WARN  nextflow.Session - There's no process matching config selector: nwb_subject
+Apr-24 11:04:39.037 [main] DEBUG nextflow.Session - Igniting dataflow network (12)
+Apr-24 11:04:39.047 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > job_dispatch
+Apr-24 11:04:39.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > preprocessing
+Apr-24 11:04:39.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > spikesort_kilosort4
+Apr-24 11:04:39.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > postprocessing
+Apr-24 11:04:39.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > curation
+Apr-24 11:04:39.048 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > visualization
+Apr-24 11:04:39.054 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > results_collector
+Apr-24 11:04:39.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quality_control
+Apr-24 11:04:39.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quality_control_collector
+Apr-24 11:04:39.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > nwb_ecephys
+Apr-24 11:04:39.062 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > nwb_units
+Apr-24 11:04:39.063 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ca4cfbc669997bac: /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf
+Apr-24 11:04:39.063 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-24 11:04:39.063 [main] DEBUG nextflow.Session - Session await
+Apr-24 11:04:39.173 [Actor Thread 8] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://ghcr.io/allenneuraldynamics/aind-ephys-pipeline-base:si-0.103.2; path=/orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img
+Apr-24 11:04:39.405 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process job_dispatch (job-dispatch) > jobId: 12452034; workDir: /orcd/data/dandi/001/dandi-compute/work/14/afffe2dfc26f5bacac940b3a0083e4
+Apr-24 11:04:39.406 [Task submitter] INFO  nextflow.Session - [14/afffe2] Submitted process > job_dispatch (job-dispatch)
+Apr-24 11:05:48.937 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452034; id: 1; name: job_dispatch (job-dispatch); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/14/afffe2dfc26f5bacac940b3a0083e4 started: 1777043148927; exited: 2026-04-24T15:05:39.581757639Z; ]
+Apr-24 11:05:48.938 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-24 11:05:49.038 [Actor Thread 16] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://ghcr.io/allenneuraldynamics/aind-ephys-pipeline-nwb:si-0.103.2; path=/orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-nwb-si-0.103.2.img
+Apr-24 11:05:49.226 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process nwb_ecephys (nwb-ecephys) > jobId: 12452044; workDir: /orcd/data/dandi/001/dandi-compute/work/ea/6213d7c46049d808807ebe26c9e941
+Apr-24 11:05:49.227 [Task submitter] INFO  nextflow.Session - [ea/6213d7] Submitted process > nwb_ecephys (nwb-ecephys)
+Apr-24 11:05:49.325 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process preprocessing (preprocessing) > jobId: 12452045; workDir: /orcd/data/dandi/001/dandi-compute/work/92/83be4ad2414cb12b9b8ea95103db88
+Apr-24 11:05:49.325 [Task submitter] INFO  nextflow.Session - [92/83be4a] Submitted process > preprocessing (preprocessing)
+Apr-24 11:07:23.866 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452045; id: 2; name: preprocessing (preprocessing); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/92/83be4ad2414cb12b9b8ea95103db88 started: 1777043208932; exited: 2026-04-24T15:07:06.9563004Z; ]
+Apr-24 11:07:23.881 [Actor Thread 14] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://ghcr.io/allenneuraldynamics/aind-ephys-spikesort-kilosort4:si-0.103.2; path=/orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-spikesort-kilosort4-si-0.103.2.img
+Apr-24 11:07:24.060 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process spikesort_kilosort4 (spikesort-kilosort4) > jobId: 12452076; workDir: /orcd/data/dandi/001/dandi-compute/work/4e/d895e37da559886bf571a706378b48
+Apr-24 11:07:24.061 [Task submitter] INFO  nextflow.Session - [4e/d895e3] Submitted process > spikesort_kilosort4 (spikesort-kilosort4)
+Apr-24 11:09:43.870 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[jobId: 12452044; id: 3; name: nwb_ecephys (nwb-ecephys); status: RUNNING; exit: -; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/ea/6213d7c46049d808807ebe26c9e941 started: 1777043208931; exited: -; ]
+~> TaskHandler[jobId: 12452076; id: 4; name: spikesort_kilosort4 (spikesort-kilosort4); status: SUBMITTED; exit: -; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/4e/d895e37da559886bf571a706378b48 started: -; exited: -; ]
+Apr-24 11:09:53.871 [Task monitor] DEBUG nextflow.file.FileHelper - FS path type (true): /orcd/data/dandi/001/dandi-compute/work
+Apr-24 11:09:53.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452044; id: 3; name: nwb_ecephys (nwb-ecephys); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/ea/6213d7c46049d808807ebe26c9e941 started: 1777043208931; exited: 2026-04-24T15:09:31.453197999Z; ]
+Apr-24 11:09:58.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452076; id: 4; name: spikesort_kilosort4 (spikesort-kilosort4); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/4e/d895e37da559886bf571a706378b48 started: 1777043398870; exited: 2026-04-24T15:09:45.694286463Z; ]
+Apr-24 11:09:59.023 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process postprocessing (postprocessing) > jobId: 12452165; workDir: /orcd/data/dandi/001/dandi-compute/work/10/18a95743663b8a0ab58691bd2366e7
+Apr-24 11:09:59.023 [Task submitter] INFO  nextflow.Session - [10/18a957] Submitted process > postprocessing (postprocessing)
+Apr-24 11:11:03.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452165; id: 5; name: postprocessing (postprocessing); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/10/18a95743663b8a0ab58691bd2366e7 started: 1777043433872; exited: 2026-04-24T15:10:39.263619229Z; ]
+Apr-24 11:11:04.043 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process curation (curation) > jobId: 12452194; workDir: /orcd/data/dandi/001/dandi-compute/work/90/729dd1c0f80a9df6fa4b701f2aca5e
+Apr-24 11:11:04.044 [Task submitter] INFO  nextflow.Session - [90/729dd1] Submitted process > curation (curation)
+Apr-24 11:11:38.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452194; id: 6; name: curation (curation); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/90/729dd1c0f80a9df6fa4b701f2aca5e started: 1777043498873; exited: 2026-04-24T15:11:37.568981416Z; ]
+Apr-24 11:11:39.046 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process visualization (visualization) > jobId: 12452199; workDir: /orcd/data/dandi/001/dandi-compute/work/cf/822b356c9c0f631da77eb834791067
+Apr-24 11:11:39.046 [Task submitter] INFO  nextflow.Session - [cf/822b35] Submitted process > visualization (visualization)
+Apr-24 11:13:13.877 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452199; id: 7; name: visualization (visualization); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/cf/822b356c9c0f631da77eb834791067 started: 1777043573942; exited: 2026-04-24T15:13:01.915505337Z; ]
+Apr-24 11:13:14.004 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process results_collector (result-collector) > jobId: 12452222; workDir: /orcd/data/dandi/001/dandi-compute/work/13/1a4c450323d726813c8fdc9ddadcf9
+Apr-24 11:13:14.004 [Task submitter] INFO  nextflow.Session - [13/1a4c45] Submitted process > results_collector (result-collector)
+Apr-24 11:13:48.879 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452222; id: 8; name: results_collector (result-collector); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/13/1a4c450323d726813c8fdc9ddadcf9 started: 1777043628877; exited: 2026-04-24T15:13:33.747703039Z; ]
+Apr-24 11:13:49.017 [TaskFinalizer-8] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-24 11:13:49.115 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process nwb_units (nwb-units) > jobId: 12452230; workDir: /orcd/data/dandi/001/dandi-compute/work/68/1b2336ccc12769b89dc0fcb06e72cf
+Apr-24 11:13:49.115 [Task submitter] INFO  nextflow.Session - [68/1b2336] Submitted process > nwb_units (nwb-units)
+Apr-24 11:13:49.196 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quality_control (quality-control) > jobId: 12452231; workDir: /orcd/data/dandi/001/dandi-compute/work/e6/b927a50b795cca7bd2b1ea15dcda03
+Apr-24 11:13:49.197 [Task submitter] INFO  nextflow.Session - [e6/b927a5] Submitted process > quality_control (quality-control)
+Apr-24 11:14:43.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[jobId: 12452230; id: 9; name: nwb_units (nwb-units); status: SUBMITTED; exit: -; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/68/1b2336ccc12769b89dc0fcb06e72cf started: -; exited: 2026-04-24T15:14:37.292097698Z; ]
+~> TaskHandler[jobId: 12452231; id: 10; name: quality_control (quality-control); status: SUBMITTED; exit: -; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/e6/b927a50b795cca7bd2b1ea15dcda03 started: -; exited: -; ]
+Apr-24 11:14:53.953 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452230; id: 9; name: nwb_units (nwb-units); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/68/1b2336ccc12769b89dc0fcb06e72cf started: 1777043693950; exited: 2026-04-24T15:14:37.292097698Z; ]
+Apr-24 11:15:23.885 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452231; id: 10; name: quality_control (quality-control); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/e6/b927a50b795cca7bd2b1ea15dcda03 started: 1777043693953; exited: 2026-04-24T15:14:47.928163755Z; ]
+Apr-24 11:15:24.015 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quality_control_collector (qc-collector) > jobId: 12452264; workDir: /orcd/data/dandi/001/dandi-compute/work/df/31b5912ea1cd2c706c9fb74a936c43
+Apr-24 11:15:24.015 [Task submitter] INFO  nextflow.Session - [df/31b591] Submitted process > quality_control_collector (qc-collector)
+Apr-24 11:15:53.956 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 12452264; id: 11; name: quality_control_collector (qc-collector); status: COMPLETED; exit: 0; error: -; workDir: /orcd/data/dandi/001/dandi-compute/work/df/31b5912ea1cd2c706c9fb74a936c43 started: 1777043753954; exited: 2026-04-24T15:15:31.903436875Z; ]
+Apr-24 11:15:53.972 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-24 11:15:58.886 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Apr-24 11:15:58.886 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-24 11:15:58.889 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Apr-24 11:15:58.892 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Apr-24 11:15:58.898 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=11; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1h 15m 40s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=48; peakMemory=320 GB; ]
+Apr-24 11:15:59.032 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Apr-24 11:15:59.527 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Apr-24 11:15:59.590 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Apr-24 11:15:59.620 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-24 11:15:59.648 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-24 11:15:59.648 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
