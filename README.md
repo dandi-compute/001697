@@ -56,24 +56,23 @@ After the first run, we decided to host PNG files via the GitHub CDN for the web
 This requires unannexing these files:
 
 ```
-cat >> .gitattributes << 'EOF'
-*.png annex.largefiles=nothing
-*.log annex.largefiles=nothing
-*.config annex.largefiles=nothing
-*.nf annex.largefiles=nothing
-EOF
-```
+EXTS=(png log config nf)
 
-If any contents have been accidentally annexed:
-
-```
-find ./derivatives \( -name '*.log' -o -name '*.png' -o -name '*.config' -o -name '*.nf' \) | xargs datalad get
-
-for ext in png log config nf; do
-    find . -name "*.$ext" -exec git annex unannex {} +
+for ext in "${EXTS[@]}"; do
+    line="*.$ext annex.largefiles=nothing"
+    grep -qxF "$line" .gitattributes 2>/dev/null || echo "$line" >> .gitattributes
 done
 
-git add .gitattributes '*.png' '*.log' '*.config' '*.nf'
-git commit -m "Track some files in Git directly instead of git-annex"
+find ./derivatives "${FIND_EXPR[@]}" -print0 | xargs -0 -r datalad get
+find . "${FIND_EXPR[@]}" -print0 | xargs -0 -r git annex unannex
+
+for ext in "${EXTS[@]}"; do
+    git annex get --include="*.$ext"
+    git annex unannex --include="*.$ext"
+done
+
+git add .gitattributes
+git diff --cached --quiet || git commit -m "Track some files in Git directly instead of git-annex"
+
 datalad push --to github
 ```
