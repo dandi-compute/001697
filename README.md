@@ -58,12 +58,22 @@ This requires unannexing these files:
 ```
 cat >> .gitattributes << 'EOF'
 *.png annex.largefiles=nothing
+*.log annex.largefiles=nothing
+*.config annex.largefiles=nothing
+*.nf annex.largefiles=nothing
 EOF
+```
 
-find . -name '*.png' -exec git annex unannex {} +
+If any contents have been accidentally annexed:
 
-git add .gitattributes
-git add '*.png'
-git commit -m "Track PNGs in Git directly instead of git-annex"
+```
+find ./derivatives \( -name '*.log' -o -name '*.png' -o -name '*.config' -o -name '*.nf' \) | xargs datalad get
+
+for ext in png log config nf; do
+    find . -name "*.$ext" -exec git annex unannex {} +
+done
+
+git add .gitattributes '*.png' '*.log' '*.config' '*.nf'
+git commit -m "Track some files in Git directly instead of git-annex"
 datalad push --to github
 ```
