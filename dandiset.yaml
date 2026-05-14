@@ -41,8 +41,8 @@ assetsSummary:
   - ProcessingModule
   - ElectricalSeries
   - Units
-citation: 'Baker, Cody (2026) DANDI Compute: AIND Ephys (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/001697/draft'
+citation: Baker, Cody (2026) DANDI Compute (Version draft) [Data set]. DANDI Archive.
+  https://dandiarchive.org/dandiset/001697/draft
 contributor:
 - affiliation: []
   email: cody.c.baker.phd@gmail.com
@@ -64,7 +64,7 @@ license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001697/versions/draft/assets/
-name: 'DANDI Compute: AIND Ephys'
+name: DANDI Compute
 relatedResource:
 - name: GitHub
   relation: dcite:IsVariantFormOf
