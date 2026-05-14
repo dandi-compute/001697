@@ -22,24 +22,24 @@ assetsSummary:
   measurementTechnique:
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
-  - name: analytical technique
-    schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 133446508
-  numberOfFiles: 119
+  numberOfBytes: 126694303
+  numberOfFiles: 93
   numberOfSubjects: 1
   schemaKey: AssetsSummary
   species: []
   variableMeasured:
+  - ElectrodeGroup
   - LFP
   - ProcessingModule
   - ElectricalSeries
-  - ElectrodeGroup
   - Units
 citation: 'Baker, Cody (2026) DANDI Compute: AIND Ephys (Version draft) [Data set].
   DANDI Archive. https://dandiarchive.org/dandiset/001697/draft'
