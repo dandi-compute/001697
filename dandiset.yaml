@@ -51,6 +51,12 @@ contributor:
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- awardNumber: NIH 5R24MH117295-07
+  identifier: https://ror.org/01cwqze88
+  name: NIH
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2026-01-14T20:17:45.550719+00:00'
 description: This is an experiment in reproducible computing related to the DANDI
   Archive.  Check back in a few months for results - more details to follow! The outer
@@ -72,12 +78,6 @@ relatedResource:
   resourceType: dcite:Dataset
   schemaKey: Resource
   url: https://github.com/dandi-compute/001697
-- name: Cross-archive data linkage
-  relation: dcite:IsSupplementTo
-  resourceType: dcite:Collection
-  schemaKey: Resource
-  url: 
-    https://dandiarchive.org/dandiset/001697/draft/files?location=derivatives/dandiset-000943/sub-M1/ses-M1-D6-2020-08-10-15-01-45/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/logs/report.html
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
