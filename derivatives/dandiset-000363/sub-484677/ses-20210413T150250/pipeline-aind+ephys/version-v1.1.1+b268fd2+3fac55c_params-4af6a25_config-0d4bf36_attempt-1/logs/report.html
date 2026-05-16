@@ -18,11 +18,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Nextflow workflow report for run id [disturbed_celsius]">
+  <meta name="description" content="Nextflow workflow report for run id [disturbed_borg]">
   <meta name="author" content="Paolo Di Tommaso, Phil Ewels">
   <link rel="icon" type="image/png" href="https://www.nextflow.io/img/favicon.png" />
 
-  <title>[disturbed_celsius] Nextflow Workflow Report</title>
+  <title>[disturbed_borg] Nextflow Workflow Report</title>
 
   <style type="text/css">
   /*!
@@ -137,7 +137,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
         <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
       </ul>
       <span class="navbar-text">
-        [disturbed_celsius]
+        [disturbed_borg]
       </span>
     </div>
   </nav>
@@ -146,7 +146,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
     <div class="container">
 
       <h1 class="display-3">Nextflow workflow report</h1>
-      <h2 class="text-muted mb-4"><samp>[disturbed_celsius]</samp> </h2>
+      <h2 class="text-muted mb-4"><samp>[disturbed_borg]</samp> </h2>
 
       
           <div class="alert alert-danger mb-4">
@@ -249,20 +249,20 @@ Command error:
   ValueError: zero-size array to reduction operation maximum which has no identity
 
 Work dir:
-  /orcd/data/dandi/001/dandi-compute/work/10/e0cea2e36bc13f68bbb2f8500b3866
+  /orcd/data/dandi/001/dandi-compute/work/33/888cfcfdec4d65bb366f5062eddc0b
 
 Container:
   /orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img
 
-Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`</pre>
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`</pre>
           </div>
       
 
       <dl>
         <dt>Run times</dt>
         <dd>
-          <span id="workflow_start">15-May-2026 18:12:24</span> - <span id="workflow_complete">15-May-2026 18:13:36</span>
-          (<span id="completed_fromnow"></span>duration: <strong>1m 12s</strong>)
+          <span id="workflow_start">16-May-2026 00:03:56</span> - <span id="workflow_complete">16-May-2026 00:07:09</span>
+          (<span id="completed_fromnow"></span>duration: <strong>3m 12s</strong>)
         </dd>
 
         <dl>
@@ -302,7 +302,7 @@ Tip: you can try to figure out what's wrong by changing to the process work dir 
         
 
         <dt class="col-sm-3">Workflow session</dt>
-        <dd class="col-sm-9"><code>84970493-1a49-4939-b538-340a64863d74</code></dd>
+        <dd class="col-sm-9"><code>acc6d484-5e1d-44d3-9c32-93fd835144af</code></dd>
 
         
 
@@ -1136,7 +1136,7 @@ $(function() {
 
   // Nextflow report data
   window.data = { "trace":[
-{"task_id":"1","hash":"10\/e0cea2","native_id":"13988289","process":"job_dispatch","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"job-dispatch","name":"job_dispatch (job-dispatch)","status":"FAILED","exit":"1","submit":"1778883146739","start":"1778883216277","complete":"1778883216330","duration":"69591","realtime":"53","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/10\/e0cea2e36bc13f68bbb2f8500b3866","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[job-dispatch] allocated task time: 12h\"\n    fi\n\n    TASK_DIR=$(pwd)\n\n    echo \"[job-dispatch] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-job-dispatch.git\" \"bc73404c574d04d456684fd0abad5373a257d4fe\"\n\n    echo \"[job-dispatch] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"split_segments\":true,\"split_groups\":true,\"debug\":false,\"debug_duration\":30,\"skip_timestamps_check\":false,\"multi_session\":false,\"input\":\"nwb\",\"nwb_files\":\"\/orcd\/data\/dandi\/001\/s3dandiarchive\/blobs\/1a5\/b68\/1a5b6868-eff2-412c-ba7b-0c5d5ad8785e\"}\'\n\n    MAX_DURATION_MIN=$(python get_max_recording_duration_min.py)\n\n    cd $TASK_DIR\n    echo \"$MAX_DURATION_MIN\" > max_duration.txt\n\n    echo \"[job-dispatch] completed!\"\n\n    ","scratch":"-","queue":"mit_normal","cpus":"1","memory":"17179869184","disk":"-","time":"43200000","env":"-","error_action":"TERMINATE","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"}], "summary":[{"cpuUsage":null,"process":"job_dispatch","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":53,"min":53,"q1":53,"q2":53,"q3":53,"max":53,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"writes":null}] };
+{"task_id":"1","hash":"33\/888cfc","native_id":"14002928","process":"job_dispatch","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"job-dispatch","name":"job_dispatch (job-dispatch)","status":"FAILED","exit":"1","submit":"1778904239333","start":"1778904428855","complete":"1778904428860","duration":"189527","realtime":"5","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/33\/888cfcfdec4d65bb366f5062eddc0b","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[job-dispatch] allocated task time: 12h\"\n    fi\n\n    TASK_DIR=$(pwd)\n\n    echo \"[job-dispatch] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-job-dispatch.git\" \"bc73404c574d04d456684fd0abad5373a257d4fe\"\n\n    echo \"[job-dispatch] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"split_segments\":true,\"split_groups\":true,\"debug\":false,\"debug_duration\":30,\"skip_timestamps_check\":false,\"multi_session\":false,\"input\":\"nwb\",\"nwb_files\":\"\/orcd\/data\/dandi\/001\/s3dandiarchive\/blobs\/1a5\/b68\/1a5b6868-eff2-412c-ba7b-0c5d5ad8785e\"}\'\n\n    MAX_DURATION_MIN=$(python get_max_recording_duration_min.py)\n\n    cd $TASK_DIR\n    echo \"$MAX_DURATION_MIN\" > max_duration.txt\n\n    echo \"[job-dispatch] completed!\"\n\n    ","scratch":"-","queue":"mit_normal","cpus":"1","memory":"17179869184","disk":"-","time":"43200000","env":"-","error_action":"TERMINATE","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"}], "summary":[{"cpuUsage":null,"process":"job_dispatch","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":5,"min":5,"q1":5,"q2":5,"q3":5,"max":5,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"writes":null}] };
 
   </script>
 
