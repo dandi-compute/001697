@@ -18,11 +18,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Nextflow workflow report for run id [scruffy_bardeen]">
+  <meta name="description" content="Nextflow workflow report for run id [naughty_marconi]">
   <meta name="author" content="Paolo Di Tommaso, Phil Ewels">
   <link rel="icon" type="image/png" href="https://www.nextflow.io/img/favicon.png" />
 
-  <title>[scruffy_bardeen] Nextflow Workflow Report</title>
+  <title>[naughty_marconi] Nextflow Workflow Report</title>
 
   <style type="text/css">
   /*!
@@ -137,7 +137,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
         <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
       </ul>
       <span class="navbar-text">
-        [scruffy_bardeen]
+        [naughty_marconi]
       </span>
     </div>
   </nav>
@@ -146,17 +146,17 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
     <div class="container">
 
       <h1 class="display-3">Nextflow workflow report</h1>
-      <h2 class="text-muted mb-4"><samp>[scruffy_bardeen]</samp> </h2>
+      <h2 class="text-muted mb-4"><samp>[naughty_marconi]</samp> </h2>
 
       
           <div class="alert alert-danger mb-4">
               <h4>Workflow execution completed unsuccessfully!</h4>
               <p>The exit status of the task that caused the workflow execution to fail was: <code>1</code>.</p>
               <p>The full error message was:</p>
-              <pre>Error executing process > 'job_dispatch (job-dispatch)'
+              <pre>Error executing process > 'preprocessing (preprocessing)'
 
 Caused by:
-  Process `job_dispatch (job-dispatch)` terminated with an error exit status (1)
+  Process `preprocessing (preprocessing)` terminated with an error exit status (1)
 
 
 Command executed:
@@ -173,12 +173,12 @@ Command executed:
       mkdir -p capsule/scratch
   
       if [[ slurm == "slurm" ]]; then
-          echo "[job-dispatch] allocated task time: 12h"
+          echo "[preprocessing] allocated task time: 12h"
+          # Make sure N_JOBS matches allocated CPUs on SLURM
+          export N_JOBS_EXT=32
       fi
   
-      TASK_DIR=$(pwd)
-  
-      echo "[job-dispatch] cloning git repo..."
+      echo "[preprocessing] cloning git repo..."
       
   clone_repo() {
       local repo_url="$1"
@@ -193,89 +193,95 @@ Command executed:
       rm -rf capsule-repo
   }
   
-      clone_repo "https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git" "bc73404c574d04d456684fd0abad5373a257d4fe"
+      clone_repo "https://github.com/AllenNeuralDynamics/aind-ephys-preprocessing.git" "6a093b1c76ab99c934fa16cf66360305092135e0"
   
-      echo "[job-dispatch] running capsule..."
+      echo "[preprocessing] running capsule..."
       cd capsule/code
       chmod +x run
-      ./run --params '{"split_segments":true,"split_groups":true,"debug":false,"debug_duration":30,"skip_timestamps_check":false,"multi_session":false,"input":"nwb","nwb_files":"/orcd/data/dandi/001/s3dandiarchive/blobs/010/a71/010a711a-2fdf-4253-a451-8d7dd0a71c43"}'
+      ./run --params '{"job_kwargs":{"chunk_duration":"1s","progress_bar":false},"denoising_strategy":"cmr","min_preprocessing_duration":120,"filter_type":"highpass","highpass_filter":{"freq_min":300.0,"margin_ms":5.0},"bandpass_filter":{"freq_min":300.0,"freq_max":6000.0,"margin_ms":5.0},"phase_shift":{"margin_ms":100.0},"detect_bad_channels":{"method":"coherence+psd","dead_channel_threshold":-0.5,"noisy_channel_threshold":1.0,"outside_channel_threshold":-0.3,"outside_channels_location":"top","n_neighbors":11,"seed":0},"remove_out_channels":true,"remove_bad_channels":true,"max_bad_channel_fraction":0.5,"common_reference":{"reference":"global","operator":"median"},"highpass_spatial_filter":{"n_channel_pad":60,"n_channel_taper":null,"direction":"y","apply_agc":true,"agc_window_length_s":0.01,"highpass_butter_order":3,"highpass_butter_wn":0.01},"motion_correction":{"compute":true,"apply":false,"preset":"dredge_fast","detect_kwargs":{},"select_kwargs":{},"localize_peaks_kwargs":{},"estimate_motion_kwargs":{"win_step_norm":0.1,"win_scale_norm":0.1},"interpolate_motion_kwargs":{}}}' 
   
-      MAX_DURATION_MIN=$(python get_max_recording_duration_min.py)
-  
-      cd $TASK_DIR
-      echo "$MAX_DURATION_MIN" > max_duration.txt
-  
-      echo "[job-dispatch] completed!"
+      echo "[preprocessing] completed!"
 
 Command exit status:
   1
 
 Command output:
-  [job-dispatch] allocated task time: 12h
-  [job-dispatch] cloning git repo...
-  cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-job-dispatch.git (commit: bc73404c574d04d456684fd0abad5373a257d4fe)...
-  [job-dispatch] running capsule...
-  Running job dispatcher with the following parameters:
-  	SPLIT SEGMENTS: True
-  	SPLIT GROUPS: True
-  	DEBUG: False
-  	DEBUG DURATION: 30.0
-  	SKIP TIMESTAMPS CHECK: False
-  	MULTI SESSION: False
-  	INPUT: nwb
-  	MIN_RECORDING_DURATION: -1
-  Parsing nwb input folder
-  nwb_files: [PosixPath('/orcd/data/dandi/001/s3dandiarchive/blobs/010/a71/010a711a-2fdf-4253-a451-8d7dd0a71c43')]
-  Processing NWB file: /orcd/data/dandi/001/s3dandiarchive/blobs/010/a71/010a711a-2fdf-4253-a451-8d7dd0a71c43
-  	Session name: 010a711a-2fdf-4253-a451-8d7dd0a71c43
-  	Num. Blocks 1 - Num. streams: 0
-  Recording to be processed in parallel:
-  Generated 0 job config files
+  [preprocessing] allocated task time: 12h
+  [preprocessing] cloning git repo...
+  cloning git repo: https://github.com/AllenNeuralDynamics/aind-ephys-preprocessing.git (commit: 6a093b1c76ab99c934fa16cf66360305092135e0)...
+  [preprocessing] running capsule...
+  Running preprocessing with the following parameters:
+  	DENOISING_STRATEGY: cmr
+  	FILTER TYPE: highpass
+  	REMOVE_OUT_CHANNELS: True
+  	REMOVE_BAD_CHANNELS: True
+  	MAX BAD CHANNEL FRACTION: 0.5
+  	COMPUTE_MOTION: True
+  	APPLY_MOTION: False
+  	MOTION PRESET: dredge_fast
+  	MOTION TEMPORAL BIN S: 1
+  	T_START: None
+  	T_STOP: None
+  	MIN_DURATION FOR PREPROCESSING: 120
+  	N_JOBS: 32
+  Found 1 configurations
+  
+  
+  PREPROCESSING
+  Preprocessing recording: 00538001-89eb-4027-a104-b69825880216 - block0_acquisition-ElectricalSeries_recording1_groupGroup GPi
+  	Duration: 1495.77 s
 
 Command error:
   WARNING: While bind mounting '/orcd/data/dandi/001:/orcd/data/dandi/001': destination is already in the mount point list
   Cloning into 'capsule-repo'...
-  + python -u run_capsule.py --params '{"split_segments":true,"split_groups":true,"debug":false,"debug_duration":30,"skip_timestamps_check":false,"multi_session":false,"input":"nwb","nwb_files":"/orcd/data/dandi/001/s3dandiarchive/blobs/010/a71/010a711a-2fdf-4253-a451-8d7dd0a71c43"}'
+  + python -u run_capsule.py --params '{"job_kwargs":{"chunk_duration":"1s","progress_bar":false},"denoising_strategy":"cmr","min_preprocessing_duration":120,"filter_type":"highpass","highpass_filter":{"freq_min":300.0,"margin_ms":5.0},"bandpass_filter":{"freq_min":300.0,"freq_max":6000.0,"margin_ms":5.0},"phase_shift":{"margin_ms":100.0},"detect_bad_channels":{"method":"coherence+psd","dead_channel_threshold":-0.5,"noisy_channel_threshold":1.0,"outside_channel_threshold":-0.3,"outside_channels_location":"top","n_neighbors":11,"seed":0},"remove_out_channels":true,"remove_bad_channels":true,"max_bad_channel_fraction":0.5,"common_reference":{"reference":"global","operator":"median"},"highpass_spatial_filter":{"n_channel_pad":60,"n_channel_taper":null,"direction":"y","apply_agc":true,"agc_window_length_s":0.01,"highpass_butter_order":3,"highpass_butter_wn":0.01},"motion_correction":{"compute":true,"apply":false,"preset":"dredge_fast","detect_kwargs":{},"select_kwargs":{},"localize_peaks_kwargs":{},"estimate_motion_kwargs":{"win_step_norm":0.1,"win_scale_norm":0.1},"interpolate_motion_kwargs":{}}}'
   Traceback (most recent call last):
-    File "capsule/code/get_max_recording_duration_min.py", line 20, in <module>
-      max_duration_min = int(np.round(np.max(durations) / 60))
-                                      ^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.11/site-packages/numpy/_core/fromnumeric.py", line 3123, in max
-      return _wrapreduction(a, np.maximum, 'max', axis, None, out,
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.11/site-packages/numpy/_core/fromnumeric.py", line 83, in _wrapreduction
-      return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  ValueError: zero-size array to reduction operation maximum which has no identity
+    File "capsule/code/run_capsule.py", line 393, in <module>
+      _, channel_labels = spre.detect_bad_channels(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/preprocessing/detect_bad_channels.py", line 262, in detect_bad_channels
+      channel_locations = recording.get_channel_locations()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/core/baserecording.py", line 827, in get_channel_locations
+      return super().get_channel_locations(channel_ids=channel_ids, axes=axes)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/core/baserecordingsnippets.py", line 341, in get_channel_locations
+      raise Exception("There are no channel locations")
+  Exception: There are no channel locations
+  Exception ignored in: <function _BaseNWBExtractor.__del__ at 0x14a9fa58d440>
+  Traceback (most recent call last):
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/extractors/nwbextractors.py", line 429, in __del__
+    File "/opt/conda/lib/python3.11/site-packages/spikeinterface/extractors/nwbextractors.py", line 410, in _close_hdf5_file
+  ImportError: sys.meta_path is None, Python is likely shutting down
 
 Work dir:
-  /orcd/data/dandi/001/dandi-compute/work/51/a9392433cefe6ad83fca562ad942ca
+  /orcd/data/dandi/001/dandi-compute/work/0f/72592927c502ffec4e5da773091446
 
 Container:
   /orcd/data/dandi/001/dandi-compute/work/apptainer_cache/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img
 
-Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`</pre>
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`</pre>
           </div>
       
 
       <dl>
         <dt>Run times</dt>
         <dd>
-          <span id="workflow_start">23-May-2026 18:18:58</span> - <span id="workflow_complete">23-May-2026 18:20:10</span>
-          (<span id="completed_fromnow"></span>duration: <strong>1m 12s</strong>)
+          <span id="workflow_start">23-May-2026 18:18:54</span> - <span id="workflow_complete">23-May-2026 18:20:41</span>
+          (<span id="completed_fromnow"></span>duration: <strong>1m 47s</strong>)
         </dd>
 
         <dl>
           <div class="progress" style="height: 1.6rem; margin: 1.2rem auto; border-radius: 0.20rem;">
-            <div style="width: 0.0%" class="progress-bar bg-success" data-toggle="tooltip" data-placement="top" title="0 tasks succeeded"><span class="text-truncate">&nbsp; 0 succeeded &nbsp;</span></div>
+            <div style="width: 25.0%" class="progress-bar bg-success" data-toggle="tooltip" data-placement="top" title="1 tasks succeeded"><span class="text-truncate">&nbsp; 1 succeeded &nbsp;</span></div>
             <div style="width: 0.0%" class="progress-bar bg-secondary" data-toggle="tooltip" data-placement="top" title="0 tasks were cached"><span class="text-truncate">&nbsp; 0 cached &nbsp;</span></div>
             <div style="width: 0.0%" class="progress-bar bg-warning" data-toggle="tooltip" data-placement="top" title="0 tasks failed and were ignored"><span class="text-truncate">&nbsp; 0 ignored &nbsp;</span></div>
-            <div style="width: 100.0%" class="progress-bar bg-danger" data-toggle="tooltip" data-placement="top" title="1 tasks failed"><span class="text-truncate">&nbsp; 1 failed (0 retries) &nbsp;</span></div>
+            <div style="width: 25.0%" class="progress-bar bg-danger" data-toggle="tooltip" data-placement="top" title="1 tasks failed"><span class="text-truncate">&nbsp; 1 failed (0 retries) &nbsp;</span></div>
           </div>
         </dl>
 
         <dt>Nextflow command</dt>
-        <dd><pre class="nfcommand"><code>nextflow -C /orcd/data/dandi/001/dandi-compute/processing/tmp1j_m5q61/001697/derivatives/dandiset-000363/sub-480134/ses-20210106T125834/pipeline-aind+ephys/version-v1.1.1+b268fd2+8b80391_params-4af6a25_config-0d4bf36_attempt-1/code/name-mit+engaging_revision-1.config -log /orcd/data/dandi/001/dandi-compute/processing/tmp1j_m5q61/001697/derivatives/dandiset-000363/sub-480134/ses-20210106T125834/pipeline-aind+ephys/version-v1.1.1+b268fd2+8b80391_params-4af6a25_config-0d4bf36_attempt-1/logs/nextflow.log run aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf -work-dir /orcd/data/dandi/001/dandi-compute/work --params_file /orcd/data/dandi/001/dandi-compute/processing/tmp1j_m5q61/001697/derivatives/dandiset-000363/sub-480134/ses-20210106T125834/pipeline-aind+ephys/version-v1.1.1+b268fd2+8b80391_params-4af6a25_config-0d4bf36_attempt-1/code/name-deterministic.json --job_dispatch_args '--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/010/a71/010a711a-2fdf-4253-a451-8d7dd0a71c43'</code></pre></dd>
+        <dd><pre class="nfcommand"><code>nextflow -C /orcd/data/dandi/001/dandi-compute/processing/tmpsiay517f/001697/derivatives/dandiset-000947/sub-Gaia/ses-post-MPTP-G-161117-3/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/mit_engaging.config -log /orcd/data/dandi/001/dandi-compute/processing/tmpsiay517f/001697/derivatives/dandiset-000947/sub-Gaia/ses-post-MPTP-G-161117-3/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/logs/nextflow.log run /orcd/data/dandi/001/dandi-compute/aind-ephys-pipeline.cody/pipeline/main_multi_backend.nf -work-dir /orcd/data/dandi/001/dandi-compute/work --params_file /orcd/data/dandi/001/dandi-compute/processing/tmpsiay517f/001697/derivatives/dandiset-000947/sub-Gaia/ses-post-MPTP-G-161117-3/pipeline-aind+ephys/version-v1.1.1+b268fd2/params-98fd947_config-6568dda_attempt-1/code/default.json --job_dispatch_args '--nwb-files /orcd/data/dandi/001/s3dandiarchive/blobs/005/380/00538001-89eb-4027-a104-b69825880216'</code></pre></dd>
       </dl>
 
       <dl class="row small">
@@ -302,7 +308,7 @@ Tip: you can replicate the issue by changing to the process work dir and enterin
         
 
         <dt class="col-sm-3">Workflow session</dt>
-        <dd class="col-sm-9"><code>09cf7ea5-fe12-494c-bb19-c3603f2ae847</code></dd>
+        <dd class="col-sm-9"><code>bcc6e58c-690e-4b7c-8025-bb8902258e00</code></dd>
 
         
 
@@ -1136,7 +1142,7 @@ $(function() {
 
   // Nextflow report data
   window.data = { "trace":[
-{"task_id":"1","hash":"51\/a93924","native_id":"14398182","process":"job_dispatch","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"job-dispatch","name":"job_dispatch (job-dispatch)","status":"FAILED","exit":"1","submit":"1779574741133","start":"1779574810613","complete":"1779574810641","duration":"69508","realtime":"28","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/51\/a9392433cefe6ad83fca562ad942ca","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[job-dispatch] allocated task time: 12h\"\n    fi\n\n    TASK_DIR=$(pwd)\n\n    echo \"[job-dispatch] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-job-dispatch.git\" \"bc73404c574d04d456684fd0abad5373a257d4fe\"\n\n    echo \"[job-dispatch] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"split_segments\":true,\"split_groups\":true,\"debug\":false,\"debug_duration\":30,\"skip_timestamps_check\":false,\"multi_session\":false,\"input\":\"nwb\",\"nwb_files\":\"\/orcd\/data\/dandi\/001\/s3dandiarchive\/blobs\/010\/a71\/010a711a-2fdf-4253-a451-8d7dd0a71c43\"}\'\n\n    MAX_DURATION_MIN=$(python get_max_recording_duration_min.py)\n\n    cd $TASK_DIR\n    echo \"$MAX_DURATION_MIN\" > max_duration.txt\n\n    echo \"[job-dispatch] completed!\"\n\n    ","scratch":"-","queue":"mit_normal","cpus":"1","memory":"17179869184","disk":"-","time":"43200000","env":"-","error_action":"TERMINATE","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"}], "summary":[{"cpuUsage":null,"process":"job_dispatch","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":28,"min":28,"q1":28,"q2":28,"q3":28,"max":28,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"writes":null}] };
+{"task_id":"1","hash":"4f\/797160","native_id":"14398181","process":"job_dispatch","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"job-dispatch","name":"job_dispatch (job-dispatch)","status":"COMPLETED","exit":"0","submit":"1779574736679","start":"1779574806212","complete":"1779574806218","duration":"69539","realtime":"3736","%cpu":"39.2","%mem":"0.0","rss":"86077440","vmem":"427962368","peak_rss":"86077440","peak_vmem":"428052480","rchar":"20371270","wchar":"654938","syscr":"4098","syscw":"303","read_bytes":"85094400","write_bytes":"589824","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/4f\/797160a3352d4a2c9f1a18df1f5d23","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[job-dispatch] allocated task time: 12h\"\n    fi\n\n    TASK_DIR=$(pwd)\n\n    echo \"[job-dispatch] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-job-dispatch.git\" \"bc73404c574d04d456684fd0abad5373a257d4fe\"\n\n    echo \"[job-dispatch] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"split_segments\":true,\"split_groups\":true,\"debug\":false,\"debug_duration\":30,\"skip_timestamps_check\":false,\"multi_session\":false,\"input\":\"nwb\",\"nwb_files\":\"\/orcd\/data\/dandi\/001\/s3dandiarchive\/blobs\/005\/380\/00538001-89eb-4027-a104-b69825880216\"}\'\n\n    MAX_DURATION_MIN=$(python get_max_recording_duration_min.py)\n\n    cd $TASK_DIR\n    echo \"$MAX_DURATION_MIN\" > max_duration.txt\n\n    echo \"[job-dispatch] completed!\"\n\n    ","scratch":"-","queue":"mit_normal","cpus":"4","memory":"17179869184","disk":"-","time":"43200000","env":"-","error_action":"-","vol_ctxt":"4981","inv_ctxt":"0","hostname":"-","cpu_model":"AMD EPYC 9474F 48-Core Processor"},{"task_id":"3","hash":"0f\/725929","native_id":"14398227","process":"preprocessing","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"preprocessing","name":"preprocessing (preprocessing)","status":"FAILED","exit":"1","submit":"1779574806624","start":"1779574841143","complete":"1779574841147","duration":"34523","realtime":"4","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/0f\/72592927c502ffec4e5da773091446","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[preprocessing] allocated task time: 12h\"\n        # Make sure N_JOBS matches allocated CPUs on SLURM\n        export N_JOBS_EXT=32\n    fi\n\n    echo \"[preprocessing] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-preprocessing.git\" \"6a093b1c76ab99c934fa16cf66360305092135e0\"\n\n    echo \"[preprocessing] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"job_kwargs\":{\"chunk_duration\":\"1s\",\"progress_bar\":false},\"denoising_strategy\":\"cmr\",\"min_preprocessing_duration\":120,\"filter_type\":\"highpass\",\"highpass_filter\":{\"freq_min\":300.0,\"margin_ms\":5.0},\"bandpass_filter\":{\"freq_min\":300.0,\"freq_max\":6000.0,\"margin_ms\":5.0},\"phase_shift\":{\"margin_ms\":100.0},\"detect_bad_channels\":{\"method\":\"coherence+psd\",\"dead_channel_threshold\":-0.5,\"noisy_channel_threshold\":1.0,\"outside_channel_threshold\":-0.3,\"outside_channels_location\":\"top\",\"n_neighbors\":11,\"seed\":0},\"remove_out_channels\":true,\"remove_bad_channels\":true,\"max_bad_channel_fraction\":0.5,\"common_reference\":{\"reference\":\"global\",\"operator\":\"median\"},\"highpass_spatial_filter\":{\"n_channel_pad\":60,\"n_channel_taper\":null,\"direction\":\"y\",\"apply_agc\":true,\"agc_window_length_s\":0.01,\"highpass_butter_order\":3,\"highpass_butter_wn\":0.01},\"motion_correction\":{\"compute\":true,\"apply\":false,\"preset\":\"dredge_fast\",\"detect_kwargs\":{},\"select_kwargs\":{},\"localize_peaks_kwargs\":{},\"estimate_motion_kwargs\":{\"win_step_norm\":0.1,\"win_scale_norm\":0.1},\"interpolate_motion_kwargs\":{}}}\' \n\n    echo \"[preprocessing] completed!\"\n    ","scratch":"-","queue":"mit_normal","cpus":"32","memory":"274877906944","disk":"-","time":"43200000","env":"-","error_action":"TERMINATE","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"},{"task_id":"4","hash":"cf\/b9cf63","native_id":"14398228","process":"preprocessing","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-base-si-0.103.2.img","tag":"preprocessing","name":"preprocessing (preprocessing)","status":"ABORTED","exit":"-","submit":"1779574806729","start":"0","complete":"-","duration":"-","realtime":"-","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/cf\/b9cf63f2988c470852ea07503e2846","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[preprocessing] allocated task time: 12h\"\n        # Make sure N_JOBS matches allocated CPUs on SLURM\n        export N_JOBS_EXT=32\n    fi\n\n    echo \"[preprocessing] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ephys-preprocessing.git\" \"6a093b1c76ab99c934fa16cf66360305092135e0\"\n\n    echo \"[preprocessing] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"job_kwargs\":{\"chunk_duration\":\"1s\",\"progress_bar\":false},\"denoising_strategy\":\"cmr\",\"min_preprocessing_duration\":120,\"filter_type\":\"highpass\",\"highpass_filter\":{\"freq_min\":300.0,\"margin_ms\":5.0},\"bandpass_filter\":{\"freq_min\":300.0,\"freq_max\":6000.0,\"margin_ms\":5.0},\"phase_shift\":{\"margin_ms\":100.0},\"detect_bad_channels\":{\"method\":\"coherence+psd\",\"dead_channel_threshold\":-0.5,\"noisy_channel_threshold\":1.0,\"outside_channel_threshold\":-0.3,\"outside_channels_location\":\"top\",\"n_neighbors\":11,\"seed\":0},\"remove_out_channels\":true,\"remove_bad_channels\":true,\"max_bad_channel_fraction\":0.5,\"common_reference\":{\"reference\":\"global\",\"operator\":\"median\"},\"highpass_spatial_filter\":{\"n_channel_pad\":60,\"n_channel_taper\":null,\"direction\":\"y\",\"apply_agc\":true,\"agc_window_length_s\":0.01,\"highpass_butter_order\":3,\"highpass_butter_wn\":0.01},\"motion_correction\":{\"compute\":true,\"apply\":false,\"preset\":\"dredge_fast\",\"detect_kwargs\":{},\"select_kwargs\":{},\"localize_peaks_kwargs\":{},\"estimate_motion_kwargs\":{\"win_step_norm\":0.1,\"win_scale_norm\":0.1},\"interpolate_motion_kwargs\":{}}}\' \n\n    echo \"[preprocessing] completed!\"\n    ","scratch":"-","queue":"mit_normal","cpus":"32","memory":"274877906944","disk":"-","time":"43200000","env":"-","error_action":"-","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"},{"task_id":"2","hash":"90\/17674a","native_id":"14398229","process":"nwb_ecephys","module":"-","container":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/apptainer_cache\/ghcr.io-allenneuraldynamics-aind-ephys-pipeline-nwb-si-0.103.2.img","tag":"nwb-ecephys","name":"nwb_ecephys (nwb-ecephys)","status":"ABORTED","exit":"-","submit":"1779574806825","start":"1779574841149","complete":"-","duration":"-","realtime":"-","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/orcd\/data\/dandi\/001\/dandi-compute\/work\/90\/17674a0b1b56c392729538d0d5b25d","script":"\n    #!\/usr\/bin\/env bash\n    set -e\n\n    \n    \n\n    mkdir -p capsule\n    mkdir -p capsule\/data\n    mkdir -p capsule\/results\n    mkdir -p capsule\/scratch\n\n    if [[ slurm == \"slurm\" ]]; then\n        echo \"[nwb-ecephys] allocated task time: 12h\"\n        # Make sure N_JOBS matches allocated CPUs on SLURM\n        export N_JOBS_EXT=16\n    fi\n\n    echo \"[nwb-ecephys] cloning git repo...\"\n    \nclone_repo() {\n    local repo_url=\"$1\"\n    local commit_hash=\"$2\"\n\n    echo \"cloning git repo: ${repo_url} (commit: ${commit_hash})...\"\n\n    git clone \"${repo_url}\" capsule-repo\n    git -C capsule-repo -c core.fileMode=false checkout \"${commit_hash}\" --quiet\n\n    mv capsule-repo\/code capsule\/code\n    rm -rf capsule-repo\n}\n\n    clone_repo \"https:\/\/github.com\/AllenNeuralDynamics\/aind-ecephys-nwb.git\" \"31d08bf37ec50b4092565a42783aa853862b348c\"\n\n    echo \"[nwb-ecephys] running capsule...\"\n    cd capsule\/code\n    chmod +x run\n    .\/run --params \'{\"backend\":\"hdf5\",\"stub\":false,\"stub_seconds\":10,\"write_lfp\":true,\"write_raw\":false,\"lfp_temporal_factor\":2,\"lfp_spatial_factor\":4,\"lfp_highpass_freq_min\":0.1,\"surface_channel_agar_probes_indices\":\"\",\"lfp\":{\"filter\":{\"freq_min\":0.1,\"freq_max\":500},\"sampling_rate\":2500}}\'\n\n    echo \"[nwb-ecephys] completed!\"\n    ","scratch":"-","queue":"mit_normal","cpus":"16","memory":"68719476736","disk":"-","time":"43200000","env":"-","error_action":"-","vol_ctxt":"-","inv_ctxt":"-","hostname":"-","cpu_model":"-"}], "summary":[{"cpuUsage":{"mean":9.8,"min":9.8,"q1":9.8,"q2":9.8,"q3":9.8,"max":9.8,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"process":"job_dispatch","mem":{"mean":86077440,"min":86077440,"q1":86077440,"q2":86077440,"q3":86077440,"max":86077440,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"memUsage":{"mean":0.5,"min":0.5,"q1":0.5,"q2":0.5,"q3":0.5,"max":0.5,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"vmem":{"mean":428052480,"min":428052480,"q1":428052480,"q2":428052480,"q3":428052480,"max":428052480,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"reads":{"mean":20371270,"min":20371270,"q1":20371270,"q2":20371270,"q3":20371270,"max":20371270,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"cpu":{"mean":39.2,"min":39.2,"q1":39.2,"q2":39.2,"q3":39.2,"max":39.2,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"time":{"mean":3736,"min":3736,"q1":3736,"q2":3736,"q3":3736,"max":3736,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"},"writes":{"mean":654938,"min":654938,"q1":654938,"q2":654938,"q3":654938,"max":654938,"minLabel":"job_dispatch (job-dispatch)","maxLabel":"job_dispatch (job-dispatch)","q1Label":"job_dispatch (job-dispatch)","q2Label":"job_dispatch (job-dispatch)","q3Label":"job_dispatch (job-dispatch)"}},{"cpuUsage":null,"process":"preprocessing","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":4,"min":4,"q1":4,"q2":4,"q3":4,"max":4,"minLabel":"preprocessing (preprocessing)","maxLabel":"preprocessing (preprocessing)","q1Label":"preprocessing (preprocessing)","q2Label":"preprocessing (preprocessing)","q3Label":"preprocessing (preprocessing)"},"writes":null},{"cpuUsage":null,"process":"nwb_ecephys","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":null,"writes":null}] };
 
   </script>
 
