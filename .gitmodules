@@ -2,3 +2,7 @@
 	path = derivatives/dandiset-001849/sub-test/sourcedata/aind-sample/pipeline-aind+ephys/version-v1.1.1+b268fd2+938ee17_params-4af6a25_config-0d4bf36_date-2026+05+24_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesRaw_recording1.zarr
 	url = https://github.com/dandizarrs/abf99a89-f1bd-4418-a18c-0de51ef9a12e
 	datalad-id = f9355787-f81e-40f9-bd1c-13106a6a7c07
+[submodule "derivatives/dandiset-001849/sub-test/sourcedata/aind-sample/pipeline-aind+ephys/version-v1.1.1+b268fd2+398f3c4_params-4af6a25_config-0d4bf36_date-2026+05+24_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesRaw_recording1.zarr"]
+	path = derivatives/dandiset-001849/sub-test/sourcedata/aind-sample/pipeline-aind+ephys/version-v1.1.1+b268fd2+398f3c4_params-4af6a25_config-0d4bf36_date-2026+05+24_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesRaw_recording1.zarr
+	url = https://github.com/dandizarrs/3805abb8-8d36-407e-8cf5-c5779b926be9
+	datalad-id = 6096b4ff-6a84-4579-bea3-a3721bed52f4
