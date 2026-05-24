@@ -1,4 +1,0 @@
-[submodule "derivatives/dandiset-001849/sub-test/pipeline-aind+ephys/version-v1.1.1+b268fd2+a66c8df_params-4af6a25_config-0d4bf36_date-2026+05+21_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesRaw_recording1.zarr"]
-	path = derivatives/dandiset-001849/sub-test/pipeline-aind+ephys/version-v1.1.1+b268fd2+a66c8df_params-4af6a25_config-0d4bf36_date-2026+05+21_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesRaw_recording1.zarr
-	url = https://github.com/dandizarrs/cd0d13ed-b2dc-40af-afcc-e999b8f8be20
-	datalad-id = 1894f876-1fe9-4b83-a6ba-dc69e939c58c
