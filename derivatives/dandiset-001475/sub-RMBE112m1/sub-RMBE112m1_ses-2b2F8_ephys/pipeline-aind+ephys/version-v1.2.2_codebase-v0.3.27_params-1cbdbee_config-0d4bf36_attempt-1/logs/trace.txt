@@ -1,0 +1,13 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	5b/030859	15878811	job_dispatch (job-dispatch)	COMPLETED	0	2026-06-11 15:31:03.249	1m 1s	3.1s	23.7%	67.4 MB	188.4 MB	19.4 MB	602.7 KB
+3	ed/f98d7a	15878829	preprocessing (preprocessing)	FAILED	1	2026-06-11 15:32:05.125	1m 8s	30ms	-	-	-	-	-
+4	e5/3352c7	15878833	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.257	-	-	-	-	-	-	-
+6	30/9d2e68	15878835	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.369	-	-	-	-	-	-	-
+7	e5/c89468	15878838	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.464	-	-	-	-	-	-	-
+5	66/b976e5	15878841	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.547	-	-	-	-	-	-	-
+8	44/b1f7c5	15878845	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.674	-	-	-	-	-	-	-
+9	43/aeb483	15878848	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.792	-	-	-	-	-	-	-
+10	f5/700ecc	15878851	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.878	-	-	-	-	-	-	-
+11	ae/3a94f5	15878854	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:05.977	-	-	-	-	-	-	-
+12	e8/1e8596	15878857	preprocessing (preprocessing)	ABORTED	-	2026-06-11 15:32:06.067	-	-	-	-	-	-	-
+2	10/6ab1ca	15878860	nwb_ecephys (nwb-ecephys)	ABORTED	-	2026-06-11 15:32:06.268	-	-	-	-	-	-	-

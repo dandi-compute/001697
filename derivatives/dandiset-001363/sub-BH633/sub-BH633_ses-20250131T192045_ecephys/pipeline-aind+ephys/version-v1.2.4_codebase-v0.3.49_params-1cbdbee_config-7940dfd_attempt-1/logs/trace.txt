@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	26/f16fd5	18904045	job_dispatch (job-dispatch)	FAILED	1	2026-07-26 09:05:09.492	34.5s	7ms	-	-	-	-	-

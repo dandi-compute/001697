@@ -1,0 +1,35 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	b1/a0666e	15874362	job_dispatch (job-dispatch)	COMPLETED	0	2026-06-11 13:46:00.384	1m 9s	13.7s	13.6%	31.2 MB	346.1 MB	19.7 MB	928.4 KB
+3	ff/0ce04c	15874406	preprocessing (preprocessing)	FAILED	1	2026-06-11 13:47:10.359	1m 34s	34.9s	-	-	-	-	-
+4	52/6e3f0a	15874409	preprocessing (preprocessing)	FAILED	1	2026-06-11 13:47:10.609	1m 34s	34.9s	-	-	-	-	-
+5	ca/0f6185	15874410	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:10.699	-	-	-	-	-	-	-
+6	85/d7e656	15874411	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:10.814	-	-	-	-	-	-	-
+7	cd/50edc0	15874412	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:10.921	-	-	-	-	-	-	-
+8	13/18ebb8	15874413	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.238	-	-	-	-	-	-	-
+9	16/f9bc1d	15874414	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.335	-	-	-	-	-	-	-
+10	13/18715d	15874415	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.421	-	-	-	-	-	-	-
+11	08/1372d0	15874416	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.509	-	-	-	-	-	-	-
+13	ed/82168d	15874417	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.593	-	-	-	-	-	-	-
+12	81/c615d6	15874418	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.674	-	-	-	-	-	-	-
+15	0e/d5500e	15874419	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.793	-	-	-	-	-	-	-
+16	7c/55fd47	15874420	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.873	-	-	-	-	-	-	-
+14	56/70304d	15874421	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:11.982	-	-	-	-	-	-	-
+17	5e/06dd99	15874422	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.068	-	-	-	-	-	-	-
+19	72/c2ed8f	15874423	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.164	-	-	-	-	-	-	-
+18	5a/3ca5a6	15874424	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.242	-	-	-	-	-	-	-
+21	21/e6793d	15874425	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.322	-	-	-	-	-	-	-
+20	e8/ebfdd2	15874426	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.420	-	-	-	-	-	-	-
+22	81/e048ac	15874427	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.502	-	-	-	-	-	-	-
+23	2a/749cea	15874428	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.593	-	-	-	-	-	-	-
+25	8f/74f116	15874429	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.715	-	-	-	-	-	-	-
+24	8f/04b342	15874430	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.809	-	-	-	-	-	-	-
+26	16/aad3ba	15874431	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.887	-	-	-	-	-	-	-
+27	98/36c410	15874432	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:12.965	-	-	-	-	-	-	-
+29	79/4c8e64	15874433	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.103	-	-	-	-	-	-	-
+28	eb/b8aa12	15874434	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.201	-	-	-	-	-	-	-
+30	b0/c377f8	15874435	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.469	-	-	-	-	-	-	-
+32	2c/193dd6	15874436	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.549	-	-	-	-	-	-	-
+31	48/e41f59	15874437	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.639	-	-	-	-	-	-	-
+34	2d/3b52b2	15874438	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.726	-	-	-	-	-	-	-
+33	cf/6c0ab1	15874439	preprocessing (preprocessing)	ABORTED	-	2026-06-11 13:47:13.804	-	-	-	-	-	-	-
+2	2b/73b8be	15874408	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-06-11 13:47:10.509	1m 34s	50.9s	299.0%	3.9 GB	41.8 GB	123.6 GB	41.6 MB

@@ -1,0 +1,851 @@
+{
+   "object_type": "Quality control",
+   "describedBy": "https://raw.githubusercontent.com/AllenNeuralDynamics/aind-data-schema/main/src/aind_data_schema/core/quality_control.py",
+   "schema_version": "2.4.0",
+   "metrics": [
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:14.216132-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:38030b9ef052f5010aa72ec813acfe0d17dddd53&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group0)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.216132-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.216132-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:38.179791-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:38.184387-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key features and number of units with different labels. Use this metric to report a low yield of units or a disproportionate high number of bad units with respect to good units. The sorting summary can also be viewed in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:01534b8e379aa1c948ccb98c9e4d6ed17ff83df6&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group0%20-%20kilosort4%20-%20Sorting%20Summary)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeries_group0",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:38.184387-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group0/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group0"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:14.010006-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:6ebbe72d24bdea08e721560cfcb45e7fbe8bd02a&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group1)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.010006-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.010006-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:40.067119-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:40.072045-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key features and number of units with different labels. Use this metric to report a low yield of units or a disproportionate high number of bad units with respect to good units. The sorting summary can also be viewed in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:2b560f7cfe7d5cd457ba99c519a558094fcbe0b2&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group1%20-%20kilosort4%20-%20Sorting%20Summary)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeries_group1",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:40.072045-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group1/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group1"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:14.058683-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:6fc6f0b9c8c5f18b6a8a21818ffdad71ef6fcd8e&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group2)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.058683-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:14.058683-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:33.054223-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:33.059021-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key features and number of units with different labels. Use this metric to report a low yield of units or a disproportionate high number of bad units with respect to good units. The sorting summary can also be viewed in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:85a2202407b88af803777db070f72efe23fb03ca&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group2%20-%20kilosort4%20-%20Sorting%20Summary)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeries_group2",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:33.059021-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group2/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group2"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:13.674084-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:7f38eea4542345505a55beac4710179b47012e30&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group3)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:13.674084-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-18T22:33:13.674084-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:42.609181-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:42.614101-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key features and number of units with different labels. Use this metric to report a low yield of units or a disproportionate high number of bad units with respect to good units. The sorting summary can also be viewed in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:66e225440e3dc22b42b31bc0e7eafda1655157af&label=7e691d7b-48a7-43c3-a53d-52393a3e3ce6%20-%20block0_acquisition-ElectricalSeries_group3%20-%20kilosort4%20-%20Sorting%20Summary)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeries_group3",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-18T22:33:42.614101-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries_group3/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries_group3"
+         },
+         "evaluated_assets": null
+      }
+   ],
+   "key_experimenters": null,
+   "notes": null,
+   "default_grouping": [
+      "probe",
+      "stage"
+   ],
+   "allow_tag_failures": [],
+   "status": {
+      "probe:block0_acquisition-ElectricalSeries_group0": "Pending",
+      "probe:block0_acquisition-ElectricalSeries_group1": "Pending",
+      "probe:block0_acquisition-ElectricalSeries_group2": "Pending",
+      "probe:block0_acquisition-ElectricalSeries_group3": "Pending",
+      "ecephys": "Pending",
+      "Raw data": "Pending",
+      "Processing": "Pending"
+   }
+}

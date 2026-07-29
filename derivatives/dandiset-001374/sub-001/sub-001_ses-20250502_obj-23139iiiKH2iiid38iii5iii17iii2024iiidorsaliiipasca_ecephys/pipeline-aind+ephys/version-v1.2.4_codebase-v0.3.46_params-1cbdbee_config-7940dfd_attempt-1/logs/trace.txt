@@ -1,0 +1,11 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	59/b1d1c4	17188200	job_dispatch (job-dispatch)	COMPLETED	0	2026-07-05 02:31:00.116	1m 9s	1.3s	72.7%	82.2 MB	408.2 MB	19.9 MB	1016.1 KB
+2	79/0647c2	17188237	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-07-05 02:32:09.322	2m 35s	2m 1s	1221.9%	13.4 GB	51.5 GB	51 GB	376.5 MB
+3	4b/579ad6	17188238	preprocessing (preprocessing)	COMPLETED	0	2026-07-05 02:32:09.456	5m 4s	4m 3s	438.1%	72.7 GB	123.6 GB	83.4 GB	60.1 GB
+4	4f/f2aa6d	17188330	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-05 02:37:14.070	14m 5s	10m 55s	244.0%	10.9 GB	41.4 GB	93.9 MB	155.2 MB
+5	c6/ccb194	17188698	postprocessing (postprocessing)	COMPLETED	0	2026-07-05 02:51:19.080	9m 5s	7m 58s	638.6%	105.1 GB	158 GB	859.1 MB	1.2 GB
+6	fd/248d6b	17188963	curation (curation)	COMPLETED	0	2026-07-05 03:00:24.123	1m 5s	25.7s	31.5%	674.3 MB	3.1 GB	288.1 MB	320.8 KB
+7	db/70c952	17188995	visualization (visualization)	COMPLETED	0	2026-07-05 03:01:29.072	3m 5s	2m 23s	69.0%	4.7 GB	42.4 GB	4.8 GB	122.5 MB
+8	7c/a1a77b	17189155	results_collector (result-collector)	COMPLETED	0	2026-07-05 03:04:34.058	34.8s	9.3s	44.7%	291.1 MB	957.7 MB	330.2 MB	288.1 MB
+9	cf/ad8031	17189167	nwb_units (nwb-units)	COMPLETED	0	2026-07-05 03:05:09.195	1m 5s	20.6s	92.5%	1.2 GB	2.1 GB	144.3 MB	436.1 MB
+10	e7/9ec553	17189168	quality_control (quality-control)	FAILED	1	2026-07-05 03:05:09.299	2m 40s	2m 5s	-	-	-	-	-

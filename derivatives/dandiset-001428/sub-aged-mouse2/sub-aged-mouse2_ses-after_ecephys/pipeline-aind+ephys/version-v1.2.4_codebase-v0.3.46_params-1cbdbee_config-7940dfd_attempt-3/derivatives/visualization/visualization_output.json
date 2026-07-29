@@ -1,0 +1,18 @@
+{
+    "block0_acquisition-ElectricalSeries_recording1_group2": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:03a30cc7e24756aee41d29d98ed03dd9092a90c8&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group2",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:f5f177724210a04d6cc4fe7b7e1ff6addf22e3bc&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group2%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeries_recording1_group3": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:6340ae099a5132d5780b7fd3c488fcfc473a9ee9&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group3",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:b808b739ab4a03d73b4043ed100bf1eaa4d68b6d&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group3%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeries_recording1_group1": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:03eca221f2023dfdd9f7614d5f07ee3023e7ed00&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group1",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:ccd25e8156da651851bc4d03514a033c4a4b4aa1&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group1%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeries_recording1_group0": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:e625032add0492998007f1a9cde4f96ece5031c0&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group0",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:ddcb1a9a196947b94dd6d21082da60e094f8b118&label=16c23f1d-2296-47c6-8442-dd72a453dfcf%20-%20block0_acquisition-ElectricalSeries_recording1_group0%20-%20kilosort4%20-%20Sorting%20Summary"
+    }
+}

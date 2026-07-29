@@ -1,0 +1,30 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	65/aa8c60	17195473	job_dispatch (job-dispatch)	COMPLETED	0	2026-07-05 06:16:58.024	1m 9s	1.5s	83.3%	75.6 MB	403.5 MB	20.6 MB	1.8 MB
+3	54/2739c0	17195491	preprocessing (preprocessing)	COMPLETED	0	2026-07-05 06:18:07.674	3m 5s	2m 11s	198.7%	9.6 GB	59.4 GB	11.1 GB	1.8 GB
+2	2b/f1f773	17195490	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-07-05 06:18:07.586	3m 5s	2m 9s	746.8%	9.9 GB	48 GB	62.5 GB	136 MB
+4	b3/043b5e	17195492	preprocessing (preprocessing)	COMPLETED	0	2026-07-05 06:18:07.761	3m 10s	2m 15s	186.2%	8.8 GB	58.2 GB	11.1 GB	1.8 GB
+6	e0/9f0caa	17195494	preprocessing (preprocessing)	COMPLETED	0	2026-07-05 06:18:07.968	5m 9s	1m 28s	297.2%	8.3 GB	52.2 GB	11.2 GB	1.8 GB
+7	64/16b864	17195572	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-05 06:21:12.388	2m 5s	44s	317.5%	3.2 GB	32.1 GB	73.4 MB	25.4 MB
+5	96/d9d36c	17195493	preprocessing (preprocessing)	COMPLETED	0	2026-07-05 06:18:07.846	5m 9s	1m 30s	340.9%	7.7 GB	51.6 GB	11.2 GB	1.8 GB
+8	29/8396f1	17195573	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-05 06:21:17.427	2m 5s	39.9s	447.6%	3.1 GB	25.9 GB	75.8 MB	41.3 MB
+9	fc/49a7f4	17195644	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-05 06:23:17.377	1m 5s	42.4s	554.5%	3.1 GB	24.2 GB	78.8 MB	64.1 MB
+10	91/809629	17195645	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-05 06:23:17.459	1m 5s	41.8s	494.2%	3.2 GB	26.9 GB	76.6 MB	47 MB
+12	ec/6e3ac2	17195677	postprocessing (postprocessing)	COMPLETED	0	2026-07-05 06:24:22.411	3m 5s	2m 3s	627.3%	14.4 GB	60.7 GB	747.8 MB	1014.5 MB
+11	d6/31f73d	17195678	postprocessing (postprocessing)	COMPLETED	0	2026-07-05 06:24:22.527	3m 10s	1m 53s	546.4%	11.9 GB	56.5 GB	550.3 MB	717.4 MB
+13	dd/588482	17195679	postprocessing (postprocessing)	COMPLETED	0	2026-07-05 06:24:22.617	3m 10s	1m 59s	553.8%	15.1 GB	62.6 GB	857.5 MB	1.2 GB
+14	38/8d3241	17195680	postprocessing (postprocessing)	COMPLETED	0	2026-07-05 06:24:22.706	3m 10s	2m 25s	832.7%	19.2 GB	67.1 GB	1.1 GB	1.6 GB
+17	22/797cf4	17195809	curation (curation)	COMPLETED	0	2026-07-05 06:27:32.456	34.8s	24.1s	23.2%	684.8 MB	2.1 GB	506.7 MB	315.5 KB
+16	3a/43c890	17195808	curation (curation)	COMPLETED	0	2026-07-05 06:27:32.350	34.9s	22.6s	22.5%	823.6 MB	2 GB	359.1 MB	314.9 KB
+18	b9/9772b9	17195810	curation (curation)	COMPLETED	0	2026-07-05 06:27:32.534	34.7s	24.1s	21.7%	816.9 MB	2.3 GB	630.9 MB	315.7 KB
+15	e4/f071e7	17195807	curation (curation)	COMPLETED	0	2026-07-05 06:27:27.410	1m 5s	28.3s	22.0%	1 GB	2.2 GB	452.7 MB	315.2 KB
+20	fb/aec57b	17195918	visualization (visualization)	COMPLETED	0	2026-07-05 06:28:32.422	2m 5s	1m 52s	62.0%	2.4 GB	29.8 GB	3.6 GB	48.4 MB
+22	da/a6523f	17195920	visualization (visualization)	COMPLETED	0	2026-07-05 06:28:32.595	2m 6s	1m 51s	58.2%	2.6 GB	27.5 GB	3.8 GB	56.5 MB
+21	6e/8fa543	17195921	visualization (visualization)	COMPLETED	0	2026-07-05 06:28:32.677	2m 6s	1m 48s	60.8%	2.4 GB	17.7 GB	3.9 GB	61.6 MB
+19	af/fcaf0b	17195919	visualization (visualization)	COMPLETED	0	2026-07-05 06:28:32.505	2m 10s	1m 52s	54.5%	1.9 GB	15.4 GB	3.6 GB	43.6 MB
+23	28/1f3558	17196073	results_collector (result-collector)	COMPLETED	0	2026-07-05 06:30:42.360	2m 5s	1m 38s	7.2%	261.3 MB	912 MB	1.6 GB	1.5 GB
+24	64/9232d7	17196202	nwb_units (nwb-units)	COMPLETED	0	2026-07-05 06:32:47.480	1m 35s	25s	33.7%	335.3 MB	953.2 MB	126.9 MB	105.4 MB
+25	1f/c3ce5a	17196203	quality_control (quality-control)	COMPLETED	0	2026-07-05 06:32:47.683	2m 35s	32s	68.9%	564.9 MB	3.1 GB	1.8 GB	5.7 MB
+27	1b/cff60c	17196204	quality_control (quality-control)	COMPLETED	0	2026-07-05 06:32:47.778	2m 34s	36.3s	64.6%	562.7 MB	2.9 GB	1.9 GB	5.8 MB
+28	eb/abcaee	17196205	quality_control (quality-control)	COMPLETED	0	2026-07-05 06:32:47.867	3m 39s	23.3s	93.9%	557.1 MB	2.9 GB	1.8 GB	6 MB
+26	0a/886d1c	17196206	quality_control (quality-control)	COMPLETED	0	2026-07-05 06:32:47.961	3m 39s	34s	65.8%	556.7 MB	2.9 GB	1.8 GB	5.8 MB
+29	ff/cd1c7d	17196427	quality_control_collector (qc-collector)	COMPLETED	0	2026-07-05 06:36:27.396	34.8s	5.9s	13.9%	50.5 MB	370.9 MB	18 MB	10.1 MB
