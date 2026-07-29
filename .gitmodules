@@ -866,3 +866,7 @@
 	path = derivatives/dandiset-001435/sub-Offenbach/sub-Offenbach_ses-20230208_ecephys/pipeline-aind+ephys/version-v1.2.4_codebase-v0.3.50_params-4e89ec7_config-7940dfd_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeriesVP_recording1.zarr
 	url = https://github.com/dandizarrs/dd2d1d28-4bfd-43c6-abc2-481cf56ca190
 	datalad-id = 7f6e32f5-84f6-41a3-8476-22f2b2793e21
+[submodule "derivatives/dandiset-001603/sub-M1S1/sub-M1S1_ses-20250924T011941_ecephys/pipeline-aind+ephys/version-v1.2.4_codebase-v0.3.49_params-1cbdbee_config-7940dfd_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandiset-001603/sub-M1S1/sub-M1S1_ses-20250924T011941_ecephys/pipeline-aind+ephys/version-v1.2.4_codebase-v0.3.49_params-1cbdbee_config-7940dfd_attempt-1/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/6f211b1e-5685-4238-a347-7164c20059c8
+	datalad-id = 43f7ec06-06b3-409d-a8b7-8819fe10e217
