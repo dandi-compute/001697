@@ -1,5 +1,0 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-1	56/83cc81	16685546	job_dispatch (job-dispatch)	COMPLETED	0	2026-06-27 11:37:51.057	2m 34s	1.6s	116.4%	83.3 MB	409.8 MB	19.4 MB	650 KB
-3	b1/e3abbc	16685772	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-06-27 11:40:25.647	32m 1s	27m 53s	53.1%	5.3 GB	43.3 GB	98.3 GB	159.6 MB
-2	24/01f98c	16685773	preprocessing (preprocessing)	COMPLETED	0	2026-06-27 11:40:25.890	39m 14s	35m 42s	30.4%	10.1 GB	60 GB	43.9 GB	16.8 GB
-4	dd/0e28ce	16687667	spikesort_kilosort4 (spikesort-kilosort4)	FAILED	140	2026-06-27 12:19:40.305	6h	5h 58m 51s	-	-	-	-	-
