@@ -3,7 +3,10 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0000955
+  name: brain
+  schemaKey: Anatomy
 access:
 - embargoedUntil: '2026-04-14'
   schemaKey: AccessRequirements
@@ -58,29 +61,23 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2026-01-14T20:17:45.550719+00:00'
-description: This is an experiment in reproducible computing related to the DANDI
-  Archive.  Check back in a few months for results - more details to follow! The outer
-  level of the Dandiset is organized according to a BIDS-Study layout.  The primary
-  `derivatives/` directory follows the Type 1 BIDS-Derivatives structure. See the
-  linked GitHub companion repository for more information!
+description: Automated job runs spanning the archive, such as spike-sorting with AIND.
 ethicsApproval: []
 id: DANDI:001697/draft
 identifier: DANDI:001697
+keywords:
+- spike-sorting
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001697/versions/draft/assets/
 name: DANDI Compute
-relatedResource:
-- name: GitHub
-  relation: dcite:IsVariantFormOf
-  repository: '001697'
-  resourceType: dcite:Dataset
-  schemaKey: Resource
-  url: https://github.com/dandi-compute/001697
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
+studyTarget:
+- meta-analysis of spike-sorting output
 url: https://dandiarchive.org/dandiset/001697/draft
 version: draft
 wasGeneratedBy: []
