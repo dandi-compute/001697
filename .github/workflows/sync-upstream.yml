@@ -1,0 +1,57 @@
+name: Sync fork with upstream
+
+# Keeps this fork's default branch in sync with the upstream dandisets repository.
+# Uses the GitHub "merge upstream" API, so no checkout of this (very large,
+# git-annex backed) dataset is needed.
+
+on:
+  schedule:
+    # Hourly, at 17 past the hour to stay off the crowded top of the hour.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to sync with upstream"
+        required: false
+        default: draft
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge upstream into ${{ inputs.branch || 'draft' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ inputs.branch || 'draft' }}
+        run: |
+          set -euo pipefail
+
+          status=0
+          response=$(gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${GITHUB_REPOSITORY}/merge-upstream" \
+            -f "branch=${BRANCH}" 2>&1) || status=$?
+
+          echo "$response"
+
+          if [ "$status" -ne 0 ]; then
+            if echo "$response" | grep -q "HTTP 409"; then
+              echo "::error::'${BRANCH}' has diverged from upstream and cannot be fast-forwarded. Resolve the conflict manually."
+            fi
+            exit "$status"
+          fi
+
+          merge_type=$(echo "$response" | jq -r '.merge_type // "unknown"')
+          echo "merge_type=${merge_type}"
+          case "$merge_type" in
+            none) echo "Already up to date with upstream." ;;
+            *)    echo "Synced '${BRANCH}' with upstream (${merge_type})." ;;
+          esac
