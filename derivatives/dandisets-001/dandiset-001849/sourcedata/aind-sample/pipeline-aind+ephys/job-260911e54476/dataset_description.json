@@ -1,0 +1,35 @@
+{
+  "Name": "DANDI Compute: AIND Ephys pipeline output for Dandiset 001849",
+  "BIDSVersion": "1.10",
+  "DatasetType": "study",
+  "GeneratedBy": [
+    {
+      "Name": "AIND Ephys Pipeline",
+      "Description": "A customized and version-locked branch of the main AIND ephys pipeline.",
+      "Version": "v1.2.4+6be18c3f0f997d007ef4b53e5b4b5172b25dab2e",
+      "CodeURL": "https://github.com/CodyCBakerPhD/aind-ephys-pipeline/tree/v1.2.4"
+    },
+    {
+      "Name": "DANDI Compute: Code",
+      "Description": "The primary source code for orchestration of AIND on MIT Engaging.",
+      "Version": "v0.3.36+ff4dbb564cc7e981ec436040302250a24760a84b",
+      "CodeURL": "https://github.com/dandi-compute/code"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset/001849/"
+    }
+  ],
+  "DandiCompute": {
+    "job_id": "job-260911e54476",
+    "dandiset_id": "001849",
+    "dandi_path": "sourcedata/aind-sample.nwb",
+    "content_id": "048d1ee9-83b7-491f-8f02-1ca615b1d455",
+    "pipeline": "aind+ephys",
+    "version": "v1.2.4",
+    "codebase": "v0.3.36",
+    "params": "1cbdbee",
+    "config": "7940dfd"
+  }
+}

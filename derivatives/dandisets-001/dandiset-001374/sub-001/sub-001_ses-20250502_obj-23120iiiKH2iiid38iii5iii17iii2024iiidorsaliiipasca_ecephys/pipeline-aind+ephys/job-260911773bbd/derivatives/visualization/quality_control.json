@@ -1,0 +1,115 @@
+{
+   "object_type": "Quality control",
+   "describedBy": "https://raw.githubusercontent.com/AllenNeuralDynamics/aind-data-schema/main/src/aind_data_schema/core/quality_control.py",
+   "schema_version": "2.4.0",
+   "metrics": [
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-07-05T01:25:42.885901-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:99f1c1592173721abb23d754a1852e697bb35c47&label=a4c8cbd8-87ed-4a23-a64d-bfbfd3f6d3a9%20-%20block0_acquisition-ElectricalSeries)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-05T01:25:42.885901-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-07-05T01:25:42.885901-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      }
+   ],
+   "key_experimenters": null,
+   "notes": null,
+   "default_grouping": [
+      "probe",
+      "stage"
+   ],
+   "allow_tag_failures": [],
+   "status": {
+      "probe:block0_acquisition-ElectricalSeries": "Pending",
+      "ecephys": "Pending",
+      "Raw data": "Pending"
+   }
+}
