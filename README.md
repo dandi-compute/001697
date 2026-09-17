@@ -13,19 +13,21 @@ The nesting pattern follows the specific structure:
 ```
 001697/
 └── derivatives/
-    └── dandisets-{first 3 digits}XYZ/
+    └── dandisets-{first 3 digits of Dandiset ID}/
         └── dandiset-{Dandiset ID}/
         │       └── sub-{subject ID}/
-        │           └── [ses-{session ID}/]  ← optional
-        │               └── pipeline-{pipeline ID}/
-        │                   └── version-{version ID}/
-        │                       └── [params-{hash}_config-{hash}_attempt-{counter}/]
-        │                       ├── code/  ← a copy of the exact code used to run the pipeline
-        │                       ├── logs/  ← all runtime records for success or failure
-        │                       ├── output/  ← the spike sorting output
-        │                       ├── visualizations/  ← associated figures for intermediate processing
-        │                       └── dataset_description.json  ← provenance info
+        │       │   └── [ses-{session ID}/]  ← optional
+        │       │   │   └── pipeline-{pipeline ID}/
+        │       │   │       └── job-{job ID}/
+        │       │   │       │   ├── code/  ← a copy of the exact code used to run the pipeline
+        │       │   │       │   ├── logs/  ← all runtime records for success or failure
+        │       │   │       │   ├── output/  ← the spike sorting output
+        │       │   │       │   ├── visualizations/  ← associated figures for intermediate processing
+        │       │   │       │   └── dataset_description.json  ← provenance info
+        │       │   │       └── job-.../
+        │       │   └── [ses-.../]
+        │       └── sub-.../
         └── dandiset-.../
 ```
 
-Each subdirectory at the bottom level is itself a **self-contained [BIDS-Study](https://bids-specification.readthedocs.io/en/stable/common-principles.html#study-dataset)**, with the `dataset_description.json` containing provenance information about the pipeline and submission software versions used to generate that dataset.
+Each job capsule is a **self-contained [BIDS-Study](https://bids-specification.readthedocs.io/en/stable/common-principles.html#study-dataset)**, with the `dataset_description.json` containing provenance information about the pipeline and submission software versions used to generate that dataset.

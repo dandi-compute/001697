@@ -1,0 +1,34 @@
+{
+    "block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank2": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:62508c31b5a56d715b2ac5e622d63e45d3b0973e&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank2",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:cf1503d536c8e776bdeccbb0f7bc2195d6f2baa5&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank2%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank1": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:6acd22dcf79233e5186a45b6da983e84cc53f55e&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank1",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:e83b8f5b334e3a72373bc9ca1a67ebdfcecd5b33&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank1%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank3": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:b0d905b70a8ffa8d553d28c018cca4d8d908a154&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank3",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:3950deaa80687bebd64002a76ba44fb7c9e231a0&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank3%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank0": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:9e97af74094ad327ad32c1107e4d3fdd991bf857&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank0",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:748c65ead7ad9c2f8c594bb17847fbf5a7e8c31b&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank0%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank1": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:513e5f2ee8ca2f44d26f1e0091e1e24b1d1b42b5&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank1",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:635de030fc20ef92a411db7a026ffe33488c3e6c&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank1%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank2": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:15fe91bfe25f79e4abb23201cbc5762455988b53&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank2",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:c7eb0ecc0761cc0a35a200c7a45b3c2f8cdd2bb3&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank2%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank0": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:e8dbb60a53acf104a77838761cf64feb39af2c67&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank0",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:0dbc750bfc8a4f2f747d7d507a001c5e92b95c80&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec0_recording1_groupNeuropixelsImec0Shank0%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank3": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:688818a8bb52e538e5e8ac9af82a09b3412755b8&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank3",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:9f4e4c8fbeb409e76291985db1908f07f2642eed&label=c15b4e84-af4a-48f2-bb2d-5dac67b20e8c%20-%20block0_acquisition-ElectricalSeriesAPImec1_recording1_groupNeuropixelsImec1Shank3%20-%20kilosort4%20-%20Sorting%20Summary"
+    }
+}
