@@ -1,0 +1,10 @@
+{
+    "block0_acquisition-ElectricalSeriesProbe01AP_recording1": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:a74a90345abcaf6bcad3d4af513eab50e04b3a8e&label=adda8fdf-94cb-49bd-928c-2d1253c68556%20-%20block0_acquisition-ElectricalSeriesProbe01AP_recording1",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:f3297ee069a449712d3e39b51d755f3bcc41e726&label=adda8fdf-94cb-49bd-928c-2d1253c68556%20-%20block0_acquisition-ElectricalSeriesProbe01AP_recording1%20-%20kilosort4%20-%20Sorting%20Summary"
+    },
+    "block0_acquisition-ElectricalSeriesProbe00AP_recording1": {
+        "timeseries": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:9525c950210fec70d4ae5f6f8026586f7fb87433&label=adda8fdf-94cb-49bd-928c-2d1253c68556%20-%20block0_acquisition-ElectricalSeriesProbe00AP_recording1",
+        "sorting_summary": "https://figurl.org/f?v=npm://@fi-sci/figurl-sortingview@12/dist&d=kachery:default:sha1:a585a18b848500d8bb67bf033d1bdb80a56cfc4e&label=adda8fdf-94cb-49bd-928c-2d1253c68556%20-%20block0_acquisition-ElectricalSeriesProbe00AP_recording1%20-%20kilosort4%20-%20Sorting%20Summary"
+    }
+}

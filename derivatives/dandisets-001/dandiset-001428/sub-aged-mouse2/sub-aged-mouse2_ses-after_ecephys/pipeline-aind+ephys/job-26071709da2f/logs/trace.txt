@@ -1,0 +1,30 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	cb/9421fe	18123840	job_dispatch (job-dispatch)	COMPLETED	0	2026-07-17 01:09:58.045	4m 18s	2m 18s	3.6%	154.6 MB	548.8 MB	20.6 MB	1.8 MB
+3	5a/3d5e30	18124084	preprocessing (preprocessing)	COMPLETED	0	2026-07-17 01:14:24.575	48m 27s	41m 6s	10.5%	9.6 GB	59.5 GB	11.4 GB	1.8 GB
+5	37/81d676	18124102	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-07-17 01:14:27.012	51m 50s	48m 6s	39.0%	9.8 GB	48 GB	65.3 GB	141.6 MB
+2	7f/aeddb9	18124095	preprocessing (preprocessing)	COMPLETED	0	2026-07-17 01:14:26.419	1h 18m 31s	29m 19s	17.4%	9.7 GB	59.5 GB	11.4 GB	1.8 GB
+7	6e/e60d2d	18126279	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-17 02:02:54.804	48m 33s	48m 1s	4.1%	3.2 GB	29.3 GB	72 MB	17.2 MB
+6	ee/b758e9	18124106	preprocessing (preprocessing)	COMPLETED	0	2026-07-17 01:14:28.232	2h 7m 37s	36m 27s	12.5%	9.7 GB	59.5 GB	11.7 GB	1.8 GB
+8	bd/454917	18127679	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-17 02:33:00.054	1h 6m 55s	47m 53s	3.4%	3.2 GB	17.7 GB	71.9 MB	16.3 MB
+4	b1/f3cba9	18124105	preprocessing (preprocessing)	COMPLETED	0	2026-07-17 01:14:27.675	2h 53m 19s	1h 31m 36s	7.9%	8.6 GB	59.5 GB	11.7 GB	1.8 GB
+9	8e/4652e9	18129715	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-17 03:22:09.933	56m 22s	37m 35s	6.2%	3.1 GB	29.3 GB	72.4 MB	19.8 MB
+10	47/e6ddcc	18132366	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-07-17 04:07:49.279	48m 3s	36m 50s	3.8%	3.1 GB	17.8 GB	71.3 MB	13.2 MB
+14	09/4b3079	18134646	postprocessing (postprocessing)	COMPLETED	0	2026-07-17 04:55:56.071	25m 50s	22m 30s	41.4%	12.7 GB	58 GB	624.2 MB	824.5 MB
+13	c2/3fce7e	18134645	postprocessing (postprocessing)	COMPLETED	0	2026-07-17 04:55:55.894	26m 30s	23m 11s	9.0%	3.9 GB	24.1 GB	341 MB	401.9 MB
+16	de/9b76da	18135966	curation (curation)	COMPLETED	0	2026-07-17 05:22:26.687	10m 25s	8m 5s	2.1%	780.8 MB	2.1 GB	256.8 MB	315.2 KB
+15	29/87e733	18135961	curation (curation)	COMPLETED	0	2026-07-17 05:22:00.877	16m 31s	13m 51s	0.8%	911.5 MB	2.2 GB	389.3 MB	315.6 KB
+12	3b/35efc8	18134643	postprocessing (postprocessing)	COMPLETED	0	2026-07-17 04:55:55.540	53m 11s	49m 36s	16.5%	11.5 GB	55.3 GB	475.5 MB	575.2 MB
+11	7e/8561fd	18134644	postprocessing (postprocessing)	COMPLETED	0	2026-07-17 04:55:55.739	53m 41s	49m 36s	15.8%	11.5 GB	56.6 GB	556.9 MB	723.9 MB
+17	9e/5f7f57	18137544	curation (curation)	COMPLETED	0	2026-07-17 05:49:20.608	18m 53s	15m 17s	0.6%	754 MB	1.7 GB	292.2 MB	315.5 KB
+18	89/aefeb2	18137557	curation (curation)	COMPLETED	0	2026-07-17 05:49:53.183	19m 34s	16m 4s	0.7%	878.3 MB	2.2 GB	357 MB	315.7 KB
+21	06/1ebe26	18138327	visualization (visualization)	COMPLETED	0	2026-07-17 06:09:44.363	38m 22s	36m 6s	2.8%	2.1 GB	19.4 GB	3.8 GB	39.2 MB
+22	7c/efd20b	18138328	visualization (visualization)	COMPLETED	0	2026-07-17 06:09:44.957	43m 37s	40m 35s	2.8%	1.6 GB	16 GB	3.5 GB	24.5 MB
+19	7e/b7f605	18138324	visualization (visualization)	COMPLETED	0	2026-07-17 06:09:41.818	44m 44s	42m 38s	2.9%	1.8 GB	23.7 GB	3.5 GB	35 MB
+20	15/defaa4	18138325	visualization (visualization)	COMPLETED	0	2026-07-17 06:09:43.521	47m 54s	45m 29s	2.4%	2.1 GB	11.2 GB	3.6 GB	37.5 MB
+23	fe/85ce7f	18141404	results_collector (result-collector)	COMPLETED	0	2026-07-17 06:57:54.812	1h 24m 56s	1h 21m 48s	0.2%	234.5 MB	1.5 GB	945.9 MB	896.1 MB
+25	9e/4651db	18147101	quality_control (quality-control)	COMPLETED	0	2026-07-17 08:24:00.809	11m 46s	9m 55s	4.2%	450.1 MB	2.8 GB	1.9 GB	5.5 MB
+26	33/0a720e	18147102	quality_control (quality-control)	COMPLETED	0	2026-07-17 08:24:05.290	11m 46s	9m 46s	4.0%	511.5 MB	2.9 GB	1.9 GB	5.6 MB
+27	74/9ffc4e	18147108	quality_control (quality-control)	COMPLETED	0	2026-07-17 08:24:09.834	11m 42s	9m 50s	4.3%	495.9 MB	2.8 GB	2 GB	5.7 MB
+28	17/3562d7	18147112	quality_control (quality-control)	COMPLETED	0	2026-07-17 08:24:11.388	11m 40s	9m 50s	4.2%	497.2 MB	2.8 GB	1.9 GB	5.7 MB
+24	10/eee0bf	18147103	nwb_units (nwb-units)	COMPLETED	0	2026-07-17 08:24:07.761	11m 44s	9m 34s	1.2%	314.8 MB	1.5 GB	125.3 MB	91.2 MB
+29	f9/8b0127	18148130	quality_control_collector (qc-collector)	COMPLETED	0	2026-07-17 08:35:51.570	1m 40s	2.9s	28.4%	50.9 MB	370.9 MB	17.1 MB	9.1 MB
