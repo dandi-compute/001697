@@ -1,0 +1,36 @@
+{
+  "Name": "DANDI Compute: LFP pipeline output for Dandiset 000411",
+  "BIDSVersion": "1.10",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {
+      "Name": "DANDI Compute: LFP Pipeline",
+      "Description": "A minimal SpikeInterface-based LFP extraction pipeline run from a container.",
+      "Version": "v0.9.7",
+      "CodeURL": "ghcr.io/dandi-compute/dandi-compute-lfp:v0.9.7"
+    },
+    {
+      "Name": "DANDI Compute: Code",
+      "Description": "The primary source code for orchestration on MIT Engaging.",
+      "Version": "v0.9.7+8f4d623dc724b93c479e24730a7a6517551d3b1e",
+      "CodeURL": "https://github.com/dandi-compute/dandi-compute-core"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset/000411/"
+    }
+  ],
+  "DandiCompute": {
+    "job_id": "job-260928095602",
+    "dandiset_id": "000411",
+    "within_dandiset_path": "sub-001/sub-001_ecephys.nwb",
+    "content_id": "080677c9-0e9e-4085-afd6-e5e0379510b9",
+    "pipeline": "lfp",
+    "version": "v0.9.7",
+    "codebase": "v0.9.7",
+    "params": "2f6768c",
+    "config": "",
+    "params_key": "default"
+  }
+}
