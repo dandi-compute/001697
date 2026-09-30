@@ -910,3 +910,7 @@
 	path = derivatives/dandisets-001/dandiset-001428/sub-aged-mouse2/sub-aged-mouse2_ses-after_ecephys/pipeline-aind+ephys/job-26092912bf64/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1_group0.zarr
 	url = https://github.com/dandizarrs/f57ea93c-111f-4f99-86db-ffcbc26b067c
 	datalad-id = cf11a483-d4db-4461-ac14-103bb969bbbd
+[submodule "derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-13_ecephys/pipeline-aind+ephys/job-2609306d4728/derivatives/postprocessed/block0_acquisition-ElectricalSeriesVP0_recording1.zarr"]
+	path = derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-13_ecephys/pipeline-aind+ephys/job-2609306d4728/derivatives/postprocessed/block0_acquisition-ElectricalSeriesVP0_recording1.zarr
+	url = https://github.com/dandizarrs/5b81c1c6-7a56-4b9a-bffa-8b7ebe8d5aee
+	datalad-id = e3ac8b30-0c36-4b99-8ff6-a972b3ddf611
