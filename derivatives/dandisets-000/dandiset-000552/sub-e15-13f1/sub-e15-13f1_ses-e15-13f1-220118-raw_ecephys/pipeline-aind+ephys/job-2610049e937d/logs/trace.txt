@@ -1,0 +1,15 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	eb/e6a0b5	24783031	validate_params (validate_params)	COMPLETED	0	2026-10-03 23:46:14.972	1m 8s	286ms	32.8%	9.7 MB	17.5 MB	3 MB	344 B
+2	62/adbe11	24783054	job_dispatch (job-dispatch)	COMPLETED	0	2026-10-03 23:47:23.081	6m 34s	10.5s	65.2%	20.1 GB	20.5 GB	38.2 MB	2.8 MB
+5	83/aa6ed5	24783405	preprocessing (preprocessing)	COMPLETED	0	2026-10-03 23:53:57.835	2h 51m 11s	23m 5s	595.0%	10.5 GB	60.1 GB	184.2 GB	26.7 GB
+6	da/3f8c7c	24783406	preprocessing (preprocessing)	COMPLETED	0	2026-10-03 23:53:57.960	3h 13m 2s	20m 53s	462.7%	10.6 GB	60.1 GB	184.2 GB	26.8 GB
+12	ba/adb345	24798593	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-10-04 03:00:08.703	10m 1s	8m 44s	858.1%	7.2 GB	55.9 GB	869.7 MB	1.6 GB
+13	92/c935fa	24798995	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-10-04 03:07:00.057	10m 5s	9m 12s	942.2%	8.4 GB	57.7 GB	868.8 MB	1.8 GB
+4	66/3cd353	24783407	preprocessing (preprocessing)	COMPLETED	0	2026-10-03 23:53:58.102	3h 31m 17s	17m 52s	640.0%	10.5 GB	60 GB	184.2 GB	26.7 GB
+14	e0/e2ff49	24800574	spikesort_kilosort4 (spikesort-kilosort4)	COMPLETED	0	2026-10-04 03:25:14.985	9m 10s	8m 28s	684.8%	6.5 GB	55.2 GB	799 MB	1.3 GB
+3	6c/330dc2	24783555	nwb_ecephys (nwb-ecephys)	FAILED	1	2026-10-03 23:56:44.296	4h 4m 6s	34.9s	-	-	-	-	-
+7	19/c1a2f6	24783408	preprocessing (preprocessing)	ABORTED	-	2026-10-03 23:53:58.206	-	-	-	-	-	-	-
+8	8a/673301	24783409	preprocessing (preprocessing)	ABORTED	-	2026-10-03 23:53:58.286	-	-	-	-	-	-	-
+9	96/136a20	24783410	preprocessing (preprocessing)	ABORTED	-	2026-10-03 23:53:58.401	-	-	-	-	-	-	-
+11	c5/d03028	24783411	preprocessing (preprocessing)	ABORTED	-	2026-10-03 23:53:58.505	-	-	-	-	-	-	-
+10	29/b4637d	24783412	preprocessing (preprocessing)	ABORTED	-	2026-10-03 23:53:58.589	-	-	-	-	-	-	-

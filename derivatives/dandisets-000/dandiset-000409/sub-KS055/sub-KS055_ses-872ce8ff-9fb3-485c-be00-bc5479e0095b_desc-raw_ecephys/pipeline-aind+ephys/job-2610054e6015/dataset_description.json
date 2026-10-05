@@ -1,0 +1,37 @@
+{
+  "Name": "DANDI Compute: AIND Ephys pipeline output for Dandiset 000409",
+  "BIDSVersion": "1.10",
+  "DatasetType": "study",
+  "GeneratedBy": [
+    {
+      "Name": "AIND Ephys Pipeline",
+      "Description": "The AIND ephys pipeline, run at a released version.",
+      "Version": "1.4.0+e600e087ba72bdac3c956eeaca9d604346caadb7",
+      "CodeURL": "https://github.com/AllenNeuralDynamics/aind-ephys-pipeline/tree/1.4.0"
+    },
+    {
+      "Name": "DANDI Compute: Code",
+      "Description": "The primary source code for orchestration of AIND on MIT Engaging.",
+      "Version": "v0.10.0+a67a632e7f05ac711555362613c62228f4865873",
+      "CodeURL": "https://github.com/dandi-compute/dandi-compute-core"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset/000409/"
+    }
+  ],
+  "DandiCompute": {
+    "job_id": "job-2610054e6015",
+    "dandiset_id": "000409",
+    "within_dandiset_path": "sub-KS055/sub-KS055_ses-872ce8ff-9fb3-485c-be00-bc5479e0095b_desc-raw_ecephys.nwb",
+    "content_id": "1521914e-c9be-4abe-b8e4-74342bb01efb",
+    "pipeline": "aind+ephys",
+    "version": "1.4.0",
+    "codebase": "v0.10.0",
+    "params": "5e4ac6f",
+    "config": "7092ab8",
+    "params_key": "default",
+    "config_key": "default"
+  }
+}
