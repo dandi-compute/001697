@@ -1,0 +1,533 @@
+{
+   "object_type": "Quality control",
+   "describedBy": "https://raw.githubusercontent.com/AllenNeuralDynamics/aind-data-schema/main/src/aind_data_schema/core/quality_control.py",
+   "schema_version": "2.4.2",
+   "metrics": [
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T01:25:40.880986-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](None)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T01:25:40.880986-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T01:25:40.880986-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T01:26:17.012769-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T01:26:17.016790-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key quality and template metrics and depth profiles of amplitude and firing rate. Use this metric to report a low yield of units or a disproportionate number of noise units. ",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T01:26:18.690624-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Auto Curation Summary - block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low yield",
+               "Review needed"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T01:26:18.841346-04:00"
+            }
+         ],
+         "description": "This metric summarises the outputs of the automatic curation step, showing the overlap of 'good' units identified by each method (Default QC, UnitRefine, Bombcell) and the number of merge groups proposed by SLAy.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeries/curation_summary.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "Curation metric",
+         "name": "Sorting Curation - block0_acquisition-ElectricalSeries",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": [
+            {
+               "supported_versions": [
+                  "1",
+                  "2"
+               ],
+               "format_version": "2",
+               "unit_ids": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+               ],
+               "label_definitions": {
+                  "quality": {
+                     "name": "quality",
+                     "label_options": [
+                        "good",
+                        "MUA",
+                        "noise"
+                     ],
+                     "exclusive": true
+                  }
+               },
+               "manual_labels": [
+                  {
+                     "unit_id": 0,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 1,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 2,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 3,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 4,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 5,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 6,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 7,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 8,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 9,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 10,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 11,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 12,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 13,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 14,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 15,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 16,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 17,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 18,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 19,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 20,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  }
+               ],
+               "removed": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+               ],
+               "merges": [],
+               "splits": []
+            }
+         ],
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T01:26:18.841346-04:00"
+            }
+         ],
+         "description": "This metric renders the SpikeInterface GUI through the AIND ephys portal. You can use the GUI to curate spike sorting results (label, remove, merge, split). Use the 'Submit to parent' button to submit the curation data to the QC Portal.",
+         "reference": "https%3A//ephys.allenneuraldynamics.org/ephys_gui_app%3Fanalyzer_path%3D%7Bderived_asset_location%7D/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeries"
+         },
+         "evaluated_assets": null,
+         "type": "Spike sorting curation",
+         "curation_history": [
+            {
+               "object_type": "Curation history",
+               "curator": "Ephys pipeline",
+               "timestamp": "2026-10-03T01:26:18.841346-04:00"
+            }
+         ]
+      }
+   ],
+   "key_experimenters": null,
+   "notes": null,
+   "default_grouping": [
+      "probe",
+      "stage"
+   ],
+   "allow_tag_failures": [],
+   "status": {
+      "probe:block0_acquisition-ElectricalSeries": "Pending",
+      "ecephys": "Pending",
+      "Processing": "Pending",
+      "Raw data": "Pending"
+   }
+}

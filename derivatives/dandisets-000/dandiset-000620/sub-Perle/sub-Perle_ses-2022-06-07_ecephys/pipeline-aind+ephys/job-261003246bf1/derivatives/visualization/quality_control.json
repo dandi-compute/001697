@@ -1,0 +1,2388 @@
+{
+   "object_type": "Quality control",
+   "describedBy": "https://raw.githubusercontent.com/AllenNeuralDynamics/aind-data-schema/main/src/aind_data_schema/core/quality_control.py",
+   "schema_version": "2.4.2",
+   "metrics": [
+      {
+         "object_type": "QC metric",
+         "name": "Raw data block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Normal",
+               "No spikes",
+               "Noisy"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T14:42:53.100532-04:00"
+            }
+         ],
+         "description": "This metric displays raw data snippets for both for AP and LFP streams. Check out the snippets for abnormal noise or lack of spikes.Raw data can also be visualized in [Sortingview](None)",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/traces_raw.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "PSD block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": null,
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T14:42:53.100532-04:00"
+            }
+         ],
+         "description": "This metric displays the power spectral density (PSD) of raw data. PDSs are computed by channel and shown as lines or map (by channel depth). Use the plots to spot contamination from high-frequency or line noise sources.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/psd.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "RMS block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "No out channels detected"
+            ],
+            "status": [
+               "Pass",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T14:42:53.100532-04:00"
+            }
+         ],
+         "description": "This metric shows the noise levels (RMS) by depth for each channel, computed from the raw and preprocessed data. It also includes a summary of channel labels (after bad channel detection). Use this metric to check if out-of-brain channels are visible (lower RMS values at the top of the probe), but not labeled as 'out'.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/rms.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Probe Drift - block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Raw data",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "High drift",
+               "Bad drift estimation"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T14:47:17.464782-04:00"
+            }
+         ],
+         "description": "This metric shows a rastermap of the recording with overlaid estimated motion. Use this metric to spot high drifts or bad drift estimation.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/drift_map.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Unit Metrics Yield - block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low Yield",
+               "High Noise"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T14:47:17.622796-04:00"
+            }
+         ],
+         "description": "This metric displays a summary of spike sorted units, including distributions of key quality and template metrics and depth profiles of amplitude and firing rate. Use this metric to report a low yield of units or a disproportionate number of noise units. ",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/unit_yield.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Firing rate - block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "No problems detected",
+               "Seizure",
+               "Firing Rate Gap"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T14:47:20.624708-04:00"
+            }
+         ],
+         "description": "This metric shows the population firing rate across the entire recording. Use this metric to spot abnormal seizure-like activity or firing rate gaps, which could result from hardware failures diring acquisition.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/firing_rate.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "QC metric",
+         "name": "Auto Curation Summary - block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": {
+            "value": "",
+            "options": [
+               "Good",
+               "Low yield",
+               "Review needed"
+            ],
+            "status": [
+               "Pass",
+               "Fail",
+               "Fail"
+            ],
+            "type": "dropdown"
+         },
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pending",
+               "timestamp": "2026-10-03T14:47:20.879728-04:00"
+            }
+         ],
+         "description": "This metric summarises the outputs of the automatic curation step, showing the overlap of 'good' units identified by each method (Default QC, UnitRefine, Bombcell) and the number of merge groups proposed by SLAy.",
+         "reference": "quality_control/block0_acquisition-ElectricalSeriesAP/curation_summary.png",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null
+      },
+      {
+         "object_type": "Curation metric",
+         "name": "Sorting Curation - block0_acquisition-ElectricalSeriesAP",
+         "modality": {
+            "name": "Extracellular electrophysiology",
+            "abbreviation": "ecephys"
+         },
+         "stage": "Processing",
+         "value": [
+            {
+               "supported_versions": [
+                  "1",
+                  "2"
+               ],
+               "format_version": "2",
+               "unit_ids": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  50,
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57,
+                  58,
+                  59,
+                  60,
+                  61,
+                  62,
+                  63,
+                  64,
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76,
+                  77,
+                  78,
+                  79,
+                  80,
+                  81,
+                  82,
+                  83,
+                  84,
+                  85,
+                  86,
+                  87,
+                  88,
+                  89,
+                  90,
+                  91,
+                  92,
+                  93,
+                  94,
+                  95,
+                  96,
+                  97,
+                  98,
+                  99,
+                  100,
+                  101,
+                  102,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  108,
+                  109,
+                  110,
+                  111,
+                  112,
+                  113,
+                  114,
+                  115,
+                  116,
+                  117,
+                  118,
+                  119,
+                  120,
+                  121,
+                  122,
+                  123,
+                  124,
+                  125,
+                  126,
+                  127,
+                  128,
+                  129,
+                  130,
+                  131,
+                  132,
+                  133,
+                  134,
+                  135,
+                  136,
+                  137,
+                  138,
+                  139,
+                  140,
+                  141,
+                  142,
+                  143,
+                  144,
+                  145,
+                  146,
+                  147,
+                  148,
+                  149,
+                  150,
+                  151,
+                  152,
+                  153,
+                  154,
+                  155,
+                  156,
+                  157,
+                  158,
+                  159,
+                  160,
+                  161,
+                  162,
+                  163,
+                  164,
+                  165,
+                  166,
+                  167,
+                  168,
+                  169,
+                  170,
+                  171,
+                  172,
+                  173,
+                  174,
+                  175,
+                  176,
+                  177,
+                  178,
+                  179,
+                  180,
+                  181,
+                  182,
+                  183,
+                  184,
+                  185,
+                  186,
+                  187,
+                  188,
+                  189,
+                  190,
+                  191,
+                  192,
+                  193,
+                  194,
+                  195,
+                  196,
+                  197,
+                  198,
+                  199,
+                  200,
+                  201,
+                  202,
+                  203,
+                  204,
+                  205,
+                  206,
+                  207,
+                  208,
+                  209,
+                  210,
+                  211,
+                  212,
+                  213,
+                  214,
+                  215,
+                  216,
+                  217,
+                  218,
+                  219,
+                  220,
+                  221,
+                  222,
+                  223,
+                  224,
+                  225,
+                  226,
+                  227,
+                  228,
+                  229,
+                  230,
+                  231,
+                  232,
+                  233,
+                  234,
+                  235,
+                  236,
+                  237,
+                  238,
+                  239,
+                  240,
+                  241,
+                  242,
+                  243,
+                  244,
+                  245,
+                  246,
+                  247,
+                  248,
+                  249,
+                  250,
+                  251,
+                  252,
+                  253,
+                  254,
+                  255,
+                  256,
+                  257,
+                  258,
+                  259,
+                  260,
+                  261,
+                  262,
+                  263,
+                  264,
+                  265,
+                  266,
+                  267,
+                  268,
+                  269,
+                  270,
+                  271,
+                  272,
+                  273,
+                  274,
+                  275,
+                  276,
+                  277,
+                  278,
+                  279,
+                  280,
+                  281,
+                  282,
+                  283,
+                  284,
+                  285,
+                  286,
+                  287,
+                  288,
+                  289,
+                  290,
+                  291,
+                  292,
+                  293,
+                  294,
+                  295,
+                  296,
+                  297,
+                  298,
+                  299,
+                  300,
+                  301,
+                  302,
+                  303,
+                  304,
+                  305,
+                  306,
+                  307,
+                  308,
+                  309,
+                  310,
+                  311,
+                  312,
+                  313,
+                  314,
+                  315,
+                  316,
+                  317,
+                  318,
+                  319,
+                  320,
+                  321,
+                  322,
+                  323,
+                  324,
+                  325,
+                  326,
+                  327,
+                  328,
+                  329,
+                  330,
+                  331,
+                  332,
+                  333,
+                  334,
+                  335,
+                  336,
+                  337,
+                  338,
+                  339
+               ],
+               "label_definitions": {
+                  "quality": {
+                     "name": "quality",
+                     "label_options": [
+                        "good",
+                        "MUA",
+                        "noise"
+                     ],
+                     "exclusive": true
+                  }
+               },
+               "manual_labels": [
+                  {
+                     "unit_id": 3,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 5,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 7,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 8,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 10,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 11,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 13,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 15,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 21,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 22,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 25,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 28,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 29,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 36,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 39,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 46,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 54,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 56,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 59,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 62,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 64,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 65,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 67,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 72,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 75,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 78,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 81,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 86,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 93,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 100,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 106,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 110,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 112,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 114,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 115,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 116,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 119,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 122,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 132,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 135,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 138,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 154,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 155,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 156,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 159,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 160,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 161,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 162,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 164,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 165,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 166,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 167,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 169,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 171,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 172,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 173,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 174,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 175,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 178,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 179,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 180,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 181,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 182,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 183,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 185,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 186,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 187,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 191,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 192,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 193,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 198,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 199,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 201,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 203,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 205,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 207,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 208,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 209,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 210,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 211,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 212,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 213,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 214,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 215,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 216,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 217,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 218,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 219,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 220,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 221,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 222,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 224,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 225,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 226,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 227,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 228,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 229,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 234,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 236,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 237,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 238,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 239,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 240,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 241,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 242,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 243,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 244,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 245,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 246,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 247,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 248,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 249,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 250,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 251,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 252,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 253,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 254,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 255,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 256,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 257,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 258,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 259,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 260,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 261,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 262,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 263,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 264,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 265,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 266,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 267,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 268,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 269,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 270,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 271,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 272,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 273,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 274,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 275,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 276,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 277,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 278,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 279,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 280,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 281,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 282,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 283,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 284,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 285,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 286,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 287,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 288,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 289,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 290,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 291,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 293,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 294,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 295,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 297,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 298,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 299,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 300,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 301,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 302,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 303,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 304,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 305,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 307,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 308,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 309,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 310,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 311,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 312,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 313,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 314,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 315,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 317,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 318,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 320,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 323,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 324,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 325,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 326,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 327,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 329,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 331,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 332,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 334,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 335,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 336,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  },
+                  {
+                     "unit_id": 338,
+                     "labels": {
+                        "quality": [
+                           "noise"
+                        ]
+                     }
+                  }
+               ],
+               "removed": [
+                  3,
+                  5,
+                  7,
+                  8,
+                  10,
+                  11,
+                  13,
+                  15,
+                  21,
+                  22,
+                  25,
+                  28,
+                  29,
+                  36,
+                  39,
+                  46,
+                  54,
+                  56,
+                  59,
+                  62,
+                  64,
+                  65,
+                  67,
+                  72,
+                  75,
+                  78,
+                  81,
+                  86,
+                  93,
+                  100,
+                  106,
+                  110,
+                  112,
+                  114,
+                  115,
+                  116,
+                  119,
+                  122,
+                  132,
+                  135,
+                  138,
+                  154,
+                  155,
+                  156,
+                  159,
+                  160,
+                  161,
+                  162,
+                  164,
+                  165,
+                  166,
+                  167,
+                  169,
+                  171,
+                  172,
+                  173,
+                  174,
+                  175,
+                  178,
+                  179,
+                  180,
+                  181,
+                  182,
+                  183,
+                  185,
+                  186,
+                  187,
+                  191,
+                  192,
+                  193,
+                  198,
+                  199,
+                  201,
+                  203,
+                  205,
+                  207,
+                  208,
+                  209,
+                  210,
+                  211,
+                  212,
+                  213,
+                  214,
+                  215,
+                  216,
+                  217,
+                  218,
+                  219,
+                  220,
+                  221,
+                  222,
+                  224,
+                  225,
+                  226,
+                  227,
+                  228,
+                  229,
+                  234,
+                  236,
+                  237,
+                  238,
+                  239,
+                  240,
+                  241,
+                  242,
+                  243,
+                  244,
+                  245,
+                  246,
+                  247,
+                  248,
+                  249,
+                  250,
+                  251,
+                  252,
+                  253,
+                  254,
+                  255,
+                  256,
+                  257,
+                  258,
+                  259,
+                  260,
+                  261,
+                  262,
+                  263,
+                  264,
+                  265,
+                  266,
+                  267,
+                  268,
+                  269,
+                  270,
+                  271,
+                  272,
+                  273,
+                  274,
+                  275,
+                  276,
+                  277,
+                  278,
+                  279,
+                  280,
+                  281,
+                  282,
+                  283,
+                  284,
+                  285,
+                  286,
+                  287,
+                  288,
+                  289,
+                  290,
+                  291,
+                  293,
+                  294,
+                  295,
+                  297,
+                  298,
+                  299,
+                  300,
+                  301,
+                  302,
+                  303,
+                  304,
+                  305,
+                  307,
+                  308,
+                  309,
+                  310,
+                  311,
+                  312,
+                  313,
+                  314,
+                  315,
+                  317,
+                  318,
+                  320,
+                  323,
+                  324,
+                  325,
+                  326,
+                  327,
+                  329,
+                  331,
+                  332,
+                  334,
+                  335,
+                  336,
+                  338
+               ],
+               "merges": [
+                  {
+                     "unit_ids": [
+                        89,
+                        108
+                     ],
+                     "new_unit_id": null
+                  },
+                  {
+                     "unit_ids": [
+                        95,
+                        104
+                     ],
+                     "new_unit_id": null
+                  }
+               ],
+               "splits": []
+            }
+         ],
+         "status_history": [
+            {
+               "object_type": "QC status",
+               "evaluator": "",
+               "status": "Pass",
+               "timestamp": "2026-10-03T14:47:20.879728-04:00"
+            }
+         ],
+         "description": "This metric renders the SpikeInterface GUI through the AIND ephys portal. You can use the GUI to curate spike sorting results (label, remove, merge, split). Use the 'Submit to parent' button to submit the curation data to the QC Portal.",
+         "reference": "https%3A//ephys.allenneuraldynamics.org/ephys_gui_app%3Fanalyzer_path%3D%7Bderived_asset_location%7D/postprocessed/block0_acquisition-ElectricalSeriesAP_recording1.zarr",
+         "tags": {
+            "probe": "block0_acquisition-ElectricalSeriesAP"
+         },
+         "evaluated_assets": null,
+         "type": "Spike sorting curation",
+         "curation_history": [
+            {
+               "object_type": "Curation history",
+               "curator": "Ephys pipeline",
+               "timestamp": "2026-10-03T14:47:20.879728-04:00"
+            }
+         ]
+      }
+   ],
+   "key_experimenters": null,
+   "notes": null,
+   "default_grouping": [
+      "probe",
+      "stage"
+   ],
+   "allow_tag_failures": [],
+   "status": {
+      "probe:block0_acquisition-ElectricalSeriesAP": "Pending",
+      "ecephys": "Pending",
+      "Raw data": "Pending",
+      "Processing": "Pending"
+   }
+}
