@@ -1,0 +1,5 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	87/462cdb	25014264	validate_params (validate_params)	COMPLETED	0	2026-10-06 01:36:18.659	1m 34s	214ms	52.8%	10.7 MB	18.1 MB	3 MB	351 B
+2	2d/d2aa0e	25014350	job_dispatch (job-dispatch)	COMPLETED	0	2026-10-06 01:37:52.612	29m 45s	5.1s	40.1%	155.7 MB	602.1 MB	37.5 MB	2 MB
+4	50/a4c2e2	25017207	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-10-06 02:07:38.151	1h 1m 19s	6m 6s	320.8%	99.9 GB	103.9 GB	22.3 GB	628.1 MB
+3	38/7dfc46	25017206	preprocessing (preprocessing)	FAILED	1	2026-10-06 02:07:38.038	1h 29m 34s	3m	-	-	-	-	-
