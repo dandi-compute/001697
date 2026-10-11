@@ -1,0 +1,7 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	75/c42904	25491452	validate_params (validate_params)	CACHED	0	2026-10-10 08:46:52.750	1m 10s	712ms	16.0%	10.9 MB	18.1 MB	3 MB	352 B
+2	37/1d4a2e	25491497	job_dispatch (job-dispatch)	CACHED	0	2026-10-10 08:48:02.537	59.3s	4.2s	64.6%	944.2 MB	1.6 GB	37 MB	1.2 MB
+3	c7/b275f1	25491550	nwb_ecephys (nwb-ecephys)	CACHED	0	2026-10-10 08:49:02.130	50m 5s	36m 6s	356.1%	66.6 GB	70.5 GB	138 GB	2.5 GB
+4	6a/620f82	25491548	preprocessing (preprocessing)	CACHED	0	2026-10-10 08:49:02.032	13m 10s	11m 1s	888.0%	12 GB	61.7 GB	180.6 GB	90.6 GB
+5	98/952b6d	25492095	spikesort_kilosort4 (spikesort-kilosort4)	CACHED	0	2026-10-10 09:02:11.919	48m 25s	47m 47s	581.5%	23.1 GB	124.4 GB	1.7 GB	5.4 GB
+6	f7/699500	25532270	postprocessing (postprocessing)	FAILED	140	2026-10-10 19:16:00.916	12h 2m 39s	11h 59m 3s	-	-	-	-	-
