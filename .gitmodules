@@ -1038,3 +1038,7 @@
 	path = derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-13_ecephys/pipeline-aind+ephys/job-2610115abd6a/derivatives/postprocessed/block0_acquisition-ElectricalSeriesVP0_recording1.zarr
 	url = https://github.com/dandizarrs/0a76cf63-f015-41ee-8d6e-ca3b76346676
 	datalad-id = a8ebb07f-30a1-4030-96ac-56a1be90a7a0
+[submodule "derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-2/sub-Chronic-Implant-2_obj-1pfv28z_ecephys/pipeline-aind+ephys/job-261011d9bc64/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-2/sub-Chronic-Implant-2_obj-1pfv28z_ecephys/pipeline-aind+ephys/job-261011d9bc64/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/b07c46af-273e-4518-9911-eb149a321f98
+	datalad-id = 7219e38c-64be-4e86-97ff-6a23c79d5225
