@@ -1298,6 +1298,12 @@ job-2609112e89d8	derivatives/dandisets-001/dandiset-001177/sub-H1-3/sub-H1-3_ses
 job-2609112e89d8	derivatives/dandisets-001/dandiset-001177/sub-H1-3/sub-H1-3_ses-PPXopenField-H1-3-day3_ecephys/pipeline-aind+ephys/job-2609112e89d8/logs/timeline.html	2acc8764-b17c-42f2-b348-63b7edc8b5b8
 job-2609112e89d8	derivatives/dandisets-001/dandiset-001177/sub-H1-3/sub-H1-3_ses-PPXopenField-H1-3-day3_ecephys/pipeline-aind+ephys/job-2609112e89d8/logs/trace.txt	42e457dc-c306-477c-bb37-fe4bba59f985
 job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/dataset_description.json	05ed6d66-040d-4121-91ab-e5aa42ddac77
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/dag.html	0732df4a-a9fe-40c0-bb9a-2ba864dd03ba
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/job-28172406_slurm.log	46796df1-8474-4374-829d-50745dd42970
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/nextflow.log	46df9f2f-455f-4306-9d75-0f975025dd7d
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/report.html	29c45eb3-7ce0-4926-9fab-b7efa215eb7b
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/timeline.html	28d332c2-cb86-4774-889b-e4b923cbce9c
+job-261107627036	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day1_ecephys/pipeline-aind+ephys/job-261107627036/logs/trace.txt	cff95610-8e69-4e58-b03d-78799c590f38
 job-26110605fac9	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day4_ecephys/pipeline-aind+ephys/job-26110605fac9/dataset_description.json	36406da5-066f-4cc8-98bf-65f7c6bc4a27
 job-26110605fac9	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day4_ecephys/pipeline-aind+ephys/job-26110605fac9/logs/dag.html	0732df4a-a9fe-40c0-bb9a-2ba864dd03ba
 job-26110605fac9	derivatives/dandisets-001/dandiset-001177/sub-H4-3/sub-H4-3_ses-PPXopenField-H4-3-day4_ecephys/pipeline-aind+ephys/job-26110605fac9/logs/job-28094003_slurm.log	311a78f6-8202-45a3-a296-e0d0af984a42
