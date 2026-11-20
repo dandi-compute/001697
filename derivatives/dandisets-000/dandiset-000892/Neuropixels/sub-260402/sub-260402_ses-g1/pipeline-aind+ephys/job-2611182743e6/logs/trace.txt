@@ -1,0 +1,3 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	a5/87b2f0	29753465	save_provenance (provenance)	COMPLETED	0	2026-11-20 03:57:27.816	1m 8s	35ms	4.7%	0	0	229.8 KB	125 KB
+2	d7/c79e7c	29753466	job_dispatch (job-dispatch)	FAILED	1	2026-11-20 03:57:27.986	1h 28m 13s	4ms	-	-	-	-	-
