@@ -2649,8 +2649,9 @@ job-261110747372	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-age
 job-261110747372	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-261110747372/logs/job-28682344_slurm.log	751ed65a-f559-4586-bf9b-5286ecd8c56b
 job-261110747372	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-261110747372/logs/nextflow.log	c94526e9-0098-42f2-bfa2-f7c4ef96ab21
 job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/dataset_description.json	292e0f42-54a6-4417-b571-51eae89c01b9
-job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/logs/job-28682345_slurm.log	4e7e3dbe-f8cf-4234-aa7c-d57c55388fae
-job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/logs/nextflow.log	81499fbf-fb09-4e85-b0bf-c715a294fc14
+job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/logs/job-28682345_slurm.log	c4c44a79-b8ce-4abb-ad92-fe1131c3f819
+job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/logs/nextflow.log	1913f246-cae6-4a6e-b5c7-5bc9a6a8dbef
+job-2611107677d7	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-2611107677d7/logs/nextflow.log.1	81499fbf-fb09-4e85-b0bf-c715a294fc14
 job-261110b4854c	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-261110b4854c/dataset_description.json	cdc84491-9c14-4a60-af14-e693721d50a5
 job-261110b4854c	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-261110b4854c/logs/job-28582469_slurm.log	31a8a84c-5750-410f-a581-cd84450428be
 job-261110b4854c	derivatives/dandisets-001/dandiset-001428/sub-aged-mice/sub-aged-mice_ses-after_ecephys/pipeline-aind+ephys/job-261110b4854c/logs/nextflow.log	f054cad4-24d8-4f27-9567-d0380ee224bd
