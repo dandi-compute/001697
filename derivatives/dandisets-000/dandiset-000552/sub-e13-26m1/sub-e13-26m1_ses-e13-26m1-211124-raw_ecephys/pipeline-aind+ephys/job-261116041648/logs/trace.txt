@@ -1,0 +1,36 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	bb/73f843	29756932	save_provenance (provenance)	COMPLETED	0	2026-11-20 04:35:13.052	2m 34s	46ms	12.0%	0	0	214.8 KB	125.2 KB
+2	8c/454e0d	29756931	job_dispatch (job-dispatch)	COMPLETED	0	2026-11-20 04:35:12.933	57m 9s	9s	89.0%	15.1 GB	15.5 GB	39.2 MB	2.8 MB
+4	dd/6717cf	29761280	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:22.603	1d 1h 8m 37s	5m 15s	810.4%	6.5 GB	15.4 GB	150 GB	20 GB
+3	76/0bda6a	29761281	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:22.759	1d 1h 14m 42s	4m 53s	910.2%	6.5 GB	15.3 GB	148.9 GB	20 GB
+7	5b/54c85d	29761283	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:22.840	1d 1h 20m 37s	5m 31s	852.3%	6.5 GB	15.4 GB	151.4 GB	20 GB
+8	4c/4eff7f	29761286	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:23.006	1d 1h 25m 41s	5m 14s	803.6%	6.6 GB	15.4 GB	149.6 GB	20 GB
+5	7e/288cae	29761287	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:23.099	1d 1h 32m 11s	4m 50s	1006.5%	6.5 GB	15.3 GB	150.9 GB	18.7 GB
+9	28/06bd90	29761288	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:23.182	1d 1h 38m 46s	5m 29s	920.5%	6.6 GB	15.4 GB	151.4 GB	18.8 GB
+6	f7/f2e29f	29761285	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-11-20 05:32:22.923	1d 1h 56m 36s	16m 30s	331.4%	5.6 GB	9.5 GB	161.3 GB	3 GB
+10	a7/0623ab	29761289	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:23.263	1d 2h 6s	3m 8s	1287.7%	6.5 GB	15.4 GB	150 GB	19.9 GB
+11	80/91ea14	29761290	preprocessing (preprocessing)	COMPLETED	0	2026-11-20 05:32:23.348	1d 2h 5m 56s	3m 22s	1214.7%	6.5 GB	15.4 GB	152.2 GB	18.7 GB
+13	eb/f5e1d2	29939285	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 06:47:05.439	16h 46m 9s	4m 26s	1300.2%	11.9 GB	92.7 GB	39.9 GB	444 MB
+15	b6/31078b	29939636	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 06:58:05.069	17h 16m 40s	6m	1420.1%	12.9 GB	94 GB	40 GB	575.8 MB
+16	8d/727cbb	29939969	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 07:04:34.556	17h 34m 43s	4m 57s	1316.7%	11.4 GB	92.9 GB	39.8 GB	369.7 MB
+17	05/e2ff9a	29940252	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 07:11:09.541	17h 35m 58s	8m 21s	1419.6%	13.6 GB	95.6 GB	40.2 GB	840.6 MB
+18	09/20a17f	29941876	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 07:32:29.996	17h 14m 57s	7m 35s	1417.5%	10.5 GB	92 GB	39.9 GB	467.5 MB
+19	09/e2d8e2	29942146	spikesort_lupin (spikesort-lupin)	COMPLETED	0	2026-11-21 07:38:20.421	17h 19m 27s	5m 2s	1222.4%	11.5 GB	92.8 GB	40 GB	540.7 MB
+20	b6/79ed74	30031570	postprocessing (postprocessing)	COMPLETED	0	2026-11-21 23:33:14.767	2h 49m 48s	3m 34s	472.6%	11.1 GB	53.2 GB	25.6 GB	263.7 MB
+22	f8/e3e6eb	30036183	postprocessing (postprocessing)	COMPLETED	0	2026-11-22 00:39:17.640	1h 44m 10s	3m 54s	551.5%	10.7 GB	52.6 GB	26.9 GB	267.7 MB
+26	35/e6193b	30043732	curation (curation)	COMPLETED	0	2026-11-22 02:23:02.797	55.8s	11.3s	45.4%	680.2 MB	2.9 GB	209.5 MB	14.5 MB
+21	e6/3c1e23	30034612	postprocessing (postprocessing)	COMPLETED	0	2026-11-22 00:14:44.764	2h 9m 18s	4m 31s	531.1%	13.5 GB	55.7 GB	28.9 GB	389.3 MB
+23	eb/cfd929	30036968	postprocessing (postprocessing)	COMPLETED	0	2026-11-22 00:47:08.571	1h 36m 54s	4m 24s	603.1%	17 GB	59.7 GB	29.2 GB	520.8 MB
+28	bc/1ad547	30043788	visualization (visualization)	COMPLETED	0	2026-11-22 02:24:01.110	1m 31s	7.8s	27.5%	186.5 MB	764.4 MB	84.3 MB	861.2 KB
+29	07/311c7c	30043791	curation (curation)	COMPLETED	0	2026-11-22 02:24:03.504	1m 34s	11.9s	48.1%	676.6 MB	2.9 GB	253.6 MB	14.5 MB
+27	8c/b25798	30043752	curation (curation)	COMPLETED	0	2026-11-22 02:23:27.938	2m 30s	10.9s	44.3%	791.6 MB	3.2 GB	218.5 MB	14.5 MB
+25	4d/d884ad	30037777	postprocessing (postprocessing)	COMPLETED	0	2026-11-22 00:57:47.888	1h 28m 50s	2m 31s	647.2%	10.3 GB	53.3 GB	24.8 GB	280.4 MB
+24	40/65c4d2	30037000	postprocessing (postprocessing)	COMPLETED	0	2026-11-22 00:47:29.184	1h 39m 8s	2m 10s	597.4%	10.1 GB	53 GB	24 GB	275.5 MB
+31	99/b650cb	30044001	quality_control (quality-control)	FAILED	1	2026-11-22 02:25:33.267	1m 34s	9.9s	-	-	-	-	-
+12	5f/4f6f77	29939086	spikesort_lupin (spikesort-lupin)	ABORTED	-	2026-11-21 06:40:59.547	-	-	-	-	-	-	-
+14	ad/7f6b24	29939494	spikesort_lupin (spikesort-lupin)	ABORTED	-	2026-11-21 06:52:59.492	-	-	-	-	-	-	-
+30	e4/141705	30043792	curation (curation)	ABORTED	-	2026-11-22 02:24:03.581	-	-	-	-	-	-	-
+32	80/ca7bc9	30044035	visualization (visualization)	ABORTED	-	2026-11-22 02:25:37.687	-	-	-	-	-	-	-
+33	c4/a38a55	30044055	visualization (visualization)	ABORTED	-	2026-11-22 02:25:57.742	-	-	-	-	-	-	-
+34	48/76bc77	30044108	curation (curation)	ABORTED	-	2026-11-22 02:26:37.719	-	-	-	-	-	-	-
+35	6e/2a04ba	30044109	curation (curation)	ABORTED	-	2026-11-22 02:26:37.795	-	-	-	-	-	-	-

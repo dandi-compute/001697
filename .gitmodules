@@ -1046,3 +1046,19 @@
 	path = derivatives/dandisets-000/dandiset-000939/sub-A3728/sub-A3728_ses-210309b_behavior+ecephys/pipeline-aind+ephys/job-261114cfb2e3/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
 	url = https://github.com/dandizarrs/58c9968b-90e9-4a77-b6cb-6470f9921368
 	datalad-id = d042c675-c5b0-42fa-afc1-38b3f472451d
+[submodule "derivatives/dandisets-000/dandiset-000409/sub-ZM-1897/sub-ZM-1897_ses-e5fae088-ed96-4d9b-82f9-dfd13c259d52_desc-raw_ecephys/pipeline-aind+ephys/job-26111676dc82/derivatives/postprocessed/block0_acquisition-ElectricalSeriesProbe00AP_recording1.zarr"]
+	path = derivatives/dandisets-000/dandiset-000409/sub-ZM-1897/sub-ZM-1897_ses-e5fae088-ed96-4d9b-82f9-dfd13c259d52_desc-raw_ecephys/pipeline-aind+ephys/job-26111676dc82/derivatives/postprocessed/block0_acquisition-ElectricalSeriesProbe00AP_recording1.zarr
+	url = https://github.com/dandizarrs/db3fead3-c460-48ea-acda-f3ee32b0dbca
+	datalad-id = e6a0ba37-826e-4b98-87a4-c60588bd5b7b
+[submodule "derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-3/sub-Chronic-Implant-3_obj-29wy76_ecephys/pipeline-aind+ephys/job-261116cd8a3c/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-3/sub-Chronic-Implant-3_obj-29wy76_ecephys/pipeline-aind+ephys/job-261116cd8a3c/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/b2b7101e-6b41-4598-98b1-c2771868d88f
+	datalad-id = d6098ca8-47c7-4d44-b9bc-ba2dac3ba1a8
+[submodule "derivatives/dandisets-001/dandiset-001374/sub-001/sub-001_ses-20250502_obj-Traceiii20240701iii12iii07iii14iii22194iii80iiiventraliiie14iiidopamineiiiinit_ecephys/pipeline-aind+ephys/job-2611194520a1/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001374/sub-001/sub-001_ses-20250502_obj-Traceiii20240701iii12iii07iii14iii22194iii80iiiventraliiie14iiidopamineiiiinit_ecephys/pipeline-aind+ephys/job-2611194520a1/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/5981751e-2722-439b-b91d-d206513f7f48
+	datalad-id = 799684b8-f18a-4795-b363-7c10f58964fd
+[submodule "derivatives/dandisets-000/dandiset-000939/sub-A1808/sub-A1808_ses-190807_behavior+ecephys+ogen/pipeline-aind+ephys/job-26111565c4bf/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-000/dandiset-000939/sub-A1808/sub-A1808_ses-190807_behavior+ecephys+ogen/pipeline-aind+ephys/job-26111565c4bf/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/d6b87df2-2ff4-4fbe-8086-e7971387c909
+	datalad-id = d04bd730-e864-45c8-96ee-bd7a844602be
