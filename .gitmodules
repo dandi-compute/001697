@@ -1062,3 +1062,7 @@
 	path = derivatives/dandisets-000/dandiset-000939/sub-A1808/sub-A1808_ses-190807_behavior+ecephys+ogen/pipeline-aind+ephys/job-26111565c4bf/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
 	url = https://github.com/dandizarrs/d6b87df2-2ff4-4fbe-8086-e7971387c909
 	datalad-id = d04bd730-e864-45c8-96ee-bd7a844602be
+[submodule "derivatives/dandisets-001/dandiset-001177/sub-D0/sub-D0_ses-SalineopenField-DO_ecephys/pipeline-aind+ephys/job-261118c7899a/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001177/sub-D0/sub-D0_ses-SalineopenField-DO_ecephys/pipeline-aind+ephys/job-261118c7899a/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/0fd32f69-6ae5-4fdd-8930-15e3180e8f5f
+	datalad-id = bbabee34-9675-456c-9987-d26a51e9de6a
