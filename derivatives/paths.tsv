@@ -1898,6 +1898,8 @@ job-261121aba311	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amade
 job-261121fa30c3	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-01042020_ecephys/pipeline-aind+ephys/job-261121fa30c3/dataset_description.json	3a992d28-4542-449d-beba-62d2905e0780
 job-2611220dd99e	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06242019_ecephys/pipeline-aind+ephys/job-2611220dd99e/dataset_description.json	0c800940-69ee-4a5d-a033-ce34ac89f2e6
 job-2611221f287c	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06242019_ecephys/pipeline-aind+ephys/job-2611221f287c/dataset_description.json	27b4a925-55bf-4ba2-a88f-5202dab9db53
+job-2611221f287c	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06242019_ecephys/pipeline-aind+ephys/job-2611221f287c/logs/job-30242101_slurm.log	d33d6780-cd14-4e7e-b183-271fa2add6e2
+job-2611221f287c	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06242019_ecephys/pipeline-aind+ephys/job-2611221f287c/logs/nextflow.log	9afdc1b8-b0cf-4bb3-a359-0ba6839c82d5
 job-261122897396	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06242019_ecephys/pipeline-aind+ephys/job-261122897396/dataset_description.json	2347f3ab-0198-4cd0-8f20-1d3f0a99f60a
 job-261107e60c05	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06302020_ecephys/pipeline-aind+ephys/job-261107e60c05/dataset_description.json	270b935a-0779-4294-a638-1a3d2d1adb84
 job-261107e60c05	derivatives/dandisets-001/dandiset-001275/sub-amadeus/sub-amadeus_ses-06302020_ecephys/pipeline-aind+ephys/job-261107e60c05/logs/dag.html	0732df4a-a9fe-40c0-bb9a-2ba864dd03ba
@@ -4593,6 +4595,8 @@ job-2610012fab6d	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses
 job-26112264e2ef	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses-20250924T012016_ecephys/pipeline-aind+ephys/job-26112264e2ef/dataset_description.json	f06a8195-9574-441c-bf16-ae3d245fc927
 job-261122793724	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses-20250924T012016_ecephys/pipeline-aind+ephys/job-261122793724/dataset_description.json	aaa675f4-8147-46e1-b9c0-04e94d8b98d9
 job-261122be1b76	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses-20250924T012016_ecephys/pipeline-aind+ephys/job-261122be1b76/dataset_description.json	a91b8cea-3925-4216-9c21-b7ee70970199
+job-261122be1b76	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses-20250924T012016_ecephys/pipeline-aind+ephys/job-261122be1b76/logs/job-30242102_slurm.log	436db570-69eb-4194-a097-ddf9ab367893
+job-261122be1b76	derivatives/dandisets-001/dandiset-001603/sub-M3S1/sub-M3S1_ses-20250924T012016_ecephys/pipeline-aind+ephys/job-261122be1b76/logs/nextflow.log	2fe5c05c-7585-405c-a331-f4b14ed8cdeb
 job-260910f48185	derivatives/dandisets-001/dandiset-001603/sub-MO10/sub-MO10_ses-20250924T011950_ecephys/pipeline-aind+ephys/job-260910f48185/dataset_description.json	5411a154-8f12-48f2-b15f-bc356b4fac2b
 job-260910f48185	derivatives/dandisets-001/dandiset-001603/sub-MO10/sub-MO10_ses-20250924T011950_ecephys/pipeline-aind+ephys/job-260910f48185/derivatives/60ab0635-8566-453e-b4ad-2bc3d1f2c260_block0_recording1.nwb	fe33100b-c594-4bdf-aff3-49fd6869daf0
 job-260910f48185	derivatives/dandisets-001/dandiset-001603/sub-MO10/sub-MO10_ses-20250924T011950_ecephys/pipeline-aind+ephys/job-260910f48185/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr	fc5f1371-a75c-4024-8d5c-4b8f6eccd569
