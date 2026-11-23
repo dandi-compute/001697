@@ -1,0 +1,5 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	07/3b08d5	30061405	save_provenance (provenance)	CACHED	0	2026-11-22 07:06:18.191	33.6s	11ms	37.5%	0	0	214.1 KB	125.1 KB
+2	27/a8125a	30061406	job_dispatch (job-dispatch)	CACHED	0	2026-11-22 07:06:18.373	33.5s	3.9s	80.6%	3.3 GB	4 GB	36.9 MB	785.4 KB
+3	44/480c82	30081186	nwb_ecephys (nwb-ecephys)	FAILED	1	2026-11-22 13:03:42.560	16h 2m 57s	53.9s	-	-	-	-	-
+4	32/fbe1cd	30081187	preprocessing (preprocessing)	ABORTED	-	2026-11-22 13:03:42.760	-	-	-	-	-	-	-

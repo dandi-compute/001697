@@ -1062,3 +1062,15 @@
 	path = derivatives/dandisets-000/dandiset-000939/sub-A1808/sub-A1808_ses-190807_behavior+ecephys+ogen/pipeline-aind+ephys/job-26111565c4bf/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
 	url = https://github.com/dandizarrs/d6b87df2-2ff4-4fbe-8086-e7971387c909
 	datalad-id = d04bd730-e864-45c8-96ee-bd7a844602be
+[submodule "derivatives/dandisets-001/dandiset-001177/sub-D0/sub-D0_ses-SalineopenField-DO_ecephys/pipeline-aind+ephys/job-261118c7899a/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001177/sub-D0/sub-D0_ses-SalineopenField-DO_ecephys/pipeline-aind+ephys/job-261118c7899a/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/0fd32f69-6ae5-4fdd-8930-15e3180e8f5f
+	datalad-id = bbabee34-9675-456c-9987-d26a51e9de6a
+[submodule "derivatives/dandisets-000/dandiset-000409/sub-ZM-1897/sub-ZM-1897_ses-e5fae088-ed96-4d9b-82f9-dfd13c259d52_desc-raw_ecephys/pipeline-aind+ephys/job-2611161dbf07/derivatives/postprocessed/block0_acquisition-ElectricalSeriesProbe00AP_recording1.zarr"]
+	path = derivatives/dandisets-000/dandiset-000409/sub-ZM-1897/sub-ZM-1897_ses-e5fae088-ed96-4d9b-82f9-dfd13c259d52_desc-raw_ecephys/pipeline-aind+ephys/job-2611161dbf07/derivatives/postprocessed/block0_acquisition-ElectricalSeriesProbe00AP_recording1.zarr
+	url = https://github.com/dandizarrs/c1c8dd51-ada7-4207-a333-dd1364c573f7
+	datalad-id = 5c1c3db3-837b-40cf-9966-85ae5f15e78f
+[submodule "derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-1/sub-Chronic-Implant-1_obj-zf2qe2_ecephys/pipeline-aind+ephys/job-2611159d3722/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr"]
+	path = derivatives/dandisets-001/dandiset-001469/sub-Chronic-Implant-1/sub-Chronic-Implant-1_obj-zf2qe2_ecephys/pipeline-aind+ephys/job-2611159d3722/derivatives/postprocessed/block0_acquisition-ElectricalSeries_recording1.zarr
+	url = https://github.com/dandizarrs/20f7d8c5-9d6f-4a3d-aa39-b1427230222b
+	datalad-id = cc9bce3e-9ecc-4a20-8d36-5dc620bd6f27
