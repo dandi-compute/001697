@@ -4845,6 +4845,8 @@ job-261114e08047	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_s
 job-2611222acc89	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200201_behavior+ecephys/pipeline-aind+ephys/job-2611222acc89/dataset_description.json	36e87609-124c-4afe-84a9-4d90a6989e75
 job-261122d98707	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200201_behavior+ecephys/pipeline-aind+ephys/job-261122d98707/dataset_description.json	87c73d4f-1250-4a60-b930-8f3b1bd0403e
 job-261122f6b510	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200201_behavior+ecephys/pipeline-aind+ephys/job-261122f6b510/dataset_description.json	fd69a828-fcf5-4fab-a4e8-b792bef08cc3
+job-261122f6b510	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200201_behavior+ecephys/pipeline-aind+ephys/job-261122f6b510/logs/job-30242103_slurm.log	c5988478-18f6-4a22-b9a0-b5246a81d5f5
+job-261122f6b510	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200201_behavior+ecephys/pipeline-aind+ephys/job-261122f6b510/logs/nextflow.log	a533b0dc-a621-464c-8ca4-5101a2663808
 job-261001c03f08	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200202_behavior+ecephys/pipeline-aind+ephys/job-261001c03f08/dataset_description.json	c8a31046-878e-4648-aea6-7f7d29d98014
 job-261001c03f08	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200202_behavior+ecephys/pipeline-aind+ephys/job-261001c03f08/logs/dag.html	374d93d6-f54a-49e3-9bd4-23cc49c2e489
 job-261001c03f08	derivatives/dandisets-001/dandiset-001699/sub-H3001/sub-H3001_ses-200202_behavior+ecephys/pipeline-aind+ephys/job-261001c03f08/logs/job-24530592_slurm.log	576af9dc-9414-4741-bad7-ef3b2d83dace
