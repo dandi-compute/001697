@@ -676,6 +676,9 @@ job-260929b7036b	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_s
 job-260929b7036b	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-260929b7036b/logs/timeline.html	a4d42790-d117-4334-939f-0b4a6c55584d
 job-260929b7036b	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-260929b7036b/logs/trace.txt	3854c9a4-5e88-40e2-bca6-1596ba3fd7fc
 job-2611221ab58d	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-2611221ab58d/dataset_description.json	35705dd0-1764-4f41-aba8-5b86e33a1323
+job-2611221ab58d	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-2611221ab58d/logs/job-30242097_slurm.log	6ec83a0a-967d-4b08-bd07-15054b6694a4
+job-2611221ab58d	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-2611221ab58d/logs/nextflow.log	d04c43dd-abce-4e2c-9502-a15c6e9294e0
+job-2611221ab58d	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-2611221ab58d/logs/nextflow.log.1	f4a946c9-8a62-439e-9716-afa2c4b01f1f
 job-2611226b60fd	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-2611226b60fd/dataset_description.json	caec0aba-5784-4533-aa8a-73004b1acd78
 job-261122b45920	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-07_ecephys/pipeline-aind+ephys/job-261122b45920/dataset_description.json	1621b947-fc1f-4ea2-adc0-ba9d3aab28e1
 job-2609270ce5c5	derivatives/dandisets-000/dandiset-000620/sub-Elgar/sub-Elgar_ses-2022-09-09_ecephys/pipeline-aind+ephys/job-2609270ce5c5/dataset_description.json	657be4b2-e619-45aa-905c-332db194230a
