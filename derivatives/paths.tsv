@@ -5560,6 +5560,10 @@ job-261107053765	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/e
 job-261107053765	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261107053765/logs/trace.txt	cff95610-8e69-4e58-b03d-78799c590f38
 job-26112301ed1f	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-26112301ed1f/dataset_description.json	47a81406-e270-48d8-bd51-0479fb2f4972
 job-261123c1cf41	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123c1cf41/dataset_description.json	65c3bf52-b2ec-4111-9503-78064aab264f
+job-261123c1cf41	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123c1cf41/logs/job-30242094_slurm.log	9c425117-eb1d-41b9-890b-22c820700ccf
+job-261123c1cf41	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123c1cf41/logs/nextflow.log	c8df491a-2424-4cd7-a3fa-2fcce4f87bf0
+job-261123c1cf41	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123c1cf41/logs/nextflow.log.1	475b9028-046f-4cc6-a8cd-68137aeec031
+job-261123c1cf41	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123c1cf41/logs/nextflow.log.2	4d29acd2-2aa1-4fe2-952c-0775a99acf38
 job-261123fa6f16	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP05/ecephys/sub-NP05_ecephys/pipeline-aind+ephys/job-261123fa6f16/dataset_description.json	c2cfaa79-7f35-442b-aa42-7b3e47659e8b
 job-2609117db352	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP06/ecephys/sub-NP06_ecephys/pipeline-aind+ephys/job-2609117db352/dataset_description.json	e84c590f-385c-48c2-a962-8617026b6ac2
 job-2609117db352	derivatives/dandisets-001/dandiset-001765/sourcedata/sub-NP06/ecephys/sub-NP06_ecephys/pipeline-aind+ephys/job-2609117db352/derivatives/4ed2c639-aeb0-4f48-a497-e282cd243c1f_block0_recording1.nwb	35d5826a-7018-4d13-9f1f-07d6044e7640
