@@ -1,0 +1,8 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	cc/3ec1b7	30642895	save_provenance (provenance)	COMPLETED	0	2026-11-26 18:49:23.033	2m 8s	12ms	69.6%	0	0	213.9 KB	127.3 KB
+2	fe/9fa950	30642896	job_dispatch (job-dispatch)	COMPLETED	0	2026-11-26 18:49:23.332	11h 27m 59s	30.8s	93.4%	22.4 GB	23.9 GB	37.6 MB	1004.7 KB
+3	0d/17158b	30692872	nwb_ecephys (nwb-ecephys)	COMPLETED	0	2026-11-27 06:17:24.280	22h 2m 13s	13m 53s	3.5%	4.1 GB	6.6 GB	55.2 MB	530 MB
+4	4c/dc6b58	30692873	preprocessing (preprocessing)	FAILED	1	2026-11-27 06:17:24.618	23h 9m 38s	5m 10s	-	-	-	-	-
+5	aa/676844	30692874	preprocessing (preprocessing)	ABORTED	-	2026-11-27 06:17:25.854	-	-	-	-	-	-	-
+6	ea/18c696	30692875	preprocessing (preprocessing)	ABORTED	-	2026-11-27 06:17:26.154	-	-	-	-	-	-	-
+7	11/f9d3c0	30692876	preprocessing (preprocessing)	ABORTED	-	2026-11-27 06:17:27.303	-	-	-	-	-	-	-
